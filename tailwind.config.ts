@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
         cardSections: 'linear-gradient(to right, #73FF9299, #00BE9B99)',
+        neonLight: 'linear-gradient(to bottom right, #5AFF43, #21B26B, #5AFF43)',
+        shimmerGreen: 'linear-gradient(to bottom right, #5DE7C1, #107B37)',
+        aquaLight: 'linear-gradient(to right, #21B26B, #41EAD4, #21B26B)',
       },
       backgroundColor: {
         primary: '#0D1816',
