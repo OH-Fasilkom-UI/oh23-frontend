@@ -21,7 +21,7 @@ const config: Config = {
 
         "secondary-enabled": "#FFFFFF03",
         "secondary-hover": "linear-gradient(to bottom, #24E7F433, #5AFF4300)",
-        "secondary-pressed": "linear-gradient(to bottom, #24E7F433, #5AFF4300",
+        "secondary-pressed": "linear-gradient(to bottom, #24E7F433, #5AFF4300)",
       },
       backgroundColor: {
         primary: "#0D1816",
