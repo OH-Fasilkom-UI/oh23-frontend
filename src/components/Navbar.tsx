@@ -18,7 +18,7 @@ const NavLink = ({
     className?: string;
 }) => {
     return (
-        <Link href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "opacity-70"} ${className}`}>
+        <Link href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${className}`}>
             {children}
         </Link>
     )
@@ -32,7 +32,7 @@ const Navbar = () => {
     const router = useRouter();
 
     return (
-        <nav className={`fixed top-0 sm:top-2 left-1/2 -translate-x-1/2 w-full sm:w-4/5 sm:rounded-md  sm:border-2 border-transparent flex items-center px-5 py-2 gap-4 justify-between transition-all duration-500 z-50 backdrop-blur ${y > 100 ? "sm:top-6 sm:scale-95 bg-opacity-10 border-gray-100 border-opacity-30" : "bg-opacity-0 border-opacity-0"}`}>
+        <nav className={`border-2  border-gray-100 fixed top-0 sm:top-2 left-1/2 -translate-x-1/2 w-full sm:w-4/5 sm:rounded-md  sm:border-2 flex items-center px-5 py-2 gap-4 justify-between transition-all duration-500 z-50 backdrop-blur ${y > 100 ? "sm:top-6 sm:scale-95 border-opacity-20" : "border-opacity-10"}`}>
             <Link href="/">
                 <Image src="/logo.png" alt="OH 2023" width={64} height={64} />
             </Link>

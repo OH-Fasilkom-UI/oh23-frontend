@@ -8,3 +8,11 @@
     -webkit-text-stroke: 2px var(--tw-shadow);
 }
 }
+
+::-webkit-scrollbar {
+  @apply w-2 h-1 bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-screaminGreen-3
+}
