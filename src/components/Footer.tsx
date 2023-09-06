@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <section>
-            <BaseFooter height={400} className="bg-black flex flex-col md:flex-row md:space-x-10 space-y-16 md:space-y-0 px-2 py-14 border-none" >
+            <BaseFooter height={400} className="bg-black flex flex-col md:flex-row md:space-x-10 space-y-16 md:space-y-0 px-2 py-14 border-none bg-black-3" >
                 <div className="grow flex">
                     <div className="pr-4 basis-1/2">
                         <div className="grid place-content-center h-full p-2">

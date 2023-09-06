@@ -1,12 +1,14 @@
 import Image from "next/image";
 import { Orbitron } from "next/font/google";
 import { Button } from "@/components/elements/Button";
+import { Countdown } from "@/components/elements/Countdown";
 
 const orbitron = Orbitron({ weight: "800", subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black flex items-center justify-center relative">
+    <main className="bg-black">
+    <section className="min-h-screen bg-black flex items-center justify-center relative">
       <Image src="/footer-bg.png" alt="" fill className="object-cover brightness-[.6]" />
       <Image src="/block.svg" width={300} height={300} alt="Logo" className=" brightness-[.6] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="z-10 text-center flex flex-col items-center justify-center gap-5">
@@ -19,6 +21,11 @@ export default function Home() {
           Daftar Sekarang
         </Button>
       </div>
+    </section>
+    <section className="py-10 flex flex-col items-center justify-center">
+    <Countdown date={new Date("2023-09-07T06:39:00+0700")}/>
+
+    </section>
     </main>
 
   );
