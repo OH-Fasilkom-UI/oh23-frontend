@@ -1,5 +1,5 @@
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  btnType: 'primary' | 'secondary' | 'tertiary' | 'ghost'
+  variant: 'primary' | 'secondary' | 'tertiary' 
   disabled?: boolean
   icon?: React.ReactNode
   isLoading?: boolean

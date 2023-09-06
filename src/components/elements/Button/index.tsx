@@ -3,7 +3,7 @@ import { ButtonProps } from "./interface";
 import { AiOutlineLoading } from "react-icons/ai"
 
 export const Button: React.FC<ButtonProps> = ({
-  btnType,
+  variant,
   children,
   className,
   disabled = false,
@@ -16,10 +16,9 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       {...props}
       className={
-        'font-inter font-bold text-white rounded-2xl px-6 py-5 text-center flex items-center justify-center ' +
-        (disabled && ' opacity-50 ') +
-        (STYLE_GUIDE[btnType]) + ' ' +
-        className
+        `bg-clip-border transition-all duration-200 font-inter font-bold text-white rounded-lg px-6 py-5 text-center flex items-center justify-center disabled:opacity-50
+        ${(STYLE_GUIDE[variant])}
+        ${className}`
       }
     >
       {isLoading ? (

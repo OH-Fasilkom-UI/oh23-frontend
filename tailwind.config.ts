@@ -10,14 +10,14 @@ const config: Config = {
     extend: {
       backgroundImage: {
         cardSections: "linear-gradient(to right, #73FF9299, #00BE9B99)",
-        neonLight: "linear-gradient(to bottom right, #5AFF43, #21B26B, #5AFF43)",
+        neonLight: "linear-gradient(to bottom right, #5AFF43, #21B26B, #21B26B, #5AFF43)",
         shimmerGreen: "linear-gradient(to bottom right, #5DE7C1, #107B37)",
         aquaLight: "linear-gradient(to right, #21B26B, #41EAD4, #21B26B)",
 
         // Button
-        "primary-enabled": "radial-gradient(#21B26BFF, #5AFF43FF)",
-        "primary-hover": "radial-gradient(#21B26BFF, #5AFF43FF)",
-        "primary-pressed": "radial-gradient(#21B26B80, #5AFF4380)",
+        "primary-enabled": "linear-gradient(to bottom right, #5AFF43, #21B26B, #117846, #117846, #21B26B, #5AFF43)",
+        "primary-hover": "linear-gradient(to bottom right, #BEFF05, #48d964, #1d8151, #1d8151, #48d964, #BEFF05)",
+        "primary-pressed": "linear-gradient(to bottom right, #5AFF43DD, #21B26BDD, #117846DD, #117846DD, #21B26BDD, #5AFF43DD)",
 
         "secondary-enabled": "#FFFFFF03",
         "secondary-hover": "linear-gradient(to bottom, #24E7F433, #5AFF4300)",

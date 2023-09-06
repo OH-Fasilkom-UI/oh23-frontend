@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 import { useState } from 'react'
 import { HiBuildingOffice2, HiHome, HiShoppingBag, HiUserGroup } from "react-icons/hi2"
+import { STYLE_GUIDE } from './elements/Button/constant';
 
 const NavLink = ({
     children,
@@ -52,7 +53,7 @@ const Navbar = () => {
                     <HiShoppingBag />
                     <span className='text-white'>Merchandise</span>
                 </NavLink>
-                <NavLink href='/register' isActive={router.pathname === "/register"} className='px-4 py-2 border-2 text-white border-white rounded hover:border-screaminGreen-3 hover:text-screaminGreen-3 transition-colors !opacity-100'>
+                <NavLink href='/register' isActive={router.pathname === "/register"} className={`px-4 py-2 border-2 text-white border-white rounded transition-all ${STYLE_GUIDE['secondary']} !opacity-100`}>
                     {/* <HiHome /> */}
                     Register
                 </NavLink>

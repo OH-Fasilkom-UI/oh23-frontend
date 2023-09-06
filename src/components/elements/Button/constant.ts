@@ -1,10 +1,8 @@
 export const STYLE_GUIDE = {
   primary:
-    'bg-primary-enabled hover:bg-primary-hover hover:border-solid hover:border-2 hover:border-screaminGreen-4 active:bg-primary-pressed',
+    'active:scale-100 text-white hover:scale-105 bg-primary-enabled hover:bg-primary-hover border-2 border-screaminGreen-4 active:bg-primary-pressed',
   secondary:
-    'bg-secondary-enabled border-solid border-2 border-aqua-3 hover:bg-secondary-hover active:bg-secondary-pressed',
+    'active:scale-100 hover:scale-105 bg-secondary-enabled border-solid border-2  hover:border-aqua-3  hover:bg-secondary-hover active:bg-secondary-pressed',
   tertiary:
-    'bg-secondary-anabled hover:border-solid hover:border-2 hover:border-screaminGreen-2 active:bg-secondary-pressed',
-  ghost:
-    '',
+    'active:scale-100 hover:scale-105 border-2 border-transparent hover:border-screaminGreen-2 active:bg-secondary-pressed',
 }
