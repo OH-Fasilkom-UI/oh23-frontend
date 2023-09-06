@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        satoshi: ['var(--font-satoshi)'],
+      },
       backgroundImage: {
         cardSections: "linear-gradient(to right, #73FF9299, #00BE9B99)",
         neonLight: "linear-gradient(to bottom right, #5AFF43, #21B26B, #21B26B, #5AFF43)",
