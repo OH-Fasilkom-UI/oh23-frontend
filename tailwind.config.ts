@@ -9,13 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['var(--font-satoshi)'],
+        satoshi: 'Satoshi',
       },
       backgroundImage: {
         cardSections: "linear-gradient(to right, #73FF9299, #00BE9B99)",
         neonLight: "linear-gradient(to bottom right, #5AFF43, #21B26B, #21B26B, #5AFF43)",
         shimmerGreen: "linear-gradient(to bottom right, #5DE7C1, #107B37)",
         aquaLight: "linear-gradient(to right, #21B26B, #41EAD4, #21B26B)",
+        countdown: "linear-gradient(130deg, #00FF4880, #11FFE233, #0001010D, #0001010D, #0001010D, #0001010D, #0001010D, #0001010D, #0001010D, #0001010D, #11FFE233, #00FF4880)",
 
         // Button
         "primary-enabled": "linear-gradient(to bottom right, #5AFF43, #21B26B, #117846, #117846, #21B26B, #5AFF43)",
