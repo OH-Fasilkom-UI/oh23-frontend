@@ -16,15 +16,15 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       {...props}
       className={
-        `bg-clip-border transition-all duration-200 rounded-lg px-6 py-5 text-center flex items-center justify-center disabled:opacity-50
+        `bg-clip-border transition-all duration-200 rounded-xl px-8 py-4 text-center gap-2 flex items-center justify-center disabled:opacity-50
         ${(STYLE_GUIDE[variant])}
         ${className}`
       }
     >
       {isLoading ? (
-        <AiOutlineLoading className='animate-spin'/>
+        <AiOutlineLoading className='animate-spin' />
       ) : (
-        <> 
+        <>
           {children}
         </>
       )}

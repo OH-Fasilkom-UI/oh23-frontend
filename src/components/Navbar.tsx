@@ -18,7 +18,7 @@ const NavLink = ({
     className?: string;
 }) => {
     return (
-        <Link href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${className}`}>
+        <Link href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4 opacity-70" : "text-gray-100 opacity-70"} ${className}`}>
             {children}
         </Link>
     )
