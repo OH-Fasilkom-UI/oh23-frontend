@@ -1,4 +1,4 @@
-name: Deploy to Vercel Main
+name: CI and CD
 
 on:
   push:
@@ -6,17 +6,26 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-test-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v20
+      - name: Set-up Node
+        uses: actions/setup-node@v1
         with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} # Replace with your Vercel team ID
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
+          node-version: "18.x"
+        
+      - run: npm install
+      - run: npm run build
+      - run: npm test
+      
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_REPO_TOKEN }}
