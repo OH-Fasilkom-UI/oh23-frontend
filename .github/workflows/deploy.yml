@@ -19,7 +19,8 @@ jobs:
           node-version: "18.x"
         
       - run: npm install
-      - run: npm run build && npm run export
+      - run: npm run build
+      - run: next export
       
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
