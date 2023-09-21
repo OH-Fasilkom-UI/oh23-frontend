@@ -25,9 +25,6 @@ jobs:
       - name: Exporting static app
         run: npm run static
 
-      - name: Deploying app
-        run: npm run deploy
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
