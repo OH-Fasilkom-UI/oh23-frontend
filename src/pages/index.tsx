@@ -3,8 +3,6 @@ import { Orbitron } from "next/font/google";
 import { Button } from "@/components/elements/Button";
 import { Countdown } from "@/components/elements/Countdown";
 import { HiBookOpen, HiChevronDoubleRight, HiOutlineArrowRight } from "react-icons/hi2";
-import '@mantine/carousel/styles.css';
-import {  } from '@mantine/carousel';
 
 const orbitron = Orbitron({ weight: "800", subsets: ["latin"] });
 
