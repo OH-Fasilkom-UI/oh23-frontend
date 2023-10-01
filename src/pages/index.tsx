@@ -2,7 +2,8 @@ import Image from "next/image";
 import { Orbitron } from "next/font/google";
 import { Button } from "@/components/elements/Button";
 import { Countdown } from "@/components/elements/Countdown";
-import { HiBookOpen, HiChevronDoubleRight, HiOutlineArrowRight } from "react-icons/hi2";
+import { HiBookOpen, HiChevronDoubleRight } from "react-icons/hi2";
+import WhatIsOH from "@/components/WhatIsOH";
 
 const orbitron = Orbitron({ weight: "800", subsets: ["latin"] });
 
@@ -34,28 +35,8 @@ export default function Home() {
         </div>
       </section>
       <div className="my-60"/>
-      <section className="mt-10 py-10 flex flex-col items-center min-h-screen bg-black">
-        <Image src="/what-is-oh.svg" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
-        <div className="z-10 text-center flex flex-col mx-10 items-center">
-          <div className="z-10 text-center flex flex-col items-center justify-center gap-7 mx-5 px-16 rounded-md">
-            <h1 className="font-satoshi text-white bg-clip-text font-extrabold text-5xl drop-shadow-sm shadow-white">
-              What is OH?
-            </h1>
-          </div>
-          <div className="text-center font my-8">
-            Open House Fasilkom UI merupakan acara tahunan yang diselenggarakan oleh BEM Fasilkom UI untuk
-            memperkenalkan Fakultas Ilmu Komputer Universitas Indonesia kepada masyarakat luas dan membantu
-            para calon mahasiswa dalam memantapkan pilihan program studinya di Fasilkom UI.
-          </div>
-          <Button
-            variant="secondary"
-            className="px-28"
-          >
-            Baca Selengkapnya
-            <HiOutlineArrowRight/>
-          </Button>
-        </div>
-      </section>
+      <WhatIsOH/>
+      
     </main>
 
   );
