@@ -8,7 +8,7 @@ interface PrestasiProps {
 
 const Prestasi = (props: PrestasiProps) => {
   return (
-    <div className='border-gray-100 flex flex-col gap-4 rounded-md border-2 border-opacity-10 backdrop-blur py-9 px-10 w-[15rem]'>
+    <div className='border-gray-100 border-opacity-10 flex flex-col gap-4 rounded-md border-2 backdrop-blur py-9 px-10 w-[15rem]'>
       <Image src={props.imgSrc} alt="" width={150} height={150} />
       <h2 className="text-xl text-white-1">{props.title}</h2>
       <p className='text-sm'>{props.description}</p>
