@@ -19,7 +19,8 @@ const Prestasi = (props: PrestasiProps) => {
 export const ListPrestasi = () => {
   return (
     <section className='flex flex-wrap text-center justify-center gap-5 mt-36 mx-10 relative'>
-      <Image src="/background-prestasi.svg" alt="" width={573} height={428} className='absolute -left-10 -top-5' />
+      <Image src="/background-prestasi.svg" alt="" width={573} height={428} className='absolute left-0 top-0 max-w-full object-cover' />
+      <Image src="/background-prestasi.svg" alt="" width={573} height={428} className='absolute right-0 bottom-0 max-w-full object-cover' />
       <h1 className="w-full font-semibold text-5xl text-white-1 mb-5">Prestasi</h1>
       <Prestasi imgSrc="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" title="Heading" description="bejir" />
       <Prestasi imgSrc="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" title="Heading" description="bejir" />
