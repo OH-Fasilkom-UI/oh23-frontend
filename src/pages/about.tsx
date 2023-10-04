@@ -6,7 +6,7 @@ import React from 'react'
 
 const AboutPage = () => {
     return (
-        <main className='min-h-screen'>
+        <main className='min-h-screen bg-[#000]'>
             <WhatIsPacil />
             <ListPrestasi />
         </main>

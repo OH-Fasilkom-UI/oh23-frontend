@@ -5,7 +5,7 @@ import { Button } from "./elements/Button"
 
 export const WhatIsPacil = () => {
   return (
-    <section className='min-h-screen flex items-center justify-center'>
+    <section className='flex items-center justify-center pt-36'>
       <div className='flex gap-10 flex-wrap justify-center mx-10'>
         <div className='backdrop-blur rounded-md border-gray-100 border-opacity-10 border-2 max-w-2xl text-center text-white-1 py-14 px-8 flex gap-8 flex-col flex-shrink-0'>
           <h1 className="font-semibold text-5xl">Apa Itu Fasilkom UI?</h1>

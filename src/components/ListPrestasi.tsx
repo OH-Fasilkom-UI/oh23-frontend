@@ -18,7 +18,7 @@ const Prestasi = (props: PrestasiProps) => {
 
 export const ListPrestasi = () => {
   return (
-    <section className='flex flex-wrap text-center justify-center gap-5 mx-10'>
+    <section className='flex flex-wrap text-center justify-center gap-5 mt-36 mx-10'>
       <h1 className="w-full font-semibold text-5xl text-white-1 mb-5">Prestasi</h1>
       <Prestasi imgSrc="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" title="Heading" description="bejir" />
       <Prestasi imgSrc="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" title="Heading" description="bejir" />
