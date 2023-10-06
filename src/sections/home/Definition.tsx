@@ -16,11 +16,11 @@ const images = [
 
 export default function Definition() {
   return (
-    <section className="mt-10 py-10 flex flex-col items-center bg-black">
-        <Image src="/background-definition.svg" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
+    <section className="mt-10 py-10 flex flex-col items-center min-h-screen bg-black">
+        <Image src="/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
         <div className="z-10 text-center flex flex-col mx-10 items-center">
           <div className="z-10 text-center flex flex-col items-center justify-center gap-7 mx-5 px-16 rounded-md">
-            <h1 className="font-satoshi text-white bg-clip-text font-extrabold text-5xl drop-shadow-sm shadow-white">
+            <h1 className="font-satoshi text-white-1 bg-clip-text font-extrabold text-5xl drop-shadow-sm shadow-white">
               What is OH?
             </h1>
           </div>
