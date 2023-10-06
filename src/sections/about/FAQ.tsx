@@ -1,5 +1,5 @@
-import { Dropdown } from "./elements/Dropdown";
-import { contentData } from "./elements/Dropdown/Content";
+import { Dropdown } from "../../components/elements/Dropdown";
+import { contentData } from "../../components/elements/Dropdown/Content";
 import Image from "next/image";
 
 const FAQ = () => {

@@ -6,14 +6,14 @@ import { Card } from "@/components/elements/Card";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-import { ListPrestasi } from '@/components/ListPrestasi'
-import { WhatIsPacil } from '@/components/WhatIsPacil'
-import FAQ from '@/components/FAQ'
-import View360 from '@/components/View360'
+import { ListPrestasi } from '@/sections/about/ListPrestasi'
+import { WhatIsPacil } from '@/sections/about/WhatIsPacil'
+import FAQ from '@/sections/about/FAQ'
 
 const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
   ssr: false,
 });
+
 
 const orbitron = Orbitron({ weight: "800", subsets: ["latin"] });
 
@@ -109,6 +109,7 @@ const AboutPage = () => {
               offsetRadius={2}
               showNavigation={false}
               animationConfig={config.gentle}
+              goToSlideDelay={100}
             />
             <div
               className="absolute top-[50%] left-4 flex justify-center items-center w-12 h-12 rounded-full bg-[#41EAD4B2] text-white font-satoshi font-bold cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:bg-aqua-3 z-10"
@@ -125,16 +126,16 @@ const AboutPage = () => {
             <div className="hidden md:flex absolute bottom-0 left-0 w-full justify-center">
               <div className="flex justify-center gap-x-2">
                 {/* Indikator slide non-aktif dengan lingkaran berwarna hijau gelap */}
-                {[...Array(goToSlide)].map((slide) => (
-                  <div className="w-2 h-2 bg-green-950 rounded-full"></div>
+                {[...Array(goToSlide)].map((slide, i) => (
+                  <div key={i} className="w-2 h-2 bg-green-950 rounded-full"></div>
                 ))}
 
                 {/* Indikator slide aktif saat ini dengan hijau terang */}
                 <div className="w-2 h-2 bg-gradient-to-r from-grass-1 to-grass-3 rounded-full"></div>
 
                 {/* Indikator slide non-aktif dengan lingkaran berwarna hijau gelap */}
-                {[...Array(slides.length - (goToSlide + 1))].map((slide) => (
-                  <div className="w-2 h-2 bg-green-950 rounded-full"></div>
+                {[...Array(slides.length - (goToSlide + 1))].map((slide, i) => (
+                  <div key={i} className="w-2 h-2 bg-green-950 rounded-full"></div>
                 ))}
               </div>
             </div>
@@ -169,7 +170,7 @@ const AboutPage = () => {
               onClick={switchJurusanPengertian}
             >
               <div
-                className={`relative transition-opacity ease-in duration-300 px-10 md:px-32 py-5 rounded-full bg-gradient-to-r from-black-1 via-screaminGreen-4 to-black-1 ${
+                className={`relative transition-opacity ease-in duration-300 px-8 md:px-32 py-5 rounded-full bg-gradient-to-r from-black-1 via-screaminGreen-4 to-black-1 ${
                   jurusan == "pengertian" ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -188,7 +189,7 @@ const AboutPage = () => {
               onClick={switchJurusanPerbedaan}
             >
               <div
-                className={`relative transition-opacity ease-in duration-300 px-10 md:px-32 py-5 rounded-full bg-gradient-to-r from-black-1 via-screaminGreen-4 to-black-1 ${
+                className={`relative transition-opacity ease-in duration-300 px-8 md:px-32 py-5 rounded-full bg-gradient-to-r from-black-1 via-screaminGreen-4 to-black-1 ${
                   jurusan == "perbedaan" ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -214,7 +215,7 @@ const AboutPage = () => {
           />
           {/* Pengertian */}
           <div
-            className={`absolute flex transition-opacity ease-in duration-300 gap-x-10 md:gap-x-20 justify-center py-24 md:py-56 px-6 ${
+            className={`absolute flex flex-col sm:flex-row transition-opacity ease-in duration-300 gap-10 md:gap-20 justify-center py-24 md:py-56 px-6 ${
               jurusan == "pengertian" ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
