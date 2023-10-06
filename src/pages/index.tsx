@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="bg-[#000]">
       <section className="min-h-screen bg-black flex items-center justify-center relative">
-        <Image src="/background-header.svg" alt="" width={1440} height={900} className="absolute top-0 left-0 object-cover brightness-[.6]" />
+        <Image src="/background-header.png" alt="" width={1440} height={900} className="absolute top-0 left-0 object-cover brightness-[.6]" />
         <div className="z-10 text-center flex flex-col items-center justify-center gap-7 mx-5 backdrop-blur bg-black-3 px-16 py-10 rounded-md">
           <h1 className="font-satoshi text-white bg-clip-text font-extrabold text-5xl drop-shadow-sm shadow-white">
             OPEN HOUSE
