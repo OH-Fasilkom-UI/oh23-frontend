@@ -15,8 +15,8 @@ function OurLovelyTab({ children }: { children: React.ReactNode }) {
 
 function OurBloodyPerfectTimelineCard({ description, time, title }: { title: string, time: number, description: string }) {
     return (
-        <article className='bg-[#101010bb] flex justify-between gap-x-10 items-start font-semibold w-3/4 rounded-lg m-10 border-2 border-screaminGreen-2 p-10 text-white'>
-            <section className='w-1/2'>
+        <article className='bg-[#101010bb] md:flex-row flex-col-reverse min-w-[400px] flex justify-between gap-x-10 items-center md:items-start font-semibold w-3/4 rounded-lg m-10 border-2 border-screaminGreen-2 p-10 text-white'>
+            <section className='w-full text-center md:text-start md:w-1/2'>
                 <h1 className='text-white-1'>{title}</h1>
                 <h2 className='text-white-1 text-lg mb-5'>{new Date(time).toLocaleDateString("fr-FR")}</h2>
                 <p className='font-normal'>{description}</p>
@@ -31,13 +31,15 @@ function OurBloodyPerfectTimelineCard({ description, time, title }: { title: str
 export default function Timeline() {
     return (
         <Tab.Group>
-            <Tab.List className="font-satoshi text-center font-semibold my-5">
-                <OurLovelyTab>Grand Opening</OurLovelyTab>
-                <OurLovelyTab>Open Registration</OurLovelyTab>
-                <OurLovelyTab>Mentoring</OurLovelyTab>
-                <OurLovelyTab>Main Event</OurLovelyTab>
-                <OurLovelyTab>Grand Closing</OurLovelyTab>
-            </Tab.List>
+            <div className='overflow-auto'>
+                <Tab.List className="font-satoshi min-w-max  text-center font-semibold my-5">
+                    <OurLovelyTab>Grand Opening</OurLovelyTab>
+                    <OurLovelyTab>Open Registration</OurLovelyTab>
+                    <OurLovelyTab>Mentoring</OurLovelyTab>
+                    <OurLovelyTab>Main Event</OurLovelyTab>
+                    <OurLovelyTab>Grand Closing</OurLovelyTab>
+                </Tab.List>
+            </div>
             <Tab.Panels className="bg-[url(/OurLovelyTimelineBG.png)]">
                 <Tab.Panel className='grid place-items-center'>
                     <OurBloodyPerfectTimelineCard title='Grand Opening' time={Date.now()} description='Grand Opening merupakan rangkaian acara pertama yang bertujuan untuk menandai dimulainya acara Open House Fasilkom UI 2023. Acara pembuka ini akan berisikan sambutan-sambutan dari berbagai elemen Fasilkom UI, video teaser serta overview dari rangkaian acara, penampilan dari guest star, serta persembahan dari UKF yang ada di Fasilkom UI.' />
