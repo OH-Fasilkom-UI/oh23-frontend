@@ -6,16 +6,9 @@ import { Card } from "@/components/elements/Card";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-<<<<<<< HEAD
 import { ListPrestasi } from '@/sections/about/ListPrestasi'
 import { WhatIsPacil } from '@/sections/about/WhatIsPacil'
 import FAQ from '@/sections/about/FAQ'
-=======
-import { ListPrestasi } from '@/components/ListPrestasi'
-import { WhatIsPacil } from '@/components/WhatIsPacil'
-import FAQ from '@/components/FAQ'
-import View360 from '@/components/View360'
->>>>>>> 9ca23f82cdd5199514b962f3f8077617da5e238b
 
 const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
   ssr: false,
