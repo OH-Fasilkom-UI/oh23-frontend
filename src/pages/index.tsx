@@ -8,7 +8,6 @@ import Link from "next/link";
 import Definition from "@/sections/home/Definition";
 import WTS from "@/sections/home/WTS";
 
-
 export default function Home() {
   const next_countdown = new Date("2023-10-23T12:00:00+0700")
   const is_counting = new Date() < next_countdown
