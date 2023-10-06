@@ -1,16 +1,16 @@
 import { HiUserPlus } from "react-icons/hi2"
 import Image from 'next/image'
 import { Carousel } from "@mantine/carousel"
-import { Button } from "./elements/Button"
+import { Button } from "../../components/elements/Button"
 
 export const WhatIsPacil = () => {
   return (
-    <section className='flex items-center justify-center pt-36 mx-5'>
+    <section className='flex items-center justify-center'>
       <Image src="/background-whatispacil.svg" alt="" className="absolute top-16 right-2 max-w-none" width={877} height={996}/>
-      <div className='flex gap-10 flex-wrap justify-center mx-10'>
-        <div className='backdrop-blur rounded-md border-gray-100 border-opacity-10 border-2 max-w-xl text-center text-white-1 py-14 px-8 flex gap-8 flex-col'>
+      <div className='flex gap-10 flex-wrap justify-center'>
+        <div className='backdrop-blur rounded-md border-gray-100 border-opacity-10 border-2 max-w-full sm:max-w-xl  text-white-1 flex gap-8 flex-col'>
           <h1 className="font-semibold text-5xl">Apa Itu Fasilkom UI?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div className='flex flex-col gap-4'>
             <Button variant='primary' className="font-satoshi font-bold w-full">
               <HiUserPlus />
@@ -30,7 +30,7 @@ export const WhatIsPacil = () => {
           slidesToScroll={1}
           slideGap="md"
           slideSize="100%"
-          className="w-96"
+          className="w-full sm:w-96"
         >
           <Carousel.Slide>
             <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
