@@ -17,6 +17,11 @@
   @apply rounded-lg bg-screaminGreen-3
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 @font-face {
   font-family: 'Satoshi';
   src: url('/fonts/Satoshi-Bold.otf');
