@@ -193,12 +193,12 @@ const AboutPage = () => {
                 }`}
               >
                 <h1 className="font-satoshi text-white-1 text-xl md:text-2xl font-semibold opacity-0">
-                  perbedaan
+                  Perbedaan
                 </h1>
               </div>
               <div className="relative px-10 md:px-32 py-4 mt-[-35.4%] md:mt-[-18.2%] rounded-r-full bg-gradient-to-br from-black-1 via-black-1 to-grass-4">
                 <h1 className="font-satoshi text-white-1 text-xl md:text-2xl font-semibold">
-                  perbedaan
+                  Perbedaan
                 </h1>
               </div>
             </div>
@@ -221,17 +221,16 @@ const AboutPage = () => {
             <div className="cursor-pointer transition duration-300 ease-in-out hover:scale-105 max-w-xs lg:max-w-sm p-4 md:p-10 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur border border-gray-500">
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
-                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl">
-                    Heading
+                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold">
+                    Ilmu Komputer
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur. Diam pellentesque
-                    morbi enim egestas neque diam morbi laoreet. Sollicitudin
-                    vel vitae placerat penatibus tempor ipsum. Lorem ipsum dolor
-                    sit amet consectetur. Sollicitudin vel vitae placerat
-                    penatibus tempor ipsum.
+                    Ilmu yang mempelajari tentang komputasi yang mencakup beragam topik yang berkaitan 
+                    dengan komputer, mulai dari analisis abstrak algoritma sampai bahasa pemrograman.
+                    Ilmu Komputer lebih menekankan pada pemrograman komputer dan rekayasa perangkat lunak 
+                    (software).
                   </p>
                 </div>
               </div>
@@ -239,17 +238,16 @@ const AboutPage = () => {
             <div className="cursor-pointer transition duration-300 ease-in-out hover:scale-105 max-w-xs lg:max-w-sm p-4 md:p-10 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur border border-gray-500">
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
-                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl">
-                    Heading
+                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold">
+                    Sistem Informasi
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur. Diam pellentesque
-                    morbi enim egestas neque diam morbi laoreet. Sollicitudin
-                    vel vitae placerat penatibus tempor ipsum. Lorem ipsum dolor
-                    sit amet consectetur. Sollicitudin vel vitae placerat
-                    penatibus tempor ipsum.
+                    Dirancang untuk memenuhi kebutuhan terhadap tenaga tenaga muda yang terampil dan 
+                    profesional, terutama terkait dengan pengembangan, pemanfaatan dan pengelolaan
+                    Sistem Informasi atau Teknologi Informasi dalam suatu organisasi serta mencakup 
+                    fondasi dalam bidang bisnis.
                   </p>
                 </div>
               </div>
