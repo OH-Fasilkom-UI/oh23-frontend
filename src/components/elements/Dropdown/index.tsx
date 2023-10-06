@@ -13,11 +13,11 @@ export const Dropdown: React.FC<Questions> = ({
   };
 
   return (
-    <div className="flex bg-sections rounded-lg hover:cursor-grab" onClick={toggleDropdown}>
+    <div className="flex bg-shimmerGreen-2 bg-opacity-30 backdrop-blur rounded-lg hover:cursor-grab" onClick={toggleDropdown}>
       <div className="flex flex-row justify-between items-center">
-        <div className="text-left font-semibold mx-4 my-4 w-[75%] overflow-hidden">
+        <div className="text-left mx-4 my-4 w-full sm:w-[75%] overflow-hidden">
 
-          <p className='font-bold'>{header}</p>
+          <h3 className='font-medium text-white-2'>{header}</h3>
           <div
             className={`transition-max-height duration-500 ease-in-out ${isExpand ? 'max-h-screen' : 'max-h-0'
               } overflow-hidden`}

@@ -5,11 +5,11 @@ import { Button } from "../../components/elements/Button"
 
 export const WhatIsPacil = () => {
   return (
-    <section className='flex items-center justify-center'>
+    <section className='flex items-center justify-center px-5'>
       <Image src="/background-whatispacil.svg" alt="" className="absolute top-16 right-2 max-w-none" width={877} height={996}/>
       <div className='flex gap-10 flex-wrap justify-center'>
-        <div className='backdrop-blur rounded-md border-gray-100 border-opacity-10 border-2 max-w-full sm:max-w-xl  text-white-1 flex gap-8 flex-col'>
-          <h1 className="font-semibold text-5xl">Apa Itu Fasilkom UI?</h1>
+        <div className='backdrop-blur rounded-md border-gray-100 border-opacity-10 border-2 max-w-full sm:max-w-xl p-5  flex gap-5 sm:gap-8 flex-col'>
+          <h1 className="text-white-1 font-semibold text-4xl sm:text-5xl">Apa Itu Fasilkom UI?</h1>
           <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div className='flex flex-col gap-4'>
             <a
@@ -19,7 +19,6 @@ export const WhatIsPacil = () => {
               className="w-full"
             >
               <Button variant='primary' className="font-satoshi font-bold w-full">
-                <HiUserPlus />
                 Laman Resmi Fasilkom UI
               </Button>
             </a>
@@ -29,8 +28,7 @@ export const WhatIsPacil = () => {
               rel="noreferrer" 
               className="w-full"
             >
-              <Button variant='secondary' className='font-satoshi font-bold w-full'>
-                <HiUserPlus />
+              <Button variant='secondary' className='font-satoshi font-bold text-sm w-full'>
                 Unduh Profile Lengkap Fakultas
               </Button>
             </a>

@@ -35,8 +35,8 @@ const WTS = () => {
   const [selected, setSelected] = React.useState(0);
   return (
     <div className="z-10 text-center flex flex-col min-h-screen items-center">
-          <div className="px-5 z-10 text-center flex flex-col items-center justify-center gap-7 mx-5 sm:px-16 rounded-md">
-            <h2 className="font-satoshi text-white-1 font-extrabold text-5xl drop-shadow-sm shadow-white">
+          <div className="px-5 z-10 text-center flex flex-col items-center justify-center gap-7 sm:px-16 rounded-md">
+            <h2 className="font-satoshi text-white-1 font-extrabold text-3xl sm:text-5xl drop-shadow-sm shadow-white">
               What They Say About OH
             </h2>
           </div>
