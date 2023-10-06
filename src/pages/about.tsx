@@ -9,6 +9,7 @@ import { config } from "react-spring";
 import { ListPrestasi } from '@/components/ListPrestasi'
 import { WhatIsPacil } from '@/components/WhatIsPacil'
 import FAQ from '@/components/FAQ'
+import View360 from '@/components/View360'
 
 const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
   ssr: false,
@@ -85,6 +86,7 @@ const AboutPage = () => {
     <main className="bg-black-1 pt-40">
       <WhatIsPacil />
       <ListPrestasi />
+      <View360 />
       {/* Fasilitas */}
       <section className="bg-black flex items-center justify-center">
         <div className="w-full md:h-[700px] lg:h-[900px] flex flex-col items-center z-10 relative">
