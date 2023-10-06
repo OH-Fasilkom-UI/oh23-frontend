@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const FAQ = () => {
     return (
-        <div className="flex bg-black-3 w-full text-center justify-center min-h-screen">
+        <div className="flex bg-black-3 w-full text-center justify-center">
             <div className="flex flex-col items-center">
                 <div className="text-center">
                     <h3 className="font-satoshi mt-4 text-center text-white bg-clip-text font-extrabold text-5xl drop-shadow-sm shadow-white">
@@ -20,13 +20,6 @@ const FAQ = () => {
                     ))}
 
                 </div>
-                <Image
-                    src="/footer-bg.png"
-                    width={100}
-                    height={100}
-                    alt="Logo"
-                    layout="responsive"
-                />
             </div>
         </div>
     );

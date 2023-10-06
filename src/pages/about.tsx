@@ -6,9 +6,16 @@ import { Card } from "@/components/elements/Card";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
+<<<<<<< HEAD
 import { ListPrestasi } from '@/sections/about/ListPrestasi'
 import { WhatIsPacil } from '@/sections/about/WhatIsPacil'
 import FAQ from '@/sections/about/FAQ'
+=======
+import { ListPrestasi } from '@/components/ListPrestasi'
+import { WhatIsPacil } from '@/components/WhatIsPacil'
+import FAQ from '@/components/FAQ'
+import View360 from '@/components/View360'
+>>>>>>> 9ca23f82cdd5199514b962f3f8077617da5e238b
 
 const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
   ssr: false,
@@ -86,6 +93,7 @@ const AboutPage = () => {
     <main className="bg-black-1 pt-40">
       <WhatIsPacil />
       <ListPrestasi />
+      <View360 />
       {/* Fasilitas */}
       <section className="bg-black flex items-center justify-center">
         <div className="w-full md:h-[700px] lg:h-[900px] flex flex-col items-center z-10 relative">
@@ -221,17 +229,16 @@ const AboutPage = () => {
             <div className="cursor-pointer transition duration-300 ease-in-out hover:scale-105 max-w-xs lg:max-w-sm p-4 md:p-10 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur border border-gray-500">
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
-                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl">
-                    Heading
+                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold">
+                    Ilmu Komputer
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur. Diam pellentesque
-                    morbi enim egestas neque diam morbi laoreet. Sollicitudin
-                    vel vitae placerat penatibus tempor ipsum. Lorem ipsum dolor
-                    sit amet consectetur. Sollicitudin vel vitae placerat
-                    penatibus tempor ipsum.
+                    Ilmu yang mempelajari tentang komputasi yang mencakup beragam topik yang berkaitan 
+                    dengan komputer, mulai dari analisis abstrak algoritma sampai bahasa pemrograman.
+                    Ilmu Komputer lebih menekankan pada pemrograman komputer dan rekayasa perangkat lunak 
+                    (software).
                   </p>
                 </div>
               </div>
@@ -239,17 +246,16 @@ const AboutPage = () => {
             <div className="cursor-pointer transition duration-300 ease-in-out hover:scale-105 max-w-xs lg:max-w-sm p-4 md:p-10 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur border border-gray-500">
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
-                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl">
-                    Heading
+                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold">
+                    Sistem Informasi
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur. Diam pellentesque
-                    morbi enim egestas neque diam morbi laoreet. Sollicitudin
-                    vel vitae placerat penatibus tempor ipsum. Lorem ipsum dolor
-                    sit amet consectetur. Sollicitudin vel vitae placerat
-                    penatibus tempor ipsum.
+                    Dirancang untuk memenuhi kebutuhan terhadap tenaga tenaga muda yang terampil dan 
+                    profesional, terutama terkait dengan pengembangan, pemanfaatan dan pengelolaan
+                    Sistem Informasi atau Teknologi Informasi dalam suatu organisasi serta mencakup 
+                    fondasi dalam bidang bisnis.
                   </p>
                 </div>
               </div>
@@ -300,6 +306,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+      <FAQ/>
     </main>
   );
 };

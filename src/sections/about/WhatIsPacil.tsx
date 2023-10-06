@@ -12,14 +12,28 @@ export const WhatIsPacil = () => {
           <h1 className="font-semibold text-5xl">Apa Itu Fasilkom UI?</h1>
           <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div className='flex flex-col gap-4'>
-            <Button variant='primary' className="font-satoshi font-bold w-full">
-              <HiUserPlus />
-              Laman Resmi Fasilkom UI
-            </Button>
-            <Button variant='secondary' className='font-satoshi font-bold w-full'>
-              <HiUserPlus />
-              Unduh Profile Lengkap Fakultas
-            </Button>
+            <a
+              href={'https://cs.ui.ac.id'}
+              target="__blank"
+              rel="noreferrer" 
+              className="w-full"
+            >
+              <Button variant='primary' className="font-satoshi font-bold w-full">
+                <HiUserPlus />
+                Laman Resmi Fasilkom UI
+              </Button>
+            </a>
+            <a
+              href={'https://cs.ui.ac.id/wp-content/uploads/2023/06/IND-Fasilkom-profile-Up-090623.pdf'}
+              target="__blank"
+              rel="noreferrer" 
+              className="w-full"
+            >
+              <Button variant='secondary' className='font-satoshi font-bold w-full'>
+                <HiUserPlus />
+                Unduh Profile Lengkap Fakultas
+              </Button>
+            </a>
           </div>
         </div>
         <Carousel
