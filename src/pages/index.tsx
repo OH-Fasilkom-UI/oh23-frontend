@@ -4,6 +4,7 @@ import { Countdown } from "@/components/elements/Countdown";
 import { HiBookOpen, HiChevronDoubleRight } from "react-icons/hi2";
 // import { useEffect } from "react";
 import Definition from "@/components/Definition";
+import Timeline from "@/components/Timeline";
 
 
 export default function Home() {
@@ -35,14 +36,17 @@ export default function Home() {
         </div>
       </section>
       <section className="my-60">
-      <Definition/>
+        <Definition />
       </section>
-      {/* Timeline */}
       <section className="my-60">
+        <h2 className="font-satoshi  text-center text-white font-extrabold text-5xl drop-shadow-sm shadow-white">
+          Timeline
+        </h2>
+        <Timeline />
       </section>
 
       <section className="my-60">
-      <div className="z-10 text-center flex flex-col mx-10 items-center">
+        <div className="z-10 text-center flex flex-col mx-10 items-center">
           <div className="z-10 text-center flex flex-col items-center justify-center gap-7 mx-5 px-16 rounded-md">
             <h2 className="font-satoshi text-white font-extrabold text-5xl drop-shadow-sm shadow-white">
               What is OH?
