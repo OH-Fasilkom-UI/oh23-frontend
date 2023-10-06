@@ -3,13 +3,8 @@ import { Button } from "@/components/elements/Button";
 import { Countdown } from "@/components/elements/Countdown";
 import { HiBookOpen, HiChevronDoubleRight } from "react-icons/hi2";
 // import { useEffect } from "react";
-<<<<<<< HEAD
-import Definition from "@/sections/about/Definition";
+import Definition from "@/sections/home/Definition";
 import WTS from "@/sections/home/WTS";
-=======
-import Definition from "@/components/Definition";
-import Timeline from "@/components/Timeline";
->>>>>>> 9ca23f82cdd5199514b962f3f8077617da5e238b
 
 
 export default function Home() {
@@ -40,7 +35,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-<<<<<<< HEAD
       <section className="my-20">
       <Definition/>
       </section>
@@ -50,26 +44,6 @@ export default function Home() {
 
       <section className="pb-20">
         <WTS/>
-=======
-      <section className="my-60">
-        <Definition />
-      </section>
-      <section className="my-60">
-        <h2 className="font-satoshi  text-center text-white font-extrabold text-5xl drop-shadow-sm shadow-white">
-          Timeline
-        </h2>
-        <Timeline />
-      </section>
-
-      <section className="my-60">
-        <div className="z-10 text-center flex flex-col mx-10 items-center">
-          <div className="z-10 text-center flex flex-col items-center justify-center gap-7 mx-5 px-16 rounded-md">
-            <h2 className="font-satoshi text-white font-extrabold text-5xl drop-shadow-sm shadow-white">
-              What is OH?
-            </h2>
-          </div>
-        </div>
->>>>>>> 9ca23f82cdd5199514b962f3f8077617da5e238b
       </section>
 
     </main>
