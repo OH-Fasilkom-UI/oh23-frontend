@@ -13,7 +13,7 @@ function OurLovelyTab({ children }: { children: React.ReactNode }) {
     )
 }
 
-function OurBloodyPerfectTimelineCard({ description, time, title }: { title: string, time: number, description: string }) {
+function OurBloodyPerfectTimelineCard({ description, time, title }: { title: string, time: string, description: string }) {
     return (
         <article className='bg-[#101010bb] md:flex-row flex-col-reverse min-w-[400px] flex justify-between gap-x-10 items-center md:items-start font-semibold w-3/4 rounded-lg m-10 border-2 border-screaminGreen-2 p-10 text-white'>
             <section className='w-full text-center md:text-start md:w-1/2'>
@@ -35,26 +35,55 @@ export default function Timeline() {
                 <Tab.List className="font-satoshi min-w-max  text-center font-semibold my-5">
                     <OurLovelyTab>Grand Opening</OurLovelyTab>
                     <OurLovelyTab>Open Registration</OurLovelyTab>
-                    <OurLovelyTab>Mentoring</OurLovelyTab>
-                    <OurLovelyTab>Main Event</OurLovelyTab>
-                    <OurLovelyTab>Grand Closing</OurLovelyTab>
+                    <OurLovelyTab>CS Connect</OurLovelyTab>
+                    <OurLovelyTab>Tour de Campus Fasilkom UI</OurLovelyTab>
                 </Tab.List>
             </div>
             <Tab.Panels className="bg-[url(/OurLovelyTimelineBG.png)]">
                 <Tab.Panel className='grid place-items-center'>
-                    <OurBloodyPerfectTimelineCard title='Grand Opening' time={Date.now()} description='Grand Opening merupakan rangkaian acara pertama yang bertujuan untuk menandai dimulainya acara Open House Fasilkom UI 2023. Acara pembuka ini akan berisikan sambutan-sambutan dari berbagai elemen Fasilkom UI, video teaser serta overview dari rangkaian acara, penampilan dari guest star, serta persembahan dari UKF yang ada di Fasilkom UI.' />
+                    <OurBloodyPerfectTimelineCard 
+                        title='Grand Opening'
+                        time='2023-09-24'
+                        description='Grand Opening Open House Fasilkom UI 2023 merupakan rangkaian acara pertama yang bertujuan 
+                        untuk menandakan dimulainya acara Open House Fasilkom UI 2023. Grand Opening Open House Fasilkom UI 2023 
+                        akan diunggah melalui kanal YouTube resmi Fasilkom UI. Grand Opening akan berisi sambutan, pengenalan 
+                        acara Open House itu sendiri, pengenalan makna dibalik tema yang diangkat pada tahun ini, serta penampilan 
+                        oleh beberapa UKF di Fasilkom UI.'
+                    />
                 </Tab.Panel>
                 <Tab.Panel className='grid place-items-center'>
-                    <OurBloodyPerfectTimelineCard title='Open Registration' time={Date.now()} description='Grand Opening merupakan rangkaian acara pertama yang bertujuan untuk menandai dimulainya acara Open House Fasilkom UI 2023. Acara pembuka ini akan berisikan sambutan-sambutan dari berbagai elemen Fasilkom UI, video teaser serta overview dari rangkaian acara, penampilan dari guest star, serta persembahan dari UKF yang ada di Fasilkom UI.' />
+                    <OurBloodyPerfectTimelineCard 
+                        title='Open Registration'
+                        time='2023-10-23'
+                        description='Pendaftaran Open House Fasilkom UI 2023 dibuka pada tanggal 23 Oktober 2023 hingga 1 November 
+                        2023 dengan menghadirkan dua paket berbeda, yaitu Paket Full Online yang berisikan kegiatan CS Connect dan 
+                        Paket Full Experience, di mana peserta berkesempatan untuk merasakan pengalaman kegiatan CS Connect sekaligus 
+                        serangkaian acara Tour de Campus Fasilkom UI yang akan dilaksanakan secara langsung di Gedung Fasilkom UI. Open 
+                        House Fasilkom UI 2023 terbuka bagi Siswa/i SMA sederajat, gap year atau semi gap year di seluruh Indonesia 
+                        maupun di mancanegara yang memiliki minat untuk melanjutkan studi di bidang teknologi informasi.'
+                    />
                 </Tab.Panel>
                 <Tab.Panel className='grid place-items-center'>
-                    <OurBloodyPerfectTimelineCard title='Mentoring' time={Date.now()} description='Grand Opening merupakan rangkaian acara pertama yang bertujuan untuk menandai dimulainya acara Open House Fasilkom UI 2023. Acara pembuka ini akan berisikan sambutan-sambutan dari berbagai elemen Fasilkom UI, video teaser serta overview dari rangkaian acara, penampilan dari guest star, serta persembahan dari UKF yang ada di Fasilkom UI.' />
+                    <OurBloodyPerfectTimelineCard
+                        title='CS Connect'
+                        time='2023-11-04'
+                        description='CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
+                        menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi talkshow 
+                        berakhir, peserta akan di-assign ke masing-masing breakout room untuk melaksanakan Mentoring Online dengan 
+                        mentornya masing-masing dari LO. Materi yang diberikan akan berupa pengenalan jurusan yang ada di Fasilkom UI 
+                        dan informasi teknis kegiatan pada acara Tour de Campus Fasilkom UI selanjutnya.'
+                    />
                 </Tab.Panel>
                 <Tab.Panel className='grid place-items-center'>
-                    <OurBloodyPerfectTimelineCard title='Main Event' time={Date.now()} description='Grand Opening merupakan rangkaian acara pertama yang bertujuan untuk menandai dimulainya acara Open House Fasilkom UI 2023. Acara pembuka ini akan berisikan sambutan-sambutan dari berbagai elemen Fasilkom UI, video teaser serta overview dari rangkaian acara, penampilan dari guest star, serta persembahan dari UKF yang ada di Fasilkom UI.' />
-                </Tab.Panel>
-                <Tab.Panel className='grid place-items-center'>
-                    <OurBloodyPerfectTimelineCard title='Grand Closing' time={Date.now()} description='Grand Opening merupakan rangkaian acara pertama yang bertujuan untuk menandai dimulainya acara Open House Fasilkom UI 2023. Acara pembuka ini akan berisikan sambutan-sambutan dari berbagai elemen Fasilkom UI, video teaser serta overview dari rangkaian acara, penampilan dari guest star, serta persembahan dari UKF yang ada di Fasilkom UI.' />
+                    <OurBloodyPerfectTimelineCard
+                        title='Tour de Campus Fasilkom UI'
+                        time='2023-11-17'
+                        description='Tour de Campus Fasilkom UI merupakan rangkaian acara utama pada Open House Fasilkom UI, dimana 
+                        peserta akan datang ke Fasilkom UI dan melakukan serangkaian acara, seperti Tour Fasilkom UI, Mentoring Session, 
+                        Fun coding, Interactive Class, Exhibition, Wall of Dream, Parent’s Talkshow, dan Grand Closing. Pada Tour de 
+                        Campus Fasilkom UI ini peserta akan berinteraksi secara langsung dengan para civitas Fasilkom UI sehingga dapat 
+                        memperluas wawasan peserta tentang Fasilkom.'
+                    />
                 </Tab.Panel>
             </Tab.Panels>
         </Tab.Group>

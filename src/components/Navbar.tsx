@@ -11,14 +11,16 @@ const NavLink = ({
     isActive,
     href,
     className,
+    disabled
 }: {
     children: React.ReactNode;
     isActive: boolean;
     href: string;
     className?: string;
+    disabled: boolean;
 }) => {
     return (
-        <Link href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4 opacity-70" : "text-gray-100 opacity-70"} ${className}`}>
+        <Link href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${disabled ? "opacity-20 pointer-events-none" : "opacity-70"} ${className}`}>
             {children}
         </Link>
     )
@@ -26,6 +28,7 @@ const NavLink = ({
 
 
 const Navbar = () => {
+    const open_reg = new Date("2023-10-23T12:00:00+0700") < new Date()
 
     const [{ y }] = useWindowScroll();
 
@@ -37,26 +40,28 @@ const Navbar = () => {
                 <Image src="/logo.png" alt="OH 2023" width={64} height={64} />
             </Link>
             <div className='hidden sm:flex items-center gap-4 flex-1 justify-evenly'>
-                <NavLink href='/' isActive={router.pathname === "/"}>
+                <NavLink href='/' isActive={router.pathname === "/"} disabled={false}>
                     <HiHome />
                     <span className='text-white'>Home</span>
                 </NavLink>
-                <NavLink href='/about' isActive={router.pathname === "/about"}>
+                <NavLink href='/about' isActive={router.pathname === "/about"} disabled={false}>
                     <HiBuildingOffice2 />
                     <span className='text-white'>About Fasilkom</span>
                 </NavLink>
-                <NavLink href='/wall-of-fame' isActive={router.pathname === "/wall-of-fame"}>
+                <NavLink href='/wall-of-fame' isActive={router.pathname === "/wall-of-fame"} disabled>
                     <HiUserGroup />
                     <span className='text-white'>Wall of Fame</span>
                 </NavLink>
-                <NavLink href='/merchandise' isActive={router.pathname === "/merchandise"}>
+                <NavLink href='/merchandise' isActive={router.pathname === "/merchandise"} disabled>
                     <HiShoppingBag />
                     <span className='text-white'>Merchandise</span>
                 </NavLink>
-                <NavLink href='/register' isActive={router.pathname === "/register"} className={`px-4 py-2 border-2 text-white border-white rounded transition-all ${STYLE_GUIDE['secondary']} !opacity-100`}>
-                    {/* <HiHome /> */}
-                    Register
-                </NavLink>
+                {open_reg && 
+                    <NavLink href='/register' isActive={router.pathname === "/register"} className={`px-4 py-2 border-2 text-white border-white rounded transition-all ${STYLE_GUIDE['secondary']} !opacity-100`} disabled={false}>
+                        {/* <HiHome /> */}
+                        Register
+                    </NavLink>
+                }
             </div>
         </nav>
     )
