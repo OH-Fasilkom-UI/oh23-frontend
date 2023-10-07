@@ -28,7 +28,7 @@ const AboutPage = () => {
       content: (
         <Card
           image="/about/ai-center.png"
-          title="Heading"
+          title="TokoPedia AI Center"
           content="Tokopedia-UI Artificial Intelligence (AI) Center of Excellence tidak hanya berbungsi 
           sebagai lab penelitian, melainkan merupakan pusat kegiatan di mana peneliti dari berbagai lab 
           penelitian di Fasilkom UI dapat bekerja sama di antara mereka sendiri maupun dengan mitra eksternal 
@@ -57,7 +57,7 @@ const AboutPage = () => {
       content: (
         <Card
           image="/about/perpucil.png"
-          title="Heading"
+          title="Perpustakaan"
           content="Perpustakaan pada Fakultas Ilmu Komputer Universitas Indonesia adalah sebuah fasilitas 
           yang menyediakan koleksi buku, jurnal, makalah ilmiah, dan sumber daya lainnya yang relevan dengan 
           ilmu komputer dan teknologi informasi. Perpustakaan ini bertujuan untuk mendukung pendidikan, 
@@ -110,7 +110,7 @@ const AboutPage = () => {
             height={880}
             className="absolute top-0 left-0 object-cover brightness-[.6]"
           />
-          <div className="flex justify-center">
+          <div className="flex justify-center md:mb-16">
             <h1 className="font-satoshi text-white-1 text-5xl font-semibold z-10">
               Fasilitas
             </h1>
@@ -136,22 +136,22 @@ const AboutPage = () => {
             >
               <HiOutlineArrowRight color="white" />
             </div>
-            <div className="hidden md:flex absolute bottom-0 left-0 w-full justify-center">
+            {/* <div className="hidden md:flex absolute bottom-0 left-0 w-full justify-center">
               <div className="flex justify-center gap-x-2">
-                {/* Indikator slide non-aktif dengan lingkaran berwarna hijau gelap */}
+                Indikator slide non-aktif dengan lingkaran berwarna hijau gelap
                 {[...Array(goToSlide)].map((slide, i) => (
                   <div key={i} className="w-2 h-2 bg-green-950 rounded-full"></div>
                 ))}
 
-                {/* Indikator slide aktif saat ini dengan hijau terang */}
+                Indikator slide aktif saat ini dengan hijau terang
                 <div className="w-2 h-2 bg-gradient-to-r from-grass-1 to-grass-3 rounded-full"></div>
 
-                {/* Indikator slide non-aktif dengan lingkaran berwarna hijau gelap */}
+                Indikator slide non-aktif dengan lingkaran berwarna hijau gelap
                 {[...Array(slides.length - (goToSlide + 1))].map((slide, i) => (
                   <div key={i} className="w-2 h-2 bg-green-950 rounded-full"></div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

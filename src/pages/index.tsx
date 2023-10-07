@@ -57,7 +57,10 @@ export default function Home() {
       <section id="definition" className="my-20">
         <Definition />
       </section>
-      <Timeline/>
+        <h1 className="font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white text-center mb-5">
+          Timeline
+        </h1>
+        <Timeline/>
       <section className="my-20">
       </section>
       <section className="my-20">
