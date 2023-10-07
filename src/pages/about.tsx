@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dynamic, { DynamicOptions } from "next/dynamic";
 import Image from "next/image";
-import { Orbitron } from "next/font/google";
 import { Card } from "@/components/elements/Card";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
 import { v4 as uuidv4 } from "uuid";
@@ -11,8 +10,6 @@ import { WhatIsPacil } from '@/sections/about/WhatIsPacil'
 import FAQ from '@/sections/about/FAQ'
 import View360 from "@/sections/about/View360";
 
-import { Orbitron as orbitronFont } from "next/font/google";
-
 import IProps from "react-spring-3d-carousel";
 
 import { ComponentType, ComponentClass } from "react";
@@ -20,8 +17,6 @@ import { ComponentType, ComponentClass } from "react";
 const Carousel = dynamic(() => import("@/components/elements/Carousel"), {
   ssr: false,
 });
-
-const orbitron = orbitronFont({ weight: "800", subsets: ["latin"] });
 
 const AboutPage = () => {
   const [goToSlide, setGoToSlide] = useState(0);
