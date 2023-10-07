@@ -18,15 +18,15 @@ export default function Definition() {
   return (
     <section className="mt-10 py-10 flex flex-col items-center min-h-screen bg-black">
         <Image src="/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
-        <div className="z-10 text-center flex flex-col mx-10 items-center">
+        <div className="z-10 text-center flex flex-col px-5 sm:px-10 items-center w-full">
             <h1 className="font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white">
               What is OH?
             </h1>
-          <div className="text-center font my-8">
+          <p className="max-w-[100ch] text-center font my-8">
             Open House Fasilkom UI merupakan acara tahunan yang diselenggarakan oleh BEM Fasilkom UI untuk
             memperkenalkan Fakultas Ilmu Komputer Universitas Indonesia kepada masyarakat luas dan membantu
             para calon mahasiswa dalam memantapkan pilihan program studinya di Fasilkom UI.
-          </div>
+          </p>
           <Button
             variant="secondary"
             className="px-28 mb-10"

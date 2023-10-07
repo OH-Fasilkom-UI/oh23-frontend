@@ -47,7 +47,7 @@ const WTS = () => {
             <ul className='flex gap-3 w-max'>
               {
                 testimonials.map((testimonial, index) => (
-                    <article key={index} onClick={() => setSelected(index)} className={`font-satoshi ${selected === index ? "w-max" : "w-1/4"} h-[400px] flex border-2 border-white-2 p-5 rounded-md bg-shimmerGreen-2 bg-opacity-20 backdrop-blur-xl`}>
+                    <article key={index} onClick={() => setSelected(index)} className={`font-satoshi ${selected === index ? "w-max" : "w-1/4"} h-[350px] sm:h-[400px] flex border-2 border-white-2 p-5 rounded-md bg-shimmerGreen-2 bg-opacity-20 backdrop-blur-xl`}>
                       <aside className={`${selected !== index ? "flex-1" : "w-1/3"} min-w-[200px]`}>
                         <div className="flex flex-col items-center h-full justify-center">
                         <div className=" rounded-full bg-white-2 w-36 h-36 block mb-5">
@@ -57,9 +57,9 @@ const WTS = () => {
                         <p className="text-sm font-semibold">{testimonial.major}</p>
                         </div>
                       </aside>
-                      <aside className={`${selected === index ? "flex-1 pr-10": "w-0"} transition-all duration-300 relative overflow-hidden text-left flex flex-col gap-3 justify-center`}>
+                      <aside className={`${selected === index ? "flex-1 px-5 sm:px-10": "w-0"} transition-all duration-300 relative overflow-hidden text-left flex flex-col gap-3 justify-center`}>
                         <Image src='/left-quote.png' alt="" width={30} height={30} className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} transition-opacity duration-500 mr-auto`} />
-                        <p className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} max-w-prose text-white-1 transition-opacity duration-500`}>{testimonial.quote}</p>
+                        <p className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 transition-none"} max-w-[30ch] sm:max-w-prose text-white-1 transition-opacity duration-500`}>{testimonial.quote}</p>
                         <Image src='/right-quote.png' alt="" width={30} height={30} className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} transition-opacity duration-500 ml-auto`} />
                       </aside>
                     </article>
