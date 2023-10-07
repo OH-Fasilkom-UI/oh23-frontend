@@ -51,29 +51,15 @@ export const WhatIsPacil = () => {
         >
           <Carousel.Slide>
             <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
+              <div className="w-5/6 h-5/6 relative rounded-lg">
+                <Image src="/about/gedung-baru-csui.png" alt="" layout='fill' objectFit='cover' className="rounded-xl"/>
               </div>
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
             <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
-              </div>
-            </div>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
-              </div>
-            </div>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
+              <div className="w-5/6 h-5/6 relative rounded-lg">
+                <Image src="/about/gedung-lama-csui.png" alt="" layout='fill' objectFit='cover' className="rounded-xl"/>
               </div>
             </div>
           </Carousel.Slide>
