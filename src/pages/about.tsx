@@ -92,7 +92,7 @@ const AboutPage = () => {
       <section className="bg-black flex items-center justify-center mt-20">
         <div className="w-full md:h-[700px] lg:h-[900px] flex flex-col items-center z-10 relative">
           <Image
-            src="/background-about-fasilitas.svg"
+            src="/about/background-about-fasilitas.svg"
             alt=""
             width={1270}
             height={880}
@@ -147,14 +147,14 @@ const AboutPage = () => {
       <section className="relative">
         <div className="flex justify-center py-10">
           <Image
-            src="/background-about-jurusan-dan-perbedaan-kiri.svg"
+            src="/about/background-about-jurusan-dan-perbedaan-kiri.svg"
             alt=""
             width={640}
             height={130}
             className="hidden md:inline absolute top-0 left-0 object-cover brightness-[.4]"
           />
           <Image
-            src="/background-about-jurusan-dan-perbedaan-kanan.svg"
+            src="/about/background-about-jurusan-dan-perbedaan-kanan.svg"
             alt=""
             width={640}
             height={130}
@@ -208,7 +208,7 @@ const AboutPage = () => {
         </div>
         <div className="flex justify-center relative h-[600px] md:h-[900px]">
           <Image
-            src="/background-about-jurusan-dan-perbedaan-tengah.png"
+            src="/about/background-about-jurusan-dan-perbedaan-tengah.png"
             alt=""
             width={1920}
             height={666}

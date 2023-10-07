@@ -39,7 +39,7 @@ export default function Timeline() {
                     <OurLovelyTab>Tour de Campus Fasilkom UI</OurLovelyTab>
                 </Tab.List>
             </div>
-            <Tab.Panels className="bg-[url(/OurLovelyTimelineBG.png)]">
+            <Tab.Panels className="bg-[url(/home/OurLovelyTimelineBG.png)]">
                 <Tab.Panel className='grid place-items-center'>
                     <OurBloodyPerfectTimelineCard 
                         title='Grand Opening'

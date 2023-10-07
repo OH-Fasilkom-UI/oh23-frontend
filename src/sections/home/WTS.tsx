@@ -41,8 +41,8 @@ const WTS = () => {
             </h2>
           </div>
           <div className="relative w-full grid place-items-center mt-10">
-            <Image src="/bg-wts-left.png" alt="" width={400} height={800} className="absolute top-0 left-0" />
-            <Image src="/bg-wts-right.png" alt="" width={400} height={600} className="absolute top-0 right-0" />
+            <Image src="/home/bg-wts-left.png" alt="" width={400} height={800} className="absolute top-0 left-0" />
+            <Image src="/home/bg-wts-right.png" alt="" width={400} height={600} className="absolute top-0 right-0" />
             <div className="w-[calc(100%-40px)] overflow-x-auto py-5">
             <ul className='flex gap-3 w-max'>
               {
@@ -58,9 +58,9 @@ const WTS = () => {
                         </div>
                       </aside>
                       <aside className={`${selected === index ? "flex-1 pr-10": "w-0"} transition-all duration-300 relative overflow-hidden text-left flex flex-col gap-3 justify-center`}>
-                        <Image src='/left-quote.png' alt="" width={30} height={30} className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} transition-opacity duration-500 mr-auto`} />
+                        <Image src='/home/left-quote.png' alt="" width={30} height={30} className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} transition-opacity duration-500 mr-auto`} />
                         <p className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} max-w-prose text-white-1 transition-opacity duration-500`}>{testimonial.quote}</p>
-                        <Image src='/right-quote.png' alt="" width={30} height={30} className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} transition-opacity duration-500 ml-auto`} />
+                        <Image src='/home/right-quote.png' alt="" width={30} height={30} className={`${selected === index ? "opacity-100 delay-200" : "opacity-0 duration-0"} transition-opacity duration-500 ml-auto`} />
                       </aside>
                     </article>
                 ))
