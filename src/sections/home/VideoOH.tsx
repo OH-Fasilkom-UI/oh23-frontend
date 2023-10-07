@@ -11,8 +11,8 @@ const VideoOH = () => {
     </div>
     <div className="relative w-full flex justify-center items-center mt-10 sm:mt-16 overflow-hidden">
         <div className="relative md:max-w-xl w-full aspect-video p-5 overflow-x-hidden">
-            <Image src="/video-holder.webp" alt="" fill className="z-10 absolute top-0 left-0 origin-center aspect-[4/3]" />
-            <iframe src="https://www.youtube.com/embed/hrAwz6fHYgk?si=A-q6d12FjX6KyAhq" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="w-full h-full" />
+            <Image src="/home/video-holder.webp" alt="" fill className="z-10 absolute top-0 left-0 origin-center aspect-[4/3] pointer-events-none" />
+            <iframe src="https://www.youtube.com/embed/VJ4YQ0_zriI?si=Gt4O8BPalGNklpBL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="w-full h-full" />
         </div>
     </div>
     </div>

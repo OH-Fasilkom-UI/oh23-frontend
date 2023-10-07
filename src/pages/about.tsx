@@ -27,9 +27,14 @@ const AboutPage = () => {
       key: uuidv4(),
       content: (
         <Card
-          image="https://picsum.photos/900"
-          title="Heading"
-          content="Lorem ipsum dolor sit amet consectetur. Diam pellentesque morbi enim egestas"
+          image="/about/ai-center.png"
+          title="TokoPedia AI Center"
+          content="Tokopedia-UI Artificial Intelligence (AI) Center of Excellence tidak hanya berbungsi 
+          sebagai lab penelitian, melainkan merupakan pusat kegiatan di mana peneliti dari berbagai lab 
+          penelitian di Fasilkom UI dapat bekerja sama di antara mereka sendiri maupun dengan mitra eksternal 
+          untuk menyelesaikan masalah kehidupan nyata menggunakan pendekatan AI. Pusat penelitian ini 
+          dilengkapi dengan ruang kerja kolaboratif dan NVIDIA DGX-1, infrastruktur komputasi AI dan Deep 
+          Learning tercepat di Indonesia."
         />
       ),
     },
@@ -37,9 +42,13 @@ const AboutPage = () => {
       key: uuidv4(),
       content: (
         <Card
-          image="https://picsum.photos/800"
-          title="Heading"
-          content="Lorem ipsum dolor sit amet consectetur. Diam pellentesque morbi enim egestas"
+          image="/about/lab-pacil.png"
+          title="Ruang Lab"
+          content="Ruang Lab Komputer di Fakultas Ilmu Komputer Universitas Indonesia merupakan 
+          fasilitas penting yang digunakan untuk keperluan pendidikan dan penelitian dalam bidang 
+          ilmu komputer. Ruang ini dilengkapi dengan sejumlah komputer yang terhubung dalam jaringan, 
+          perangkat lunak (software) khusus, serta perangkat keras (hardware) yang diperlukan untuk 
+          mendukung aktivitas belajar mengajar dan riset."
         />
       ),
     },
@@ -47,9 +56,12 @@ const AboutPage = () => {
       key: uuidv4(),
       content: (
         <Card
-          image="https://picsum.photos/700"
-          title="Heading"
-          content="Lorem ipsum dolor sit amet consectetur. Diam pellentesque morbi enim egestas"
+          image="/about/perpucil.png"
+          title="Perpustakaan"
+          content="Perpustakaan pada Fakultas Ilmu Komputer Universitas Indonesia adalah sebuah fasilitas 
+          yang menyediakan koleksi buku, jurnal, makalah ilmiah, dan sumber daya lainnya yang relevan dengan 
+          ilmu komputer dan teknologi informasi. Perpustakaan ini bertujuan untuk mendukung pendidikan, 
+          penelitian, dan pengembangan pengetahuan mahasiswa Fasilkom."
         />
       ),
     },
@@ -92,13 +104,13 @@ const AboutPage = () => {
       <section className="bg-black flex items-center justify-center mt-20">
         <div className="w-full md:h-[700px] lg:h-[900px] flex flex-col items-center z-10 relative">
           <Image
-            src="/background-about-fasilitas.svg"
+            src="/about/background-about-fasilitas.svg"
             alt=""
             width={1270}
             height={880}
             className="absolute top-0 left-0 object-cover brightness-[.6]"
           />
-          <div className="flex justify-center">
+          <div className="flex justify-center md:mb-16">
             <h1 className="font-satoshi text-white-1 text-5xl font-semibold z-10">
               Fasilitas
             </h1>
@@ -124,22 +136,22 @@ const AboutPage = () => {
             >
               <HiOutlineArrowRight color="white" />
             </div>
-            <div className="hidden md:flex absolute bottom-0 left-0 w-full justify-center">
+            {/* <div className="hidden md:flex absolute bottom-0 left-0 w-full justify-center">
               <div className="flex justify-center gap-x-2">
-                {/* Indikator slide non-aktif dengan lingkaran berwarna hijau gelap */}
+                Indikator slide non-aktif dengan lingkaran berwarna hijau gelap
                 {[...Array(goToSlide)].map((slide, i) => (
                   <div key={i} className="w-2 h-2 bg-green-950 rounded-full"></div>
                 ))}
 
-                {/* Indikator slide aktif saat ini dengan hijau terang */}
+                Indikator slide aktif saat ini dengan hijau terang
                 <div className="w-2 h-2 bg-gradient-to-r from-grass-1 to-grass-3 rounded-full"></div>
 
-                {/* Indikator slide non-aktif dengan lingkaran berwarna hijau gelap */}
+                Indikator slide non-aktif dengan lingkaran berwarna hijau gelap
                 {[...Array(slides.length - (goToSlide + 1))].map((slide, i) => (
                   <div key={i} className="w-2 h-2 bg-green-950 rounded-full"></div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -147,14 +159,14 @@ const AboutPage = () => {
       <section className="relative">
         <div className="flex justify-center py-10">
           <Image
-            src="/background-about-jurusan-dan-perbedaan-kiri.svg"
+            src="/about/background-about-jurusan-dan-perbedaan-kiri.svg"
             alt=""
             width={640}
             height={130}
             className="hidden md:inline absolute top-0 left-0 object-cover brightness-[.4]"
           />
           <Image
-            src="/background-about-jurusan-dan-perbedaan-kanan.svg"
+            src="/about/background-about-jurusan-dan-perbedaan-kanan.svg"
             alt=""
             width={640}
             height={130}
@@ -208,7 +220,7 @@ const AboutPage = () => {
         </div>
         <div className="flex justify-center relative h-[600px] md:h-[900px]">
           <Image
-            src="/background-about-jurusan-dan-perbedaan-tengah.png"
+            src="/about/background-about-jurusan-dan-perbedaan-tengah.png"
             alt=""
             width={1920}
             height={666}
@@ -265,16 +277,16 @@ const AboutPage = () => {
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
                   <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold ">
-                    Heading
+                    Ilmu Komputer
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur aliquip ex ea commodo
-                    consequat exercitation ullamco laboris.
+                    Program Studi Sarjana Ilmu Komputer menawarkan keseimbangan antara fondasi 
+                    keilmuan yang kokoh di bidang Ilmu Komputer dan keterampilan profesional dalam 
+                    bidang Ilmu Komputer di antaranya matematika diskret, pemrograman, struktur 
+                    data & algoritma, arsitektur komputer, basis data, sistem operasi, jaringan komputer, 
+                    teori komputasi, rekayasa perangkat lunak, serta sistem cerdas.
                   </p>
                 </div>
               </div>
@@ -283,16 +295,15 @@ const AboutPage = () => {
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
                   <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold">
-                    Heading
+                    Sistem informasi
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur aliquip ex ea commodo
-                    consequat exercitation ullamco laboris.
+                    Program Studi Sistem Informasi mengajarkan landasan ilmu pengetahuan dan penerapan 
+                    Teknologi Informasi dalam suatu organisasi. Terkait hal tersebut, kurikulum Program 
+                    Studi Sistem Informasi bersifat unik karena menekankan keseimbangan antara kemampuan 
+                    manajemen dan bisnis serta rekayasa informasi dan teknologi informasi.
                   </p>
                 </div>
               </div>

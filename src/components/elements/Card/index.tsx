@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CardProps } from "./interface";
 import React from "react";
 
@@ -8,9 +9,11 @@ export const Card: React.FC<CardProps> = ({ image, title, content }) => {
       style={{ border: "1px solid rgba(165, 250, 209, 0.2)" }}
     >
       <div>
-        <img
+        <Image
           src={image}
           alt={title}
+          width={400}
+          height={300}
           className="w-[200px] h-[120px] md:w-[333px] md:h-[200px] object-cover"
           style={{ objectFit: "cover" }}
         />
