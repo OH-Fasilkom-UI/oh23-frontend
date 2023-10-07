@@ -17,10 +17,9 @@ import IProps from "react-spring-3d-carousel";
 
 import { ComponentType, ComponentClass } from "react";
 
-const Carousel = dynamic(
-  (() => import("react-spring-3d-carousel").then(module => module.default)) as unknown as DynamicOptions<IProps>,
-  { ssr: false }
-);
+const Carousel = dynamic(() => import("@/components/elements/Carousel"), {
+  ssr: false,
+});
 
 const orbitron = orbitronFont({ weight: "800", subsets: ["latin"] });
 

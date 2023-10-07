@@ -48,7 +48,7 @@ const Navbar = () => {
                     <Image src="/logo.png" alt="OH 2023" width={64} height={64} />
                     <span className='text-white font-satoshi text-3xl font-semibold text-white-1'>OH 2023</span>
                 </Link>
-                <NavLink href='/' isActive={router.pathname === "/"}>
+                <NavLink disabled={false} href='/' isActive={router.pathname === "/"}>
                     <HiHome />
                     <span className='text-white'>Home</span>
                 </NavLink>
