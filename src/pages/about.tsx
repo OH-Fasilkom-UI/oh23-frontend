@@ -9,6 +9,7 @@ import { config } from "react-spring";
 import { ListPrestasi } from '@/sections/about/ListPrestasi'
 import { WhatIsPacil } from '@/sections/about/WhatIsPacil'
 import FAQ from '@/sections/about/FAQ'
+import View360 from "@/sections/about/View360";
 
 const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
   ssr: false,
@@ -83,12 +84,12 @@ const AboutPage = () => {
   }
 
   return (
-    <main className="bg-black-1 pt-40">
+    <main className="bg-black-1 pt-20 sm:pt-40 overflow-x-hidden">
       <WhatIsPacil />
       <ListPrestasi />
       <View360 />
       {/* Fasilitas */}
-      <section className="bg-black flex items-center justify-center">
+      <section className="bg-black flex items-center justify-center mt-20">
         <div className="w-full md:h-[700px] lg:h-[900px] flex flex-col items-center z-10 relative">
           <Image
             src="/background-about-fasilitas.svg"
@@ -98,7 +99,7 @@ const AboutPage = () => {
             className="absolute top-0 left-0 object-cover brightness-[.6]"
           />
           <div className="flex justify-center">
-            <h1 className="font-satoshi text-white-1 text-5xl font-semibold">
+            <h1 className="font-satoshi text-white-1 text-5xl font-semibold z-10">
               Fasilitas
             </h1>
           </div>
@@ -143,7 +144,7 @@ const AboutPage = () => {
         </div>
       </section>
       {/* Jurusan & Perbedaan */}
-      <section className="relative mt-10">
+      <section className="relative">
         <div className="flex justify-center py-10">
           <Image
             src="/background-about-jurusan-dan-perbedaan-kiri.svg"
@@ -164,7 +165,7 @@ const AboutPage = () => {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="flex">
+          <div className="flex scale-90">
             <div
               className="rounded-l-full relative cursor-pointer"
               onClick={switchJurusanPengertian}
@@ -215,7 +216,7 @@ const AboutPage = () => {
           />
           {/* Pengertian */}
           <div
-            className={`absolute flex flex-col sm:flex-row transition-opacity ease-in duration-300 gap-10 md:gap-20 justify-center py-24 md:py-56 px-6 ${
+            className={`absolute flex flex-col sm:flex-row transition-opacity ease-in duration-300 gap-10 md:gap-20 justify-center py-12 sm:py-24 md:py-28 px-6 ${
               jurusan == "pengertian" ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
@@ -256,14 +257,14 @@ const AboutPage = () => {
           </div>
           {/* Perbedaan */}
           <div
-            className={`absolute flex transition-opacity ease-in duration-300 gap-x-10 md:gap-x-20 justify-center py-24 md:py-56 px-6 ${
+            className={`absolute flex  flex-col sm:flex-row transition-opacity ease-in duration-300 gap-10 md:gap-20 justify-center py-12 sm:py-24 md:py-28 px-6 ${
               jurusan == "perbedaan" ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
             <div className="cursor-pointer transition duration-300 ease-in-out hover:scale-105 max-w-xs lg:max-w-sm p-4 md:p-10 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur border border-gray-500">
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
-                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl">
+                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold ">
                     Heading
                   </h1>
                 </div>
@@ -281,7 +282,7 @@ const AboutPage = () => {
             <div className="cursor-pointer transition duration-300 ease-in-out hover:scale-105 max-w-xs lg:max-w-sm p-4 md:p-10 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur border border-gray-500">
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
-                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl">
+                  <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold">
                     Heading
                   </h1>
                 </div>
