@@ -17,7 +17,7 @@ const images = [
 export default function Definition() {
   return (
     <section className="mt-10 py-10 flex flex-col items-center min-h-screen bg-black">
-        <Image src="/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
+        <Image src="/home/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
         <div className="z-10 text-center flex flex-col px-5 sm:px-10 items-center w-full">
             <h1 className="font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white">
               What is OH?
