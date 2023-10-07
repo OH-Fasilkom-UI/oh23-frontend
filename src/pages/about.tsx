@@ -27,9 +27,14 @@ const AboutPage = () => {
       key: uuidv4(),
       content: (
         <Card
-          image="https://picsum.photos/900"
+          image="/about/ai-center.png"
           title="Heading"
-          content="Lorem ipsum dolor sit amet consectetur. Diam pellentesque morbi enim egestas"
+          content="Tokopedia-UI Artificial Intelligence (AI) Center of Excellence tidak hanya berbungsi 
+          sebagai lab penelitian, melainkan merupakan pusat kegiatan di mana peneliti dari berbagai lab 
+          penelitian di Fasilkom UI dapat bekerja sama di antara mereka sendiri maupun dengan mitra eksternal 
+          untuk menyelesaikan masalah kehidupan nyata menggunakan pendekatan AI. Pusat penelitian ini 
+          dilengkapi dengan ruang kerja kolaboratif dan NVIDIA DGX-1, infrastruktur komputasi AI dan Deep 
+          Learning tercepat di Indonesia."
         />
       ),
     },
@@ -37,9 +42,13 @@ const AboutPage = () => {
       key: uuidv4(),
       content: (
         <Card
-          image="https://picsum.photos/800"
-          title="Heading"
-          content="Lorem ipsum dolor sit amet consectetur. Diam pellentesque morbi enim egestas"
+          image="/about/lab-pacil.png"
+          title="Ruang Lab"
+          content="Ruang Lab Komputer di Fakultas Ilmu Komputer Universitas Indonesia merupakan 
+          fasilitas penting yang digunakan untuk keperluan pendidikan dan penelitian dalam bidang 
+          ilmu komputer. Ruang ini dilengkapi dengan sejumlah komputer yang terhubung dalam jaringan, 
+          perangkat lunak (software) khusus, serta perangkat keras (hardware) yang diperlukan untuk 
+          mendukung aktivitas belajar mengajar dan riset."
         />
       ),
     },
@@ -47,9 +56,12 @@ const AboutPage = () => {
       key: uuidv4(),
       content: (
         <Card
-          image="https://picsum.photos/700"
+          image="/about/perpucil.png"
           title="Heading"
-          content="Lorem ipsum dolor sit amet consectetur. Diam pellentesque morbi enim egestas"
+          content="Perpustakaan pada Fakultas Ilmu Komputer Universitas Indonesia adalah sebuah fasilitas 
+          yang menyediakan koleksi buku, jurnal, makalah ilmiah, dan sumber daya lainnya yang relevan dengan 
+          ilmu komputer dan teknologi informasi. Perpustakaan ini bertujuan untuk mendukung pendidikan, 
+          penelitian, dan pengembangan pengetahuan mahasiswa Fasilkom."
         />
       ),
     },
@@ -265,16 +277,16 @@ const AboutPage = () => {
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
                   <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold ">
-                    Heading
+                    Ilmu Komputer
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur aliquip ex ea commodo
-                    consequat exercitation ullamco laboris.
+                    Program Studi Sarjana Ilmu Komputer menawarkan keseimbangan antara fondasi 
+                    keilmuan yang kokoh di bidang Ilmu Komputer dan keterampilan profesional dalam 
+                    bidang Ilmu Komputer di antaranya matematika diskret, pemrograman, struktur 
+                    data & algoritma, arsitektur komputer, basis data, sistem operasi, jaringan komputer, 
+                    teori komputasi, rekayasa perangkat lunak, serta sistem cerdas.
                   </p>
                 </div>
               </div>
@@ -283,16 +295,15 @@ const AboutPage = () => {
               <div className="flex flex-col gap-y-5 items-center">
                 <div>
                   <h1 className="font-satoshi text-white-1 text-center text-2xl md:text-3xl font-bold">
-                    Heading
+                    Sistem informasi
                   </h1>
                 </div>
                 <div>
                   <p className="font-satoshi text-white-2 text-center text-xs md:text-lg">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur aliquip ex ea commodo
-                    consequat exercitation ullamco laboris.
+                    Program Studi Sistem Informasi mengajarkan landasan ilmu pengetahuan dan penerapan 
+                    Teknologi Informasi dalam suatu organisasi. Terkait hal tersebut, kurikulum Program 
+                    Studi Sistem Informasi bersifat unik karena menekankan keseimbangan antara kemampuan 
+                    manajemen dan bisnis serta rekayasa informasi dan teknologi informasi.
                   </p>
                 </div>
               </div>
