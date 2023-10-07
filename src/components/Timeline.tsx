@@ -13,7 +13,7 @@ function OurLovelyTab({ children }: { children: React.ReactNode }) {
     )
 }
 
-function OurBloodyPerfectTimelineCard({ description, time, title }: { title: string, time: string, description: string }) {
+function OurBloodyPerfectTimelineCard({ description, time, title, image }: { title: string, time: string, description: string, image: string }) {
     return (
         <article className='bg-[#101010bb] md:flex-row flex-col-reverse min-w-[400px] flex justify-between gap-x-10 items-center md:items-start font-semibold w-3/4 rounded-lg m-10 border-2 border-screaminGreen-2 p-10 text-white'>
             <section className='w-full text-center md:text-start md:w-1/2'>
@@ -22,7 +22,7 @@ function OurBloodyPerfectTimelineCard({ description, time, title }: { title: str
                 <p className='font-normal'>{description}</p>
             </section>
             <section>
-                <img className='w-[350px] rounded-md object-cover object-center h-[300px]' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHJgo1-Jcffzs8tiulp9wA8myiiEw891oYNejWdggH6QpRSCpIhOMeFPpuo8uC4NFpZI&usqp=CAU' />
+                <img className='w-[350px] rounded-md object-cover object-center h-[300px]' src={image} />
             </section>
         </article>
     )
@@ -39,11 +39,12 @@ export default function Timeline() {
                     <OurLovelyTab>Tour de Campus Fasilkom UI</OurLovelyTab>
                 </Tab.List>
             </div>
-            <Tab.Panels className="bg-[url(/OurLovelyTimelineBG.png)]">
+            <Tab.Panels className="bg-[url(/home/OurLovelyTimelineBG.png)]">
                 <Tab.Panel className='grid place-items-center'>
                     <OurBloodyPerfectTimelineCard 
                         title='Grand Opening'
                         time='2023-09-24'
+                        image='/home/grand-opening.png'
                         description='Grand Opening Open House Fasilkom UI 2023 merupakan rangkaian acara pertama yang bertujuan 
                         untuk menandakan dimulainya acara Open House Fasilkom UI 2023. Grand Opening Open House Fasilkom UI 2023 
                         akan diunggah melalui kanal YouTube resmi Fasilkom UI. Grand Opening akan berisi sambutan, pengenalan 
@@ -55,6 +56,7 @@ export default function Timeline() {
                     <OurBloodyPerfectTimelineCard 
                         title='Open Registration'
                         time='2023-10-23'
+                        image='/home/opreg.png'
                         description='Pendaftaran Open House Fasilkom UI 2023 dibuka pada tanggal 23 Oktober 2023 hingga 1 November 
                         2023 dengan menghadirkan dua paket berbeda, yaitu Paket Full Online yang berisikan kegiatan CS Connect dan 
                         Paket Full Experience, di mana peserta berkesempatan untuk merasakan pengalaman kegiatan CS Connect sekaligus 
@@ -67,6 +69,7 @@ export default function Timeline() {
                     <OurBloodyPerfectTimelineCard
                         title='CS Connect'
                         time='2023-11-04'
+                        image='/home/cs-connect.png'
                         description='CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
                         menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi talkshow 
                         berakhir, peserta akan di-assign ke masing-masing breakout room untuk melaksanakan Mentoring Online dengan 
@@ -78,6 +81,7 @@ export default function Timeline() {
                     <OurBloodyPerfectTimelineCard
                         title='Tour de Campus Fasilkom UI'
                         time='2023-11-17'
+                        image='/home/tour.png'
                         description='Tour de Campus Fasilkom UI merupakan rangkaian acara utama pada Open House Fasilkom UI, dimana 
                         peserta akan datang ke Fasilkom UI dan melakukan serangkaian acara, seperti Tour Fasilkom UI, Mentoring Session, 
                         Fun coding, Interactive Class, Exhibition, Wall of Dream, Parent’s Talkshow, dan Grand Closing. Pada Tour de 

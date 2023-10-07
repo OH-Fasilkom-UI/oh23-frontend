@@ -41,8 +41,8 @@ const WTS = () => {
             </h2>
           </div>
           <div className="relative w-full grid place-items-center mt-10">
-            <Image src="/bg-wts-left.png" alt="" width={400} height={800} className="absolute top-0 left-0" />
-            <Image src="/bg-wts-right.png" alt="" width={400} height={600} className="absolute top-0 right-0" />
+            <Image src="/home/bg-wts-left.png" alt="" width={400} height={800} className="absolute top-0 left-0" />
+            <Image src="/home/bg-wts-right.png" alt="" width={400} height={600} className="absolute top-0 right-0" />
             <div className="w-[calc(100%-40px)] overflow-x-auto py-5">
             <ul className='flex gap-3 w-max'>
               {

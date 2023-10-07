@@ -6,11 +6,16 @@ import { Button } from "../../components/elements/Button"
 export const WhatIsPacil = () => {
   return (
     <section className='flex items-center justify-center px-5'>
-      <Image src="/background-whatispacil.svg" alt="" className="absolute top-16 right-2 max-w-none" width={877} height={996}/>
+      <Image src="/about/background-whatispacil.svg" alt="" className="absolute top-16 right-2 max-w-none" width={877} height={996}/>
       <div className='flex gap-10 flex-wrap justify-center'>
-        <div className='backdrop-blur rounded-md border-gray-100 border-opacity-10 border-2 max-w-full sm:max-w-xl p-5  flex gap-5 sm:gap-8 flex-col'>
+        <div className='backdrop-blur rounded-2xl border-gray-100 border-opacity-10 border-2 max-w-full sm:max-w-xl px-5 py-9 text-center flex gap-5 sm:gap-8 flex-col'>
           <h1 className="text-white-1 font-semibold text-4xl sm:text-5xl">Apa Itu Fasilkom UI?</h1>
-          <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>
+            Fakultas Ilmu Komputer Universitas Indonesia adalah Fakultas Ilmu Komputer pertama 
+            di Indonesia yang memiliki dua program studi, yaitu Ilmu Komputer dan Sistem Informasi. Fasilkom UI 
+            berhasil mencetak alumni berkualitas dan menjadi salah satu Fakultas Ilmu Komputer terbaik di 
+            Indonesia.
+          </p>
           <div className='flex flex-col gap-4'>
             <a
               href={'https://cs.ui.ac.id'}
@@ -46,29 +51,15 @@ export const WhatIsPacil = () => {
         >
           <Carousel.Slide>
             <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
+              <div className="w-5/6 h-5/6 relative rounded-lg">
+                <Image src="/about/gedung-baru-csui.png" alt="" layout='fill' objectFit='cover' className="rounded-lg"/>
               </div>
             </div>
           </Carousel.Slide>
           <Carousel.Slide>
             <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
-              </div>
-            </div>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
-              </div>
-            </div>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center bg-icy-1 bg-opacity-10">
-              <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                <Image src="https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg" alt="" layout='fill' objectFit='contain'/>
+              <div className="w-5/6 h-5/6 relative rounded-lg">
+                <Image src="/about/gedung-lama-csui.png" alt="" layout='fill' objectFit='cover' className="rounded-lg"/>
               </div>
             </div>
           </Carousel.Slide>
