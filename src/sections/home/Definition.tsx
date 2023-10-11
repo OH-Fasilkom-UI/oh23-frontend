@@ -16,8 +16,8 @@ const images = [
 
 export default function Definition() {
   return (
-    <section className="mt-10 py-10 flex flex-col items-center min-h-screen bg-black">
-        <Image src="/home/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
+    <section className="bg-[url(/home/background-definition.png)] bg-cover bg-center mt-10 py-10 flex flex-col items-center min-h-screen">
+        {/* <Image src="/home/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" /> */}
         <div className="z-10 text-center flex flex-col px-5 sm:px-10 items-center w-full">
             <h1 className="font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white">
               What is OH?
@@ -27,13 +27,20 @@ export default function Definition() {
             memperkenalkan Fakultas Ilmu Komputer Universitas Indonesia kepada masyarakat luas dan membantu
             para calon mahasiswa dalam memantapkan pilihan program studinya di Fasilkom UI.
           </p>
-          <Button
-            variant="secondary"
-            className="px-28 mb-10"
+          <a
+            href={'https://drive.google.com/file/d/1p-ID9rRpPGkYhEt_eIn5trdmliaUdkD5/view?usp=sharing'}
+            target="__blank"
+            rel="noreferrer"
+            className="mb-10"
           >
-            Baca Selengkapnya
-            <HiOutlineArrowRight/>
-          </Button>
+            <Button
+              variant="secondary"
+              className="px-28"
+            >
+              Baca Selengkapnya
+              <HiOutlineArrowRight/>
+            </Button>
+          </a>
           {/* TODO: Add responsiveness */}
           <Carousel
             withIndicators

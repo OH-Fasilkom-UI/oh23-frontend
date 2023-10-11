@@ -8,27 +8,6 @@ import { STYLE_GUIDE } from './elements/Button/constant';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { HiX } from 'react-icons/hi';
 
-const NavLink = ({
-    children,
-    isActive,
-    href,
-    className,
-    disabled
-}: {
-    children: React.ReactNode;
-    isActive: boolean;
-    href: string;
-    className?: string;
-    disabled: boolean;
-}) => {
-    return (
-        <Link href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${disabled ? "opacity-20 pointer-events-none" : "opacity-70"} ${className}`}>
-            {children}
-        </Link>
-    )
-}
-
-
 const Navbar = () => {
     const open_reg = new Date("2023-10-23T12:00:00+0700") < new Date()
 
@@ -37,6 +16,27 @@ const Navbar = () => {
     const router = useRouter();
 
     const [isOpen, setIsOpen] = useState(false);
+
+    const NavLink = ({
+        children,
+        isActive,
+        href,
+        className,
+        disabled,
+    }: {
+        children: React.ReactNode;
+        isActive: boolean;
+        href: string;
+        className?: string;
+        disabled: boolean;
+    }) => {
+        return (
+            <Link onClick={() => setIsOpen(false)} href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${disabled ? "opacity-20 pointer-events-none" : "opacity-70"} ${className}`}>
+                {children}
+            </Link>
+        )
+    }
+
 
     return (
         <nav className={`border-2 bg-black border-gray-100 fixed top-0 sm:top-2 left-1/2 -translate-x-1/2 w-full sm:w-4/5 sm:rounded-md  sm:border-2 flex items-center px-5 py-2 gap-4 justify-between transition-all duration-500 z-50 backdrop-blur ${y > 100 ? "sm:top-6 sm:scale-95 border-opacity-20" : "border-opacity-10"}`}>

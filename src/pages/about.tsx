@@ -101,15 +101,15 @@ const AboutPage = () => {
       <ListPrestasi />
       <View360 />
       {/* Fasilitas */}
-      <section className="bg-black flex items-center justify-center mt-20">
+      <section className="bg-[url(/about/background-about-fasilitas.svg)] bg-cover bg-center flex items-center justify-center mt-20">
         <div className="w-full md:h-[700px] lg:h-[900px] flex flex-col items-center z-10 relative">
-          <Image
+          {/* <Image
             src="/about/background-about-fasilitas.svg"
             alt=""
             width={1270}
             height={880}
             className="absolute top-0 left-0 object-cover brightness-[.6]"
-          />
+          /> */}
           <div className="flex justify-center md:mb-16">
             <h1 className="font-satoshi text-white-1 text-5xl font-semibold z-10">
               Fasilitas
@@ -156,9 +156,9 @@ const AboutPage = () => {
         </div>
       </section>
       {/* Jurusan & Perbedaan */}
-      <section className="relative">
+      <section className="bg-[url(/about/background-perbedaan-jurusan.png)] bg-cover bg-center relative">
         <div className="flex justify-center py-10">
-          <Image
+          {/* <Image
             src="/about/background-about-jurusan-dan-perbedaan-kiri.svg"
             alt=""
             width={640}
@@ -171,7 +171,7 @@ const AboutPage = () => {
             width={640}
             height={130}
             className="hidden md:inline absolute top-0 right-0 object-cover brightness-[.4]"
-          />
+          /> */}
           <h1 className="font-satoshi text-white-1 text-4xl md:text-5xl text-center font-semibold">
             Jurusan & Perbedaan
           </h1>
@@ -219,13 +219,13 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="flex justify-center relative h-[600px] md:h-[900px]">
-          <Image
+          {/* <Image
             src="/about/background-about-jurusan-dan-perbedaan-tengah.png"
             alt=""
             width={1920}
             height={666}
             className="absolute top-64 md:top-96 xl:top-40 left-center object-cover brightness-[.8]"
-          />
+          /> */}
           {/* Pengertian */}
           <div
             className={`absolute flex flex-col sm:flex-row transition-opacity ease-in duration-300 gap-10 md:gap-20 justify-center py-12 sm:py-24 md:py-28 px-6 ${
