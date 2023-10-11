@@ -1,4 +1,5 @@
 import { Tab } from '@headlessui/react';
+import Image from 'next/image';
 import React from 'react';
 
 function OurLovelyTab({ children }: { children: React.ReactNode }) {
@@ -15,15 +16,17 @@ function OurLovelyTab({ children }: { children: React.ReactNode }) {
 
 function OurBloodyPerfectTimelineCard({ description, time, title, image }: { title: string, time: string, description: string, image: string }) {
     return (
-        <article className='bg-[#101010bb] md:flex-row flex-col-reverse min-w-[400px] flex justify-between gap-x-10 items-center md:items-start font-semibold w-3/4 rounded-lg m-10 border-2 border-screaminGreen-2 p-10 text-white'>
-            <section className='w-full text-center md:text-start md:w-1/2'>
-                <h1 className='text-white-1'>{title}</h1>
-                <h2 className='text-white-1 text-lg mb-5'>{new Date(time).toLocaleDateString("fr-FR")}</h2>
-                <p className='font-normal'>{description}</p>
+        <article className='bg-[#101010bb] md:flex-row flex-col-reverse min-w-fit flex justify-between gap-x-10 items-center md:items-start font-semibold w-3/4 rounded-lg m-10 border-2 border-screaminGreen-2 p-10 text-white'>
+            <section className='w-full h-full flex flex-col justify-center text-center md:text-start lg:w-2/3 md:w-1/2'>
+                <h1 className='text-white-1 lg:text-2xl md:text-xl sm:text-lg text-base leading-none my-2'>{title}</h1>
+                <h2 className='text-white-1 text-sm md:text-lg mb-5'>{new Date(time).toLocaleDateString("fr-FR")}</h2>
+                <p className='md:text-base sm:text-sm text-xs font-normal'>{description}</p>
             </section>
-            <section>
-                <img className='w-[350px] rounded-md object-cover object-center h-[300px]' src={image} />
-            </section>
+            <div className='lg:w-1/3 md:w-1/2 w-full flex h-full items-center justify-center'>
+                <section className='relative md:mb-0 mb-10 w-3/4 aspect-square'>
+                    <Image fill className='rounded-md object-cover  object-center' src={image} alt="this is the way!!!" />
+                </section>
+            </div>
         </article>
     )
 }
@@ -41,7 +44,7 @@ export default function Timeline() {
             </div>
             <Tab.Panels className="bg-[url(/home/OurLovelyTimelineBG.png)]">
                 <Tab.Panel className='grid place-items-center'>
-                    <OurBloodyPerfectTimelineCard 
+                    <OurBloodyPerfectTimelineCard
                         title='Grand Opening'
                         time='2023-09-24'
                         image='/home/grand-opening.png'
@@ -53,7 +56,7 @@ export default function Timeline() {
                     />
                 </Tab.Panel>
                 <Tab.Panel className='grid place-items-center'>
-                    <OurBloodyPerfectTimelineCard 
+                    <OurBloodyPerfectTimelineCard
                         title='Open Registration'
                         time='2023-10-23'
                         image='/home/opreg.png'
