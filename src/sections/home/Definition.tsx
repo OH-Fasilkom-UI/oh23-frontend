@@ -4,20 +4,20 @@ import { HiOutlineArrowRight } from 'react-icons/hi2'
 import { Carousel } from '@mantine/carousel';
 
 const images = [
-  "https://hololive.hololivepro.com/wp-content/uploads/2021/04/unnamed-file-6-855x1536.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2022/04/4001_Mori-Calliope.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/07/Nerissa-Ravencroft_pr-img_01.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/04/bg_Hoshimachi-Suisei_01-1.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Minato-Aqua_pr-img_01b.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2022/04/4004_Gawr-Gura.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/02/FriedA_pr-img_01.png",
-  "https://media.istockphoto.com/id/1207762975/id/foto/gray-wolf-close-up-di-musim-dingin.jpg?s=1024x1024&w=is&k=20&c=lltCILw0oR5Jbpu7pECJqeBC9075HisoUHhyvcrq6Q4="
+  "/home/definition-1.jpg",
+  "/home/definition-2.jpg",
+  "/home/definition-3.jpg",
+  "/home/definition-4.jpg",
+  "/home/definition-5.jpg",
+  "/home/definition-6.jpg",
+  "/home/definition-7.jpg",
+  "/home/definition-8.jpg",
 ]
 
 export default function Definition() {
   return (
-    <section className="mt-10 py-10 flex flex-col items-center min-h-screen bg-black">
-        <Image src="/home/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" />
+    <section className="bg-[url(/home/background-definition.png)] bg-cover bg-center mt-10 py-10 flex flex-col items-center min-h-screen">
+        {/* <Image src="/home/background-definition.png" alt="" width={1440} height={880} className="absolute left-0 object-cover brightness-[.6]" /> */}
         <div className="z-10 text-center flex flex-col px-5 sm:px-10 items-center w-full">
             <h1 className="font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white">
               What is OH?
@@ -27,13 +27,20 @@ export default function Definition() {
             memperkenalkan Fakultas Ilmu Komputer Universitas Indonesia kepada masyarakat luas dan membantu
             para calon mahasiswa dalam memantapkan pilihan program studinya di Fasilkom UI.
           </p>
-          <Button
-            variant="secondary"
-            className="px-28 mb-10"
+          <a
+            href={'https://drive.google.com/file/d/1p-ID9rRpPGkYhEt_eIn5trdmliaUdkD5/view?usp=sharing'}
+            target="__blank"
+            rel="noreferrer"
+            className="mb-10"
           >
-            Baca Selengkapnya
-            <HiOutlineArrowRight/>
-          </Button>
+            <Button
+              variant="secondary"
+              className="px-28"
+            >
+              Baca Selengkapnya
+              <HiOutlineArrowRight/>
+            </Button>
+          </a>
           {/* TODO: Add responsiveness */}
           <Carousel
             withIndicators
