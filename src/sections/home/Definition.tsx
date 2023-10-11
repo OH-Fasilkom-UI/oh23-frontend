@@ -4,14 +4,14 @@ import { HiOutlineArrowRight } from 'react-icons/hi2'
 import { Carousel } from '@mantine/carousel';
 
 const images = [
-  "https://hololive.hololivepro.com/wp-content/uploads/2021/04/unnamed-file-6-855x1536.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2022/04/4001_Mori-Calliope.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/07/Nerissa-Ravencroft_pr-img_01.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/04/bg_Hoshimachi-Suisei_01-1.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Minato-Aqua_pr-img_01b.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2022/04/4004_Gawr-Gura.png",
-  "https://hololive.hololivepro.com/wp-content/uploads/2023/02/FriedA_pr-img_01.png",
-  "https://media.istockphoto.com/id/1207762975/id/foto/gray-wolf-close-up-di-musim-dingin.jpg?s=1024x1024&w=is&k=20&c=lltCILw0oR5Jbpu7pECJqeBC9075HisoUHhyvcrq6Q4="
+  "/home/definition-1.jpg",
+  "/home/definition-2.jpg",
+  "/home/definition-3.jpg",
+  "/home/definition-4.jpg",
+  "/home/definition-5.jpg",
+  "/home/definition-6.jpg",
+  "/home/definition-7.jpg",
+  "/home/definition-8.jpg",
 ]
 
 export default function Definition() {
