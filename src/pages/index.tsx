@@ -24,7 +24,7 @@ export default function Home() {
             FASILKOM 2023
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
-            <h2 className="text-2xl mb-2 text-white-1 font-bold font-satoshi">Open registration</h2>
+            <h2 className="text-2xl mb-2 font-semibold font-satoshi">Open registration</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
             <Countdown date={next_countdown} />
             <h3 className="text-sm sm:text-lg font-bold">17 Oktober 2023, 12:00 GMT+7</h3>

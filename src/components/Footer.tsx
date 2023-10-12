@@ -1,8 +1,12 @@
 import Image from "next/image";
 import { Footer as BaseFooter } from "@mantine/core";
+import { notifications } from '@mantine/notifications';
 import Link from "next/link";
 
+const disabled = true;
+
 const Footer = () => {
+
     return (
         <section>
             <Image src="/background-footer.png" alt="" width={1440} height={700} layout="responsive"/>
@@ -27,21 +31,35 @@ const Footer = () => {
                             >
                                 About Fasilkom
                             </Link>
-                            <Link
-                                href={"/registration"}
+                            {/* <Link
+                                href={"/register"}
                                 className="hover:text-aqua-2 transition-colors duration-300 ease-out"
                             >
                                 Registration Page
-                            </Link>
+                            </Link> */}
                             <Link
-                                href={"/walloffame"}
-                                className="hover:text-aqua-2 transition-colors duration-300 ease-out"
+                                href={""}
+                                onClick={() => {
+                                    disabled && notifications.show({
+                                        title: 'Coming soon~',
+                                        message: '',
+                                        color: "red"
+                                    })
+                                }}
+                                className={` transition-colors duration-300 ease-out ${disabled ? "opacity-50" : "hover:text-aqua-2"}`}
                             >
                                 Wall of Fame
                             </Link>
                             <Link
-                                href={"/merchandise"}
-                                className="hover:text-aqua-2 transition-colors duration-300 ease-out"
+                                href={""}
+                                onClick={() => {
+                                    disabled && notifications.show({
+                                        title: 'Coming soon~',
+                                        message: '',
+                                        color: "red"
+                                    })
+                                }}
+                                className={` transition-colors duration-300 ease-out ${disabled ? "opacity-50" : "hover:text-aqua-2"}`}
                             >
                                 Merchandise
                             </Link>
@@ -121,7 +139,15 @@ const Footer = () => {
                                 <p
                                     onClick={() => {
                                         navigator.clipboard.writeText("openhouse@cs.ui.ac.id")
-                                        alert("Copied")
+                                        notifications.show({
+                                            title: 'Copied',
+                                            message: '',
+                                            styles: (theme) => ({
+                                                root: {
+                                                    '&::before': { backgroundColor: "#24F462" },
+                                                }
+                                            })
+                                        })
                                     }}
                                     className="hover:text-aqua-2 transition-colors duration-300 ease-out flex text-white active:text-white-3 hover:cursor-grab active:cursor-grabbing"
                                 >

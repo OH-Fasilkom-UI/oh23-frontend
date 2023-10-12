@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
@@ -23,6 +24,7 @@ export default function App(props: AppProps) {
           colorScheme: 'dark',
         }}
       >
+        <Notifications/>
         <Navbar />
         <Component {...pageProps} />
         <Footer />

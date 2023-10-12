@@ -2,11 +2,46 @@ import { useWindowScroll } from '@mantine/hooks';
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router';
+import { notifications } from '@mantine/notifications';
 import { useState } from 'react'
 import { HiBuildingOffice2, HiHome, HiShoppingBag, HiUserGroup } from "react-icons/hi2"
 import { STYLE_GUIDE } from './elements/Button/constant';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { HiX } from 'react-icons/hi';
+
+const NavLink = ({
+    children,
+    isActive,
+    href,
+    className,
+    disabled,
+    onClick,
+}: {
+    children: React.ReactNode;
+    isActive: boolean;
+    href: string;
+    className?: string;
+    disabled: boolean;
+    onClick?: () => any
+}) => {
+    return (
+        <Link 
+            onClick={() => {
+                disabled &&
+                notifications.show({
+                    title: 'Coming soon~',
+                    message: '',
+                    color: "red"
+                })
+            }}
+            href={href}
+            aria-disabled={disabled}
+            className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${disabled ? "opacity-20" : "opacity-70"} ${className}`}
+        >
+            {children}
+        </Link>
+    )
+}
 
 const Navbar = () => {
     const open_reg = new Date("2023-10-17T12:00:00+0700") < new Date()
@@ -17,25 +52,7 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const NavLink = ({
-        children,
-        isActive,
-        href,
-        className,
-        disabled,
-    }: {
-        children: React.ReactNode;
-        isActive: boolean;
-        href: string;
-        className?: string;
-        disabled: boolean;
-    }) => {
-        return (
-            <Link onClick={() => setIsOpen(false)} href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${disabled ? "opacity-20 pointer-events-none" : "opacity-70"} ${className}`}>
-                {children}
-            </Link>
-        )
-    }
+
 
 
     return (
@@ -43,7 +60,7 @@ const Navbar = () => {
             <Link href="/">
                 <Image src="/logo.png" alt="OH 2023" width={64} height={64} />
             </Link>
-            <div className={`z-20 fixed top-0 ${isOpen ? "left-0" : "-left-full"} sm:static transition-all duration-500 bg-black-1 sm:bg-transparent w-full font-normal sm:w-max h-screen sm:h-full flex flex-col sm:flex-row text-xl sm:text-base bg-opacity-10 backdrop-blur items-center gap-4 flex-1 justify-evenly`}>
+            <div onClick={() => setIsOpen(false)} className={`z-20 fixed top-0 ${isOpen ? "left-0" : "-left-full"} sm:static transition-all duration-500 bg-black-1 sm:bg-transparent w-full font-normal sm:w-max h-screen sm:h-full flex flex-col sm:flex-row text-xl sm:text-base bg-opacity-10 backdrop-blur items-center gap-4 flex-1 justify-evenly`}>
                 <Link href="/" className='flex items-center justify-center sm:hidden'>
                     <Image src="/logo.png" alt="OH 2023" width={64} height={64} />
                     <span className='text-white font-satoshi text-3xl font-semibold text-white-1'>OH 2023</span>
@@ -56,11 +73,11 @@ const Navbar = () => {
                     <HiBuildingOffice2 />
                     <span className='text-white'>About Fasilkom</span>
                 </NavLink>
-                <NavLink href='/wall-of-fame' isActive={router.pathname === "/wall-of-fame"} disabled>
+                <NavLink href='' isActive={router.pathname === "/wall-of-fame"} disabled>
                     <HiUserGroup />
                     <span className='text-white'>Wall of Fame</span>
                 </NavLink>
-                <NavLink href='/merchandise' isActive={router.pathname === "/merchandise"} disabled>
+                <NavLink href='' isActive={router.pathname === "/merchandise"} disabled>
                     <HiShoppingBag />
                     <span className='text-white'>Merchandise</span>
                 </NavLink>
