@@ -50,6 +50,10 @@ export default function Definition() {
             slideGap="sm"
             loop
             align="start"
+            breakpoints={[
+              { maxWidth: 'md', slideSize: '50%' },
+              { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },
+            ]}
             slidesToScroll={1}
             previousControlIcon={
                 <div className="bg-emerald-200 rounded-full p-2">
@@ -67,8 +71,8 @@ export default function Definition() {
               images.map((url, index) => (
                 <Carousel.Slide key={index}>
                   <div className="backdrop-blur-3xl rounded-xl border-2 border-white-3 border-opacity-5 w-full h-full flex items-center justify-center">
-                    <div className="bg-white-1 w-5/6 h-5/6 relative rounded-lg">
-                      <Image src={url} alt="" layout='fill' objectFit='contain'/>
+                    <div className="w-5/6 h-5/6 relative rounded-lg">
+                      <Image src={url} alt="" layout='fill' objectFit='cover'/>
                     </div>
                   </div>
                 </Carousel.Slide>
