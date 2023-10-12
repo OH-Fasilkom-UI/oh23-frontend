@@ -52,7 +52,7 @@ const DayaTampung = () => {
   return (
     <div className="h-[916px] md:h-[1024px]">
       <Image
-        src="./background-jalur-masuk-and-daya-tampung.svg"
+        src="./background-jalur-masuk-and-daya-tampung.webp"
         alt=""
         className="hidden md:block w-screen absolute"
         width={100}
