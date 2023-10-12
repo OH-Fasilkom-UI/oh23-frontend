@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/elements/Button";
-import { HiOutlineArrowRight } from 'react-icons/hi2'
+import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi2'
 import { Carousel } from '@mantine/carousel';
+import { useRef } from "react";
 
 const images = [
   "/home/definition-1.jpg",
@@ -50,6 +51,16 @@ export default function Definition() {
             loop
             align="start"
             slidesToScroll={1}
+            previousControlIcon={
+                <div className="bg-emerald-200 rounded-full p-2">
+                  <HiOutlineArrowLeft/>
+                </div>
+            }
+            nextControlIcon={
+                <div className="bg-emerald-200 rounded-full p-2">
+                  <HiOutlineArrowRight/>
+                </div>
+            }
             className="w-full"
           >
             {
