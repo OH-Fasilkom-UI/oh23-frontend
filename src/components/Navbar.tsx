@@ -9,7 +9,7 @@ import { HiMenuAlt3 } from 'react-icons/hi';
 import { HiX } from 'react-icons/hi';
 
 const Navbar = () => {
-    const open_reg = new Date("2023-10-23T12:00:00+0700") < new Date()
+    const open_reg = new Date("2023-10-17T12:00:00+0700") < new Date()
 
     const [{ y }] = useWindowScroll();
 

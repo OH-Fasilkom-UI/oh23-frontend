@@ -58,9 +58,9 @@ export default function Timeline() {
                 <Tab.Panel className='grid place-items-center'>
                     <OurBloodyPerfectTimelineCard
                         title='Open Registration'
-                        time='2023-10-23'
+                        time='2023-10-17'
                         image='/home/opreg.png'
-                        description='Pendaftaran Open House Fasilkom UI 2023 dibuka pada tanggal 23 Oktober 2023 hingga 1 November 
+                        description='Pendaftaran Open House Fasilkom UI 2023 dibuka pada tanggal 17 Oktober 2023 hingga 1 November 
                         2023 dengan menghadirkan dua paket berbeda, yaitu Paket Full Online yang berisikan kegiatan CS Connect dan 
                         Paket Full Experience, di mana peserta berkesempatan untuk merasakan pengalaman kegiatan CS Connect sekaligus 
                         serangkaian acara Tour de Campus Fasilkom UI yang akan dilaksanakan secara langsung di Gedung Fasilkom UI. Open 

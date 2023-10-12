@@ -10,7 +10,7 @@ import WTS from "@/sections/home/WTS";
 import VideoOH from "@/sections/home/VideoOH";
 
 export default function Home() {
-  const next_countdown = new Date("2023-10-23T12:00:00+0700")
+  const next_countdown = new Date("2023-10-17T12:00:00+0700")
   const is_counting = new Date() < next_countdown
 
   return (
@@ -27,7 +27,7 @@ export default function Home() {
             <h2 className="text-2xl mb-2 text-white-1 font-bold font-satoshi">Open registration</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
             <Countdown date={next_countdown} />
-            <h3 className="text-sm sm:text-lg font-bold">23 Oktober 2023, 12:00 GMT+7</h3>
+            <h3 className="text-sm sm:text-lg font-bold">17 Oktober 2023, 12:00 GMT+7</h3>
           </div>
             {is_counting ? 
               <div className="flex items-center gap-3">
