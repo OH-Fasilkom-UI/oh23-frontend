@@ -20,6 +20,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  @apply bg-black-1
 }
 
 @font-face {
