@@ -50,14 +50,7 @@ const DayaTampung = () => {
   };
 
   return (
-    <div className="h-[916px] md:h-[1024px]">
-      <Image
-        src="./background-jalur-masuk-and-daya-tampung.webp"
-        alt=""
-        className="hidden md:block w-screen absolute"
-        width={100}
-        height={200}
-      />
+    <section className="h-max md:h-[1024px] bg-[url(/about/background-jalur-masuk-and-daya-tampung.webp)] bg-cover bg-center">
 
       <div
         id="daya-tampung-laptop"
@@ -599,7 +592,7 @@ const DayaTampung = () => {
           </div>
         </Slider>
       </div>
-    </div>
+    </section>
   );
 };
 
