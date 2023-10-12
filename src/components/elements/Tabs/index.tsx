@@ -21,6 +21,7 @@ const Tabs: React.FC<TabsProps> = ({
       {buttonsText.map((buttonText, index) => {
         return (
           <button
+          key={index}
             className={`p-2 rounded-[40px] flex-1 ${
               index == activeButton
                 ? "border-[3px] border-screaminGreen-3 tabs-glow border-opacity-30 text-white-1"
