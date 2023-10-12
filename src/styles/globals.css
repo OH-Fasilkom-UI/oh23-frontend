@@ -6,7 +6,7 @@
   .text-stroke-2 {
     /* text-shadow: -1px -1px 0 var(--tw-shadow), 1px -1px 0 var(--tw-shadow), -1px 1px 0 var(--tw-shadow), 1px 1px 0 var(--tw-shadow); */
     -webkit-text-stroke: 2px var(--tw-shadow);
-}
+  }
 }
 
 ::-webkit-scrollbar {
@@ -14,34 +14,45 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-lg bg-screaminGreen-3
+  @apply rounded-lg bg-screaminGreen-3;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Bold.otf');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.otf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-BoldItalic.otf');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-BoldItalic.otf");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Italic.otf');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Italic.otf");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Regular.otf');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+.tabs-glow {
+  box-shadow: 0 0 10px #24f46265;
+}
+
+.slick-list {
+  margin: 0 -5px;
+}
+.slick-slide > div {
+  padding: 0 5px;
 }
