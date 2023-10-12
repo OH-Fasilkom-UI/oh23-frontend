@@ -31,7 +31,7 @@ const Navbar = () => {
         disabled: boolean;
     }) => {
         return (
-            <Link onClick={() => setIsOpen(false)} href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : "text-gray-100"} ${disabled ? "opacity-20 pointer-events-none" : "opacity-70"} ${className}`}>
+            <Link onClick={() => setIsOpen(false)} href={href} className={`flex items-center gap-2 font-medium ${isActive ? "text-screaminGreen-4" : ""} ${disabled ? "opacity-20 pointer-events-none" : "opacity-100"} ${className}`}>
                 {children}
             </Link>
         )
