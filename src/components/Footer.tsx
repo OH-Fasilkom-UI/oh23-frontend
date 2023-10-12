@@ -1,11 +1,15 @@
 import Image from "next/image";
 import { Footer as BaseFooter } from "@mantine/core";
+import { notifications } from '@mantine/notifications';
 import Link from "next/link";
 
+const disabled = true;
+
 const Footer = () => {
+
     return (
         <section>
-            <Image src="/background-footer.svg" alt="" width={1440} height={700}/>
+            <Image src="/background-footer.png" alt="" width={1440} height={700} layout="responsive"/>
             <BaseFooter height={400} className="bg-black-1 flex flex-col md:flex-row md:space-x-10 space-y-16 md:space-y-0 px-2 py-14 border-none" >
                 <div className="grow flex">
                     <div className="pr-4 basis-1/2">
@@ -27,21 +31,35 @@ const Footer = () => {
                             >
                                 About Fasilkom
                             </Link>
-                            <Link
-                                href={"/registration"}
+                            {/* <Link
+                                href={"/register"}
                                 className="hover:text-aqua-2 transition-colors duration-300 ease-out"
                             >
                                 Registration Page
-                            </Link>
+                            </Link> */}
                             <Link
-                                href={"/walloffame"}
-                                className="hover:text-aqua-2 transition-colors duration-300 ease-out"
+                                href={""}
+                                onClick={() => {
+                                    disabled && notifications.show({
+                                        title: 'Coming soon~',
+                                        message: '',
+                                        color: "red"
+                                    })
+                                }}
+                                className={` transition-colors duration-300 ease-out ${disabled ? "opacity-50" : "hover:text-aqua-2"}`}
                             >
                                 Wall of Fame
                             </Link>
                             <Link
-                                href={"/merchandise"}
-                                className="hover:text-aqua-2 transition-colors duration-300 ease-out"
+                                href={""}
+                                onClick={() => {
+                                    disabled && notifications.show({
+                                        title: 'Coming soon~',
+                                        message: '',
+                                        color: "red"
+                                    })
+                                }}
+                                className={` transition-colors duration-300 ease-out ${disabled ? "opacity-50" : "hover:text-aqua-2"}`}
                             >
                                 Merchandise
                             </Link>
@@ -118,9 +136,20 @@ const Footer = () => {
                                 </h4>
                             </div>
                             <div className="flex justify-between space-x-5">
-                                <Link
-                                    href={"/"}
-                                    className="hover:text-aqua-2 transition-colors duration-300 ease-out flex text-white"
+                                <p
+                                    onClick={() => {
+                                        navigator.clipboard.writeText("openhouse@cs.ui.ac.id")
+                                        notifications.show({
+                                            title: 'Copied',
+                                            message: '',
+                                            styles: (theme) => ({
+                                                root: {
+                                                    '&::before': { backgroundColor: "#24F462" },
+                                                }
+                                            })
+                                        })
+                                    }}
+                                    className="hover:text-aqua-2 transition-colors duration-300 ease-out flex text-white active:text-white-3 hover:cursor-grab active:cursor-grabbing"
                                 >
                                     openhouse@cs.ui.ac.id
                                     <span className="ml-2 grid place-content-center pt-1">
@@ -131,7 +160,7 @@ const Footer = () => {
                                             alt="Tiktok"
                                         ></Image>
                                     </span>
-                                </Link>
+                                </p>
                             </div>
                         </div>
                         {/* <div className="mt-8">
