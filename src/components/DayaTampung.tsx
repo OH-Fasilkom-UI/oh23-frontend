@@ -377,7 +377,7 @@ const DayaTampung = () => {
 
       <div
         id="daya-tampung-mobile"
-        className="mx-7 flex flex-col gap-5"
+        className="mx-7 flex flex-col gap-5 md:hidden"
       >
         <h1 className="font-satoshi font-bold text-[32px] text-center">
           Jalur Masuk & Daya Tampung
