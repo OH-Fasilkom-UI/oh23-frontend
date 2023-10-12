@@ -23,7 +23,7 @@ export const ListPrestasi = () => {
     <section className='flex flex-wrap text-center justify-center gap-5 mt-36 mx-10 relative'>
       <Image src="/about/background-prestasi.svg" alt="" width={573} height={428} className='absolute left-0 top-0 max-w-full object-cover' />
       <Image src="/about/background-prestasi.svg" alt="" width={573} height={428} className='absolute right-0 bottom-0 max-w-full object-cover' />
-      <h1 className="w-full font-semibold text-5xl text-white-1 mb-5">Prestasi</h1>
+      <h1 className="w-full font-semibold text-5xl text-white-1 mb-5 z-10">Prestasi</h1>
       <Prestasi imgSrc="/about/education.png" title={`#201-250 \n Computer Science & Information Systems`} subtitle="in the world" description="(QS WUR 2022)" />
       <Prestasi imgSrc="/about/flag.png" title={`#21 \n Competitive Programming`} subtitle="in the world" description="(ICPC 2019 World Finals)" />
       <Prestasi imgSrc="/about/world.png" title={`#1 \n Best University`} subtitle="in Indonesia" description="(QS WUR 2023)" />
