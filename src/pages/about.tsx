@@ -115,7 +115,7 @@ const AboutPage = () => {
               Fasilitas
             </h1>
           </div>
-          <div className="w-full max-w-5xl h-[500px] relative px-16">
+          <div className="w-full max-w-5xl h-[500px] relative mt-5 px-16">
             <Carousel
               slides={slides}
               goToSlide={goToSlide}
