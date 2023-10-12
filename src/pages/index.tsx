@@ -67,7 +67,7 @@ export default function Home() {
         <VideoOH />
       </section>
       <section className="pb-20">
-        <WTS/>
+        {/* <WTS/> */}
       </section>
 
     </main>
