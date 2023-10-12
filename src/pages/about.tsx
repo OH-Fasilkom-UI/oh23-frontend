@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dynamic, { DynamicOptions } from "next/dynamic";
+import DayaTampung from "@/components/DayaTampung";
 import Image from "next/image";
 import { Card } from "@/components/elements/Card";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
@@ -311,6 +312,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+      <DayaTampung />
       <FAQ/>
     </main>
   );
