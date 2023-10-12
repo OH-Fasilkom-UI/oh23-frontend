@@ -7,7 +7,7 @@ const FAQ = () => {
         <div className="flex bg-black-3 w-full text-center justify-center">
             <div className="flex flex-col items-center">
                 <div className="text-center">
-                    <h3 className="font-satoshi mt-4 text-center text-white bg-clip-text font-extrabold text-3xl text-white-1 sm:text-5xl drop-shadow-sm shadow-white">
+                    <h3 className="mx-5 font-satoshi mt-4 text-center text-white bg-clip-text font-extrabold text-3xl text-white-1 sm:text-5xl drop-shadow-sm shadow-white">
                         Frequently Asked Questions
                     </h3>
                 </div>
@@ -18,7 +18,6 @@ const FAQ = () => {
                             <Dropdown header={item.header} body={item.body} />
                         </div>
                     ))}
-
                 </div>
             </div>
         </div>

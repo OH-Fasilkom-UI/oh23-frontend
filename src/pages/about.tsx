@@ -173,7 +173,7 @@ const AboutPage = () => {
             height={130}
             className="hidden md:inline absolute top-0 right-0 object-cover brightness-[.4]"
           /> */}
-          <h1 className="font-satoshi text-white-1 text-4xl md:text-5xl text-center font-semibold">
+          <h1 className="font-satoshi text-white-1 text-4xl md:text-5xl text-center font-semibold mx-5">
             Jurusan & Perbedaan
           </h1>
         </div>
@@ -312,8 +312,12 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <DayaTampung />
-      <FAQ/>
+      <section className="my-20">
+        <DayaTampung />
+      </section>
+      <section className="my-20">
+        <FAQ/>
+      </section>
     </main>
   );
 };
