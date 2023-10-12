@@ -118,9 +118,12 @@ const Footer = () => {
                                 </h4>
                             </div>
                             <div className="flex justify-between space-x-5">
-                                <Link
-                                    href={"/"}
-                                    className="hover:text-aqua-2 transition-colors duration-300 ease-out flex text-white"
+                                <p
+                                    onClick={() => {
+                                        navigator.clipboard.writeText("openhouse@cs.ui.ac.id")
+                                        alert("Copied")
+                                    }}
+                                    className="hover:text-aqua-2 transition-colors duration-300 ease-out flex text-white active:text-white-3 hover:cursor-grab active:cursor-grabbing"
                                 >
                                     openhouse@cs.ui.ac.id
                                     <span className="ml-2 grid place-content-center pt-1">
@@ -131,7 +134,7 @@ const Footer = () => {
                                             alt="Tiktok"
                                         ></Image>
                                     </span>
-                                </Link>
+                                </p>
                             </div>
                         </div>
                         {/* <div className="mt-8">
