@@ -71,7 +71,7 @@ export default function Timeline() {
                 <Tab.Panel className='grid place-items-center'>
                     <OurBloodyPerfectTimelineCard
                         title='CS Connect'
-                        time='2023-11-04'
+                        time='2023-11-05'
                         image='/home/cs-connect.png'
                         description='CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
                         menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi talkshow 
