@@ -1,5 +1,5 @@
-import { HiUserPlus } from "react-icons/hi2"
 import Image from 'next/image'
+import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi2'
 import { Carousel } from "@mantine/carousel"
 import { Button } from "../../components/elements/Button"
 
@@ -47,6 +47,16 @@ export const WhatIsPacil = () => {
           slidesToScroll={1}
           slideGap="md"
           slideSize="100%"
+          previousControlIcon={
+            <div className="bg-emerald-200 rounded-full p-2">
+              <HiOutlineArrowLeft/>
+            </div>
+        }
+        nextControlIcon={
+            <div className="bg-emerald-200 rounded-full p-2">
+              <HiOutlineArrowRight/>
+            </div>
+        }
           className="w-full sm:w-96"
         >
           <Carousel.Slide>
