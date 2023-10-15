@@ -11,6 +11,7 @@ import VideoOH from "@/sections/home/VideoOH";
 import Keseruan from "@/sections/registration/Keseruan";
 import Keuntungan from "@/sections/registration/Keuntungan";
 import FAQ from "@/sections/registration/FAQ";
+import ContactPerson from "@/sections/registration/ContactPerson";
 
 export default function Home() {
   const next_countdown = new Date("2023-10-17T12:00:00+0700")
@@ -32,7 +33,7 @@ export default function Home() {
             <h3 className="text-sm sm:text-lg font-bold">17 Oktober 2023, 12:00 GMT+7</h3>
           </div>
             <div className="flex sm:flex-row flex-col items-center gap-3">
-              <Link href="#definition">
+              <Link href="#keseruan">
                 <Button variant="secondary" className="sm:w-auto w-full font-satoshi font-bold">
                   <HiBookOpen />
                   Learn More
@@ -53,6 +54,9 @@ export default function Home() {
       </section>
       <section id="keuntungan" className="my-20">
         <FAQ />
+      </section>
+      <section id="keuntungan" className="pb-20">
+        <ContactPerson />
       </section>
     </main>
   );

@@ -69,7 +69,6 @@ export default function Home() {
       <section className="pb-20">
         <WTS/>
       </section>
-
     </main>
 
   );

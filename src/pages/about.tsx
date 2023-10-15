@@ -315,7 +315,7 @@ const AboutPage = () => {
       <section className="my-20">
         <DayaTampung />
       </section>
-      <section className="my-20">
+      <section className="pb-20">
         <FAQ/>
       </section>
     </main>
