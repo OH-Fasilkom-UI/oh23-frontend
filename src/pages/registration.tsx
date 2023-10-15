@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/elements/Button";
 import { Countdown } from "@/components/elements/Countdown";
 import { HiBookOpen, HiChevronDoubleRight } from "react-icons/hi2";
+import { notifications } from '@mantine/notifications';
 import Link from "next/link";
 import Keseruan from "@/sections/registration/Keseruan";
 import Keuntungan from "@/sections/registration/Keuntungan";
@@ -9,8 +10,9 @@ import FAQ from "@/sections/registration/FAQ";
 import ContactPerson from "@/sections/registration/ContactPerson";
 
 export default function Home() {
-  const next_countdown = new Date("2023-10-17T12:00:00+0700")
-  const is_counting = new Date() < next_countdown
+  const countdown = new Date("2023-10-17T12:00:00+0700")
+  const next_countdown = new Date("2023-10-21T23:59:59+0700")
+  const is_counting = new Date() < countdown
 
   return (
     <main className="bg-black-1">
@@ -23,23 +25,37 @@ export default function Home() {
             OPEN HOUSE FASILKOM 2023
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
+          <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : "Close registration"}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
-            <Countdown date={next_countdown} />
-            <h3 className="text-sm sm:text-lg font-bold">17 Oktober 2023, 12:00 GMT+7</h3>
+            <Countdown date={is_counting ? countdown : next_countdown} />
+            <h3 className="text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
           </div>
             <div className="flex sm:flex-row flex-col items-center gap-3">
-              <Link href="#keseruan">
-                <Button variant="secondary" className="sm:w-auto w-full font-satoshi font-bold">
-                  <HiBookOpen />
-                  Learn More
-                </Button>
-              </Link>
-              <Link target="_blank" href="https://forms.gle/NE545DK7YVqYf5Vg7">
-                <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
-                  <HiChevronDoubleRight />
-                  Register Now
-                </Button>
-              </Link>
+              {is_counting ? 
+                <div className="flex items-center gap-3">
+                  <Link href="#keseruan">
+                    <Button variant="primary" className="font-satoshi font-bold">
+                      <HiBookOpen />
+                      Learn More
+                    </Button>
+                  </Link>
+                </div>
+              :
+                <div className="flex items-center gap-3">
+                  <Link href="#keseruan">
+                    <Button variant="secondary" className="font-satoshi font-bold">
+                      <HiBookOpen />
+                      Learn More
+                    </Button>
+                  </Link>
+                  <Link target="_blank" href="https://forms.gle/NE545DK7YVqYf5Vg7">
+                    <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
+                      <HiChevronDoubleRight />
+                      Register Now
+                    </Button>
+                  </Link>
+                </div>
+              }
             </div>
         </div>
       </section>

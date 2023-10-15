@@ -44,8 +44,6 @@ const NavLink = ({
 }
 
 const Navbar = () => {
-    const open_reg = new Date("2023-10-17T12:00:00+0700") < new Date()
-
     const [{ y }] = useWindowScroll();
 
     const router = useRouter();
@@ -87,12 +85,6 @@ const Navbar = () => {
                     <HiShoppingBag />
                     <span className='text-white'>Merchandise</span>
                 </NavLink>
-                {open_reg && 
-                    <NavLink href='/register' isActive={router.pathname === "/register"} className={`px-4 py-2 border-2 text-white border-white rounded transition-all ${STYLE_GUIDE['secondary']} !opacity-100`} disabled={false}>
-                        {/* <HiHome /> */}
-                        Register
-                    </NavLink>
-                }
                 <button onClick={() => setIsOpen(false)} className='sm:hidden'>
                   <HiX className='text-white-1 text-3xl' />
                 </button>
