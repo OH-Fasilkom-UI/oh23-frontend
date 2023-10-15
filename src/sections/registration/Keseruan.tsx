@@ -1,34 +1,57 @@
 import Image from "next/image";
-import { Button } from "@/components/elements/Button";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi2'
 import { Carousel } from '@mantine/carousel';
-import { useRef } from "react";
 import { useState } from "react";
 import Tabs from "@/components/elements/Tabs";
 
 const events: {
   img: string,
+  title: string,
   desc: string
 }[] = [
   {
     img: "/icon/registration/icon-tourdecampus.png",
-    desc: "Tour de Campus"
+    title: "Tour de Campus",
+    desc: `Tour de Campus Fasilkom UI merupakan rangkaian acara utama pada Open House Fasilkom UI, dimana 
+    peserta akan datang ke Fasilkom UI dan melakukan serangkaian acara, seperti Tour Fasilkom UI, 
+    Mentoring Session, Fun coding, Interactive Class, Exhibition, Wall of Dream, Parent’s Talkshow, 
+    dan Grand Closing. Pada Tour de Campus Fasilkom UI ini peserta akan berinteraksi secara langsung 
+    dengan para civitas Fasilkom UI sehingga dapat memperluas wawasan peserta tentang Fasilkom.`
   },
   {
     img: "/icon/registration/icon-funcoding.png",
-    desc: "Fun Coding"
+    title: "Fun Coding",
+    desc: `Kegiatan ini merupakan salah satu ciri khas yang dimiliki Open House Fasilkom UI dari tahun ke 
+    tahun di mana para peserta mencoba menulis program secara langsung. Acara ini akan dikemas seperti 
+    sebuah permainan yang fun sehingga para peserta merasa bahwa coding itu seperti sedang memainkan game.`
   },
   {
     img: "/icon/registration/icon-class.png",
-    desc: "Interactive Class"
+    title: "Interactive Class",
+    desc: `Interactive Class merupakan kegiatan di mana peserta Open House Fasilkom akan merasakan 
+    pengalaman diajar langsung oleh dosen-dosen Fasilkom UI yang telah ditentukan. Kelas akan dibuat 
+    interaktif dengan memaksimalkan komunikasi serta pemanfaatan alat peraga untuk mendukung penyampaian 
+    materi yang disampaikan.`
   },
   {
     img: "/icon/registration/icon-talkshow.png",
-    desc: "Parent Talkshow"
+    title: "Parent Talkshow",
+    desc: `Parent’s Talkshow adalah salah satu acara yang akan berlangsung selama Main Event Open House 
+    Fasilkom UI 2023 berjalan. Acara ini akan mengundang speaker yang memiliki pemahaman tentang apa saja 
+    informasi yang dibutuhkan oleh peserta terkait penerimaan mahasiswa baru. Target dari acara ini adalah 
+    orang tua para peserta Open House Fasilkom UI 2023. Selama talkshow, para orang tua akan mendapatkan 
+    informasi seputar pendaftaran dan biaya kuliah di Fasilkom UI, prospek pekerjaan lulusan Fasilkom UI, 
+    dan banyak hal lainnya. Para orang tua juga diberi kesempatan untuk mengajukan pertanyaan kepada 
+    pembawa acara.`
   },
   {
     img: "/icon/registration/icon-connect.png",
-    desc: "CS Connect"
+    title: "CS Connect",
+    desc: `CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
+    menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi 
+    talkshow berakhir, peserta akan di-assign ke masing-masing breakout room untuk melaksanakan Mentoring 
+    Online dengan mentornya masing-masing dari LO. Materi yang diberikan akan berupa pengenalan jurusan 
+    yang ada di Fasilkom UI dan informasi teknis kegiatan pada Main Event selanjutnya.`
   },
 ]
 
@@ -80,7 +103,7 @@ export default function Keseruan() {
                     <div className="h-5/6 w-full flex items-center justify-center object-contain">
                       <Image src={event.img} alt="" width={100} height={100} className="object-contain h-full w-full"/>
                     </div>
-                    <p className="font-satoshi text-white-1 font-extrabold text-center text-xl">{event.desc}</p>
+                    <p className="font-satoshi text-white-1 font-extrabold text-center text-xl">{event.title}</p>
                   </div>     
                 </Carousel.Slide>
               ))}

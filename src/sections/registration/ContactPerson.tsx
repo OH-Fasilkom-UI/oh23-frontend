@@ -1,5 +1,5 @@
 import { Button } from "@/components/elements/Button";
-import { BsWhatsapp, BsInstagram } from "react-icons/bs"
+import { BsWhatsapp } from "react-icons/bs"
 
 const ContactPerson = () => {
   return (
@@ -14,33 +14,13 @@ const ContactPerson = () => {
         </p>
         <div className="flex md:flex-row flex-col mt-10 items-center px-5 gap-6">
           <a
-            href={'https://youtu.be/3MrUpj159rI?si=wEj4SQWzjL3K6f7e'}
+            href={'https://wa.me/6285161058384'}
             target="__blank"
             rel="noreferrer" 
             className="w-full"
           >
             <Button variant="primary" className="w-full">
-              <BsWhatsapp /> Jotaro
-            </Button>
-          </a>
-          <a
-            href={'https://youtu.be/dQw4w9WgXcQ?si=fHhfjbosNRiN96pf'}
-            target="__blank"
-            rel="noreferrer" 
-            className="w-full"
-          >
-            <Button variant="primary" className="w-full">
-              <BsWhatsapp /> Polnareff
-            </Button>
-          </a>
-          <a
-            href={'https://www.instagram.com/akanecco_2323/'}
-            target="__blank"
-            rel="noreferrer" 
-            className="w-full"
-          >
-            <Button variant="primary" className="w-full">
-              <BsInstagram /> Akane
+              <BsWhatsapp /> Open House Fasilkom UI
             </Button>
           </a>
         </div>

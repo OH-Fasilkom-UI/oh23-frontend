@@ -40,7 +40,7 @@ const contentData: {
 
 const FAQ = () => {
     return (
-      <section className="bg-[url(/registration/bg-faq.png)] bg-contain bg-bottom bg-no-repeat min-h-screen mt-10 py-10 flex flex-col items-center">
+      <section className="bg-[url(/registration/bg-faq.png)] bg-cover bg-top min-h-[120vh] mt-10 py-10 flex flex-col items-center">
         <div className="z-10 flex bg-black-3 sm:w-2/3 w-11/12 rounded-xl border-2 border-green-300 text-center justify-center backdrop-blur-xl py-5">
             <div className="flex flex-col items-center">
                 <div className="text-center">

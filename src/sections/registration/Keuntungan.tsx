@@ -1,10 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/elements/Button";
-import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi2'
-import { Carousel } from '@mantine/carousel';
-import { useRef } from "react";
-import { useState } from "react";
-import Tabs from "@/components/elements/Tabs";
 
 const benefits: {
   img: string,
@@ -29,9 +23,8 @@ const benefits: {
 ]
 
 export default function Keuntungan() {
-  const [fullMode, setFullMode] = useState(true)
   return (
-    <section className="bg-center mt-10 py-10 flex flex-col items-center">
+    <section className="bg-[url(/registration/bg-keuntungan.png)] min-h-screen bg-center mt-10 py-10 flex flex-col items-center">
       <h1 className="mb-11 mt-32 font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white text-center px-5">
         Keuntungan Mengikuti OH Fasilkom
       </h1>
@@ -45,7 +38,6 @@ export default function Keuntungan() {
           </div>     
         ))}  
       </div>
-      <Image src="/registration/bg-keuntungan.png" alt="" width={1440} height={900} className="-mt-14 object-cover brightness-[.6]" />
     </section>
   )
 }
