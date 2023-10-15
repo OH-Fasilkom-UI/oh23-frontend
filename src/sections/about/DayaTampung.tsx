@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import Tabs from "./elements/Tabs";
+import Tabs from "../../components/elements/Tabs";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

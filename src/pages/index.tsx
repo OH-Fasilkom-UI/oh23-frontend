@@ -3,7 +3,7 @@ import { Button } from "@/components/elements/Button";
 import { Countdown } from "@/components/elements/Countdown";
 import { HiBookOpen, HiChevronDoubleRight } from "react-icons/hi2";
 // import { useEffect } from "react";
-import Timeline from "@/components/Timeline";
+import Timeline from "@/sections/home/Timeline";
 import Link from "next/link";
 import Definition from "@/sections/home/Definition";
 import WTS from "@/sections/home/WTS";
