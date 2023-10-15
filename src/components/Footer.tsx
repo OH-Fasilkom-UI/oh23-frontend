@@ -31,12 +31,12 @@ const Footer = () => {
                             >
                                 About Fasilkom
                             </Link>
-                            {/* <Link
+                            <Link
                                 href={"/register"}
                                 className="hover:text-aqua-2 transition-colors duration-300 ease-out"
                             >
-                                Registration Page
-                            </Link> */}
+                                Registration
+                            </Link>
                             <Link
                                 href={""}
                                 onClick={() => {
@@ -188,8 +188,8 @@ const Footer = () => {
                         </div> */}
                     </div>
                 </div>
-                <div className="grow flex">
-                    <div className="flex flex-col gap-5">
+                <div className="grow flex md:items-start md:justify-normal items-center justify-center pb-10">
+                    <div className="flex flex-col gap-5 md:items-start items-center">
                         <div>
                             <h4 className="font-bold text-transparent bg-clip-text bg-shimmerGreen">
                                 Supported by
