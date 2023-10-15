@@ -10,6 +10,7 @@ import WTS from "@/sections/home/WTS";
 import VideoOH from "@/sections/home/VideoOH";
 import Keseruan from "@/sections/registration/Keseruan";
 import Keuntungan from "@/sections/registration/Keuntungan";
+import FAQ from "@/sections/registration/FAQ";
 
 export default function Home() {
   const next_countdown = new Date("2023-10-17T12:00:00+0700")
@@ -50,7 +51,9 @@ export default function Home() {
       <section id="keuntungan" className="my-20">
         <Keuntungan />
       </section>
+      <section id="keuntungan" className="my-20">
+        <FAQ />
+      </section>
     </main>
-
   );
 }
