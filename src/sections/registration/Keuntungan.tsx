@@ -30,7 +30,7 @@ export default function Keuntungan() {
       </h1>
       <div className="grid md:grid-cols-4 grid-cols-2 items-center justify-center z-10 sm:gap-8 gap-4 w-11/12 backdrop-blur-xl">
         {benefits.map((benefit, index) => (
-          <div className="h-full border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col gap-4 pt-10 pb-6 px-5">
+          <div key={index} className="h-full border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col gap-4 pt-10 pb-6 px-5">
             <div className="sm:w-5/6 w-full  flex items-center justify-center object-contain">
               <Image src={benefit.img} alt="" width={100} height={100} className="object-contain h-full w-full"/>
             </div>
