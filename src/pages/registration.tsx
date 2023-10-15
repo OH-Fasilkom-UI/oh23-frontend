@@ -34,10 +34,12 @@ export default function Home() {
                   Learn More
                 </Button>
               </Link>
-              <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
-                <HiChevronDoubleRight />
-                Register Now
-              </Button>
+              <Link target="_blank" href="https://forms.gle/NE545DK7YVqYf5Vg7">
+                <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
+                  <HiChevronDoubleRight />
+                  Register Now
+                </Button>
+              </Link>
             </div>
         </div>
       </section>

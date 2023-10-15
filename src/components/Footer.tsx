@@ -32,7 +32,7 @@ const Footer = () => {
                                 About Fasilkom
                             </Link>
                             <Link
-                                href={"/register"}
+                                href={"/registration"}
                                 className="hover:text-aqua-2 transition-colors duration-300 ease-out"
                             >
                                 Registration
@@ -149,7 +149,7 @@ const Footer = () => {
                                             })
                                         })
                                     }}
-                                    className="hover:text-aqua-2 transition-colors duration-300 ease-out flex text-white active:text-white-3 hover:cursor-grab active:cursor-grabbing"
+                                    className="hover:text-aqua-2 transition-colors duration-300 ease-out flex text-white active:text-white-3 hover:cursor-pointer"
                                 >
                                     openhouse@cs.ui.ac.id
                                     <span className="ml-2 grid place-content-center pt-1">

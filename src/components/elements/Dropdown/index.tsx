@@ -13,7 +13,7 @@ export const Dropdown: React.FC<Questions> = ({
   };
 
   return (
-    <div className="flex bg-shimmerGreen-2 bg-opacity-30 backdrop-blur rounded-lg hover:cursor-grab" onClick={toggleDropdown}>
+    <div className="flex bg-shimmerGreen-2 bg-opacity-30 backdrop-blur rounded-lg hover:cursor-pointer" onClick={toggleDropdown}>
       <div className="flex flex-row justify-between items-center">
         <div className="text-left mx-4 my-4 w-full sm:w-[75%] overflow-hidden">
 
