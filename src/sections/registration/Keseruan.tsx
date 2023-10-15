@@ -36,13 +36,13 @@ export default function Keseruan() {
   const [fullMode, setFullMode] = useState(true)
   return (
     <section className="bg-[url(/registration/bg-keseruan.png)] bg-cover min-h-[130vh] bg-center mt-10 py-10 flex flex-col items-center">
-      <h1 className="mt-32 font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white">
+      <h1 className="mt-32 font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white text-center px-5">
         Ikuti Keseruan yang Ada di Open House
       </h1>
       <Tabs
         buttonsText={["Full Experience", "Online Experience"]}
         defaultIndex={0}
-        className="w-1/2 mx-auto text-xs my-12"
+        className="sm:w-1/2 w-4/5 mx-auto text-xs my-12"
         onClicks={[
           () => setFullMode(true),
           () => setFullMode(false),
@@ -51,7 +51,7 @@ export default function Keseruan() {
       <div className="w-full flex items-center justify-center">
         {fullMode ? (
             <Carousel
-              withIndicators
+              controlsOffset="xs"
               slideSize="33.333%"
               slideGap="sm"
               slidesToScroll={1}
@@ -59,7 +59,7 @@ export default function Keseruan() {
               height={250}
               align="start"
               breakpoints={[
-                { maxWidth: 'md', slideSize: '50%' },
+                { maxWidth: 'md', slideSize: '49.8%' },
                 { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },
               ]}
               previousControlIcon={
@@ -86,7 +86,7 @@ export default function Keseruan() {
               ))}
             </Carousel>
         ) : (
-          <div className="border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5">
+          <div className="border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5 mx-10">
             <div className="h-5/6 w-full flex items-center justify-center object-contain">
               <Image src="/icon/registration/icon-connect.png" alt="" width={100} height={100} className="object-contain h-full w-full"/>
             </div>
