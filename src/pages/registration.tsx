@@ -13,12 +13,13 @@ export default function Home() {
   const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
   const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_1 || "2023-10-21T23:59:59+0700")
   const is_counting = new Date() < countdown
+  const open_reg = new Date() < next_countdown
 
   return (
     <main className="bg-black-1">
       <section className="bg-[url(/registration/bg-countdown.png)] bg-cover bg-center min-h-screen flex items-center justify-center relative pt-16">
         {/* <Image src="/home/background-header.png" alt="" width={1440} height={900} className="absolute top-0 left-0 object-cover brightness-[.6]" /> */}
-        <div className="mt-10 z-10 text-center flex flex-col items-center justify-center gap-4 sm:gap-7 mx-5 backdrop-blur bg-black-3 sm:px-16 py-10 rounded-3xl border-2 border-green-300">
+        <div className="sm:mt-10 z-10 text-center flex flex-col items-center justify-center gap-4 sm:gap-7 mx-5 backdrop-blur bg-black-3 sm:px-16 py-10 rounded-3xl border-2 border-green-300">
           <h1 className="font-satoshi text-white-1 bg-clip-text font-extrabold text-3xl sm:text-5xl drop-shadow-sm shadow-white px-5">
             OPEN REGISTRATION
             <br />
@@ -55,12 +56,31 @@ export default function Home() {
                 Register Now
               </Button>
             ) : (
-              <Link target="_blank" href="https://forms.gle/NE545DK7YVqYf5Vg7">
-                <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
+              <>
+              {open_reg ? (
+                <Link target="_blank" href="https://forms.gle/NE545DK7YVqYf5Vg7">
+                  <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
+                    <HiChevronDoubleRight />
+                    Register Now
+                  </Button>
+                </Link>
+              ) : (
+                <Button 
+                  variant="primary"
+                  className="opacity-30 font-satoshi font-bold sm:w-auto w-full"
+                  onClick={() => {
+                    notifications.show({
+                      title: 'Hi AInergic untuk sekarang registrasi telah ditutup yaa',
+                      message: 'Bagi kalian yang masih ingin menjadi bagian dari Open House Fasilkom UI, tunggu kabar dari kami yaa',
+                      color: "red"
+                    })
+                  }}
+                >
                   <HiChevronDoubleRight />
                   Register Now
                 </Button>
-              </Link>
+              )}
+              </>
             )}
           </div>
         </div>

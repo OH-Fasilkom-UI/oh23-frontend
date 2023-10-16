@@ -124,7 +124,7 @@ export default function Keseruan() {
               ))}
             </Carousel>
         ) : (
-          <div onClick={() => {setSelectedEvent(events[1]); setShowModal(true)}} className="hover:cursor-pointer border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5 mx-10">
+          <div onClick={() => {setSelectedEvent(events[4]); setShowModal(true)}} className="hover:cursor-pointer border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5 mx-10">
             <div className="h-5/6 w-full flex items-center justify-center object-contain">
               <Image src="/icon/registration/icon-connect.png" alt="" width={100} height={100} className="object-contain h-full w-full"/>
             </div>
