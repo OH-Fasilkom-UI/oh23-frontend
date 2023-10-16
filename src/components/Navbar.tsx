@@ -50,9 +50,6 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const next_countdown = new Date("2023-10-17T12:00:00+0700")
-    const is_counting = new Date() < next_countdown
-
     return (
         <nav className={`border-2 bg-black border-gray-100 fixed top-0 md:top-2 left-1/2 -translate-x-1/2 w-full md:w-11/12 md:rounded-md  md:border-2 flex items-center px-5 py-2 gap-4 justify-between transition-all duration-500 z-50 backdrop-blur ${y > 100 ? "md:top-6 md:scale-95 border-opacity-20" : "border-opacity-10"}`}>
             <Link href="/">
@@ -71,12 +68,10 @@ const Navbar = () => {
                     <HiBuildingOffice2 />
                     <span className='text-white'>About Fasilkom</span>
                 </NavLink>
-                {is_counting &&
-                    <NavLink href='/registration' isActive={router.pathname === "/registration"} disabled={false}>
-                        <HiDocumentText />
-                        <span className='text-white'>Registration</span>
-                    </NavLink>
-                }
+                <NavLink href='/registration' isActive={router.pathname === "/registration"} disabled={false}>
+                    <HiDocumentText />
+                    <span className='text-white'>Registration</span>
+                </NavLink>
                 <NavLink href='' isActive={router.pathname === "/wall-of-fame"} disabled>
                     <HiUserGroup />
                     <span className='text-white'>Wall of Fame</span>

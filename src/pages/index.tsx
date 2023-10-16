@@ -9,10 +9,9 @@ import WTS from "@/sections/home/WTS";
 import VideoOH from "@/sections/home/VideoOH";
 
 export default function Home() {
-  const countdown = new Date("2023-10-17T12:00:00+0700")
-  const next_countdown = new Date("2023-10-21T23:59:59+0700")
+  const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
+  const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_1 || "2023-10-21T23:59:59+0700")
   const is_counting = new Date() < countdown
-
 
   return (
     <main className="bg-[#000]">

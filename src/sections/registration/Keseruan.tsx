@@ -13,6 +13,17 @@ const events: {
   location: string
 }[] = [
   {
+    img: "/icon/registration/icon-connect.png",
+    title: "CS Connect",
+    desc: `CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
+    menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi 
+    talkshow berakhir, peserta akan di-assign ke masing-masing breakout room untuk melaksanakan Mentoring 
+    Online dengan mentornya masing-masing dari LO. Materi yang diberikan akan berupa pengenalan jurusan 
+    yang ada di Fasilkom UI dan informasi teknis kegiatan pada Main Event selanjutnya.`,
+    date: "Minggu, 5 November 2023",
+    location: "Zoom Meeting"
+  },
+  {
     img: "/icon/registration/icon-tourdecampus.png",
     title: "Tour de Campus",
     desc: `Tour de Campus Fasilkom UI merupakan rangkaian acara utama pada Open House Fasilkom UI, dimana 
@@ -20,8 +31,8 @@ const events: {
     Mentoring Session, Fun coding, Interactive Class, Exhibition, Wall of Dream, Parent’s Talkshow, 
     dan Grand Closing. Pada Tour de Campus Fasilkom UI ini peserta akan berinteraksi secara langsung 
     dengan para civitas Fasilkom UI sehingga dapat memperluas wawasan peserta tentang Fasilkom.`,
-    date: "Sabtu, 28 Oktober 2023",
-    location: "Zoom Meeting"
+    date: "Sabtu, 18 November 2023",
+    location: "Gedung Baru dan Gedung Lama Fasilkom UI"
   },
   {
     img: "/icon/registration/icon-funcoding.png",
@@ -29,8 +40,8 @@ const events: {
     desc: `Kegiatan ini merupakan salah satu ciri khas yang dimiliki Open House Fasilkom UI dari tahun ke 
     tahun di mana para peserta mencoba menulis program secara langsung. Acara ini akan dikemas seperti 
     sebuah permainan yang fun sehingga para peserta merasa bahwa coding itu seperti sedang memainkan game.`,
-    date: "Sabtu, 28 Oktober 2023",
-    location: "Zoom Meeting"
+    date: "Sabtu, 18 November 2023",
+    location: "Lab Komputer Gedung Baru Fasilkom UI"
   },
   {
     img: "/icon/registration/icon-class.png",
@@ -39,8 +50,8 @@ const events: {
     pengalaman diajar langsung oleh dosen-dosen Fasilkom UI yang telah ditentukan. Kelas akan dibuat 
     interaktif dengan memaksimalkan komunikasi serta pemanfaatan alat peraga untuk mendukung penyampaian 
     materi yang disampaikan.`,
-    date: "Sabtu, 28 Oktober 2023",
-    location: "Zoom Meeting"
+    date: "Sabtu, 18 November 2023",
+    location: "Gedung Lama Fasilkom UI"
   },
   {
     img: "/icon/registration/icon-talkshow.png",
@@ -52,19 +63,8 @@ const events: {
     informasi seputar pendaftaran dan biaya kuliah di Fasilkom UI, prospek pekerjaan lulusan Fasilkom UI, 
     dan banyak hal lainnya. Para orang tua juga diberi kesempatan untuk mengajukan pertanyaan kepada 
     pembawa acara.`,
-    date: "Sabtu, 28 Oktober 2023",
-    location: "Zoom Meeting"
-  },
-  {
-    img: "/icon/registration/icon-connect.png",
-    title: "CS Connect",
-    desc: `CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
-    menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi 
-    talkshow berakhir, peserta akan di-assign ke masing-masing breakout room untuk melaksanakan Mentoring 
-    Online dengan mentornya masing-masing dari LO. Materi yang diberikan akan berupa pengenalan jurusan 
-    yang ada di Fasilkom UI dan informasi teknis kegiatan pada Main Event selanjutnya.`,
-    date: "Sabtu, 28 Oktober 2023",
-    location: "Zoom Meeting"
+    date: "Sabtu, 18 November 2023",
+    location: "Auditorium Gedung Lama Fasilkom UI"
   },
 ]
 
@@ -124,7 +124,7 @@ export default function Keseruan() {
               ))}
             </Carousel>
         ) : (
-          <div onClick={() => {setSelectedEvent(events[4]); setShowModal(true)}} className="hover:cursor-pointer border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5 mx-10">
+          <div onClick={() => {setSelectedEvent(events[0]); setShowModal(true)}} className="hover:cursor-pointer border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5 mx-10">
             <div className="h-5/6 w-full flex items-center justify-center object-contain">
               <Image src="/icon/registration/icon-connect.png" alt="" width={100} height={100} className="object-contain h-full w-full"/>
             </div>

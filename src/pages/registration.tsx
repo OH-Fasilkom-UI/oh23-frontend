@@ -10,8 +10,8 @@ import FAQ from "@/sections/registration/FAQ";
 import ContactPerson from "@/sections/registration/ContactPerson";
 
 export default function Home() {
-  const countdown = new Date("2023-10-17T12:00:00+0700")
-  const next_countdown = new Date("2023-10-21T23:59:59+0700")
+  const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
+  const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_1 || "2023-10-21T23:59:59+0700")
   const is_counting = new Date() < countdown
 
   return (
@@ -33,16 +33,6 @@ export default function Home() {
             <h3 className="text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
           </div>
             <div className="flex sm:flex-row flex-col items-center gap-3">
-              {is_counting ? 
-                <div className="flex items-center gap-3">
-                  <Link href="#keseruan">
-                    <Button variant="primary" className="font-satoshi font-bold">
-                      <HiBookOpen />
-                      Learn More
-                    </Button>
-                  </Link>
-                </div>
-              :
                 <div className="flex items-center gap-3">
                   <Link href="#keseruan">
                     <Button variant="secondary" className="font-satoshi font-bold">
@@ -50,14 +40,30 @@ export default function Home() {
                       Learn More
                     </Button>
                   </Link>
-                  <Link target="_blank" href="https://forms.gle/NE545DK7YVqYf5Vg7">
-                    <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
+                  {is_counting ? (
+                    <Button 
+                      variant="primary"
+                      className="opacity-30 sm:w-auto w-full font-satoshi font-bold"
+                      onClick={() => {
+                        notifications.show({
+                          title: 'Hi AInergic, sesaat lagi registrasi Open House Fasilkom UI akan dibuka',
+                          message: 'Silahkan cek lagi web page ini pada pukul 12.00 WIB, 17 Oktober yaa. See you soon!',
+                          color: "red"
+                        })
+                      }}
+                    >
                       <HiChevronDoubleRight />
                       Register Now
                     </Button>
-                  </Link>
+                  ) : (
+                    <Link target="_blank" href="https://forms.gle/NE545DK7YVqYf5Vg7">
+                      <Button variant="primary" className="sm:w-auto w-full font-satoshi font-bold">
+                        <HiChevronDoubleRight />
+                        Register Now
+                      </Button>
+                    </Link>
+                  )}
                 </div>
-              }
             </div>
         </div>
       </section>
