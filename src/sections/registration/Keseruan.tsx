@@ -13,17 +13,6 @@ const events: {
   location: string
 }[] = [
   {
-    img: "/icon/registration/icon-connect.png",
-    title: "CS Connect",
-    desc: `CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
-    menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi 
-    talkshow berakhir, peserta akan di-assign ke masing-masing breakout room untuk melaksanakan Mentoring 
-    Online dengan mentornya masing-masing dari LO. Materi yang diberikan akan berupa pengenalan jurusan 
-    yang ada di Fasilkom UI dan informasi teknis kegiatan pada Main Event selanjutnya.`,
-    date: "Minggu, 5 November 2023",
-    location: "Zoom Meeting"
-  },
-  {
     img: "/icon/registration/icon-tourdecampus.png",
     title: "Tour de Campus",
     desc: `Tour de Campus Fasilkom UI merupakan rangkaian acara utama pada Open House Fasilkom UI, dimana 
@@ -65,6 +54,17 @@ const events: {
     pembawa acara.`,
     date: "Sabtu, 18 November 2023",
     location: "Auditorium Gedung Lama Fasilkom UI"
+  },
+  {
+    img: "/icon/registration/icon-connect.png",
+    title: "CS Connect",
+    desc: `CS Connect adalah kegiatan yang akan diisi dengan Talkshow Online di main room Zoom dengan 
+    menghadirkan pengisi acara yang akan membawakan informasi-informasi tentang Fasilkom UI. Setelah sesi 
+    talkshow berakhir, peserta akan di-assign ke masing-masing breakout room untuk melaksanakan Mentoring 
+    Online dengan mentornya masing-masing dari LO. Materi yang diberikan akan berupa pengenalan jurusan 
+    yang ada di Fasilkom UI dan informasi teknis kegiatan pada Main Event selanjutnya.`,
+    date: "Minggu, 5 November 2023",
+    location: "Zoom Meeting"
   },
 ]
 
@@ -124,7 +124,7 @@ export default function Keseruan() {
               ))}
             </Carousel>
         ) : (
-          <div onClick={() => {setSelectedEvent(events[0]); setShowModal(true)}} className="hover:cursor-pointer border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5 mx-10">
+          <div onClick={() => {setSelectedEvent(events[1]); setShowModal(true)}} className="hover:cursor-pointer border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col justify-between gap-4 h-[250px] pt-10 pb-10 px-5 mx-10">
             <div className="h-5/6 w-full flex items-center justify-center object-contain">
               <Image src="/icon/registration/icon-connect.png" alt="" width={100} height={100} className="object-contain h-full w-full"/>
             </div>

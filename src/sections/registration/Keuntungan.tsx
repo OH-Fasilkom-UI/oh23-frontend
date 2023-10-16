@@ -5,19 +5,19 @@ const benefits: {
   desc: string
 }[] = [
   {
-    img: "https://hololive.hololivepro.com/wp-content/uploads/2022/04/%E3%82%AB%E3%83%AA%E3%82%AA%E3%83%9A.png",
+    img: "/home/cs-connect.png",
     desc: "Relasi"
   },
   {
-    img: "https://hololive.hololivepro.com/wp-content/uploads/2023/01/Takanashi-Kiara_thumb.png",
+    img: "/registration/campus-tour.jpg",
     desc: "Campus Tour"
   },
   {
-    img: "https://hololive.hololivepro.com/wp-content/uploads/2022/04/%E3%81%84%E3%81%AA%E3%81%AB%E3%81%99.png",
+    img: "/registration/coding-exp.jpg",
     desc: "Coding Experience"
   },
   {
-    img: "https://hololive.hololivepro.com/wp-content/uploads/2022/04/%E3%81%90%E3%82%89.png",
+    img: "/registration/interactive-class.jpg",
     desc: "Interactive Class"
   },
 ]
@@ -32,7 +32,7 @@ export default function Keuntungan() {
         {benefits.map((benefit, index) => (
           <div key={index} className="h-full border-green-300 border-2 shadow backdrop-blur-3xl rounded-lg items-center flex flex-col gap-4 pt-10 pb-6 px-5">
             <div className="sm:w-5/6 w-full  flex items-center justify-center object-contain">
-              <Image src={benefit.img} alt="" width={100} height={100} className="object-contain h-full w-full"/>
+              <Image src={benefit.img} alt="" width={100} height={100} className="object-contain h-full w-full rounded-2xl"/>
             </div>
             <p className="flex justify-center items-center font-satoshi text-white-1 font-extrabold text-center">{benefit.desc}</p>
           </div>     
