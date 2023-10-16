@@ -41,9 +41,9 @@ const FAQ = () => {
                         Frequently Asked Questions
                     </h3>
                 </div>
-                <div className="flex flex-col my-8 items-center px-5">
+                <div className="flex flex-col my-8 items-center px-5 w-full">
                     {contentData.map((item, index) => (
-                        <div className="my-2 items-center sm:w-4/5" key={index}>
+                        <div className="my-2 items-center sm:w-4/5 w-full" key={index}>
                             <Dropdown header={item.header} body={item.body} />
                         </div>
                     ))}

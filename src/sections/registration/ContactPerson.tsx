@@ -20,7 +20,12 @@ const ContactPerson = () => {
             className="w-full"
           >
             <Button variant="primary" className="w-full">
-              <BsWhatsapp /> Open House Fasilkom UI
+              <div>
+                <BsWhatsapp />
+              </div>
+              <p>
+                Open House Fasilkom UI
+              </p>
             </Button>
           </a>
         </div>

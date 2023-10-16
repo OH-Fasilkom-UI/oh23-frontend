@@ -27,7 +27,7 @@ export default function Home() {
             <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : "Close registration"}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
             <Countdown date={is_counting ? countdown : next_countdown} />
-            <h3 className="text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
+            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
           </div>
             <div className="flex items-center gap-3">
               <Link href="#definition">
