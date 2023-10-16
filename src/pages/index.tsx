@@ -2,16 +2,17 @@ import Image from "next/image";
 import { Button } from "@/components/elements/Button";
 import { Countdown } from "@/components/elements/Countdown";
 import { HiBookOpen, HiChevronDoubleRight } from "react-icons/hi2";
-// import { useEffect } from "react";
-import Timeline from "@/components/Timeline";
+import Timeline from "@/sections/home/Timeline";
 import Link from "next/link";
 import Definition from "@/sections/home/Definition";
 import WTS from "@/sections/home/WTS";
 import VideoOH from "@/sections/home/VideoOH";
 
 export default function Home() {
-  const next_countdown = new Date("2023-10-17T12:00:00+0700")
-  const is_counting = new Date() < next_countdown
+  const countdown = new Date("2023-10-17T12:00:00+0700")
+  const next_countdown = new Date("2023-10-21T23:59:59+0700")
+  const is_counting = new Date() < countdown
+
 
   return (
     <main className="bg-[#000]">
@@ -24,34 +25,19 @@ export default function Home() {
             FASILKOM 2023
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
-            <h2 className="text-2xl mb-2 font-semibold font-satoshi">Open registration</h2>
+            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : "Close registration"}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
-            <Countdown date={next_countdown} />
-            <h3 className="text-sm sm:text-lg font-bold">17 Oktober 2023, 12:00 GMT+7</h3>
+            <Countdown date={is_counting ? countdown : next_countdown} />
+            <h3 className="text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
           </div>
-            {is_counting ? 
-              <div className="flex items-center gap-3">
-                <Link href="#definition">
-                  <Button variant="primary" className="font-satoshi font-bold">
-                    <HiBookOpen />
-                    Learn More
-                  </Button>
-                </Link>
-              </div>
-            :
-              <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3">
+              <Link href="#definition">
                 <Button variant="primary" className="font-satoshi font-bold">
-                  <HiChevronDoubleRight />
-                  Register Now
+                  <HiBookOpen />
+                  Learn More
                 </Button>
-                <Link href="#definition">
-                  <Button variant="secondary" className="font-satoshi font-bold">
-                    <HiBookOpen />
-                    Learn More
-                  </Button>
-                </Link>
-              </div>
-            }
+              </Link>
+            </div>
         </div>
       </section>
       <section id="definition" className="my-20">
@@ -69,7 +55,6 @@ export default function Home() {
       <section className="pb-20">
         <WTS/>
       </section>
-
     </main>
 
   );

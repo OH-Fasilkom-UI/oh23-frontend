@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import dynamic, { DynamicOptions } from "next/dynamic";
-import DayaTampung from "@/components/DayaTampung";
-import Image from "next/image";
+import React, { useState } from "react";
+import dynamic from "next/dynamic";
+import DayaTampung from "@/sections/about/DayaTampung";
 import { Card } from "@/components/elements/Card";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
 import { v4 as uuidv4 } from "uuid";
@@ -10,10 +9,6 @@ import { ListPrestasi } from '@/sections/about/ListPrestasi'
 import { WhatIsPacil } from '@/sections/about/WhatIsPacil'
 import FAQ from '@/sections/about/FAQ'
 import View360 from "@/sections/about/View360";
-
-import IProps from "react-spring-3d-carousel";
-
-import { ComponentType, ComponentClass } from "react";
 
 const Carousel = dynamic(() => import("@/components/elements/Carousel"), {
   ssr: false,
@@ -315,7 +310,7 @@ const AboutPage = () => {
       <section className="my-20">
         <DayaTampung />
       </section>
-      <section className="my-20">
+      <section className="pb-20">
         <FAQ/>
       </section>
     </main>

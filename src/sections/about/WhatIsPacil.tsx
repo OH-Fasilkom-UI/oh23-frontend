@@ -40,7 +40,6 @@ export const WhatIsPacil = () => {
           </div>
         </div>
         <Carousel
-          withIndicators
           height={372}
           loop
           align="center"

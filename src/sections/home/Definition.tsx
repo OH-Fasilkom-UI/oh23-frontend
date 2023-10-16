@@ -44,7 +44,6 @@ export default function Definition() {
           </a>
           {/* TODO: Add responsiveness */}
           <Carousel
-            withIndicators
             height={372}
             slideSize="25%"
             slideGap="sm"
