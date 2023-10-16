@@ -54,12 +54,12 @@ const Navbar = () => {
     const is_counting = new Date() < next_countdown
 
     return (
-        <nav className={`border-2 bg-black border-gray-100 fixed top-0 sm:top-2 left-1/2 -translate-x-1/2 w-full md:w-11/12 sm:rounded-md  sm:border-2 flex items-center px-5 py-2 gap-4 justify-between transition-all duration-500 z-50 backdrop-blur ${y > 100 ? "sm:top-6 sm:scale-95 border-opacity-20" : "border-opacity-10"}`}>
+        <nav className={`border-2 bg-black border-gray-100 fixed top-0 md:top-2 left-1/2 -translate-x-1/2 w-full md:w-11/12 md:rounded-md  md:border-2 flex items-center px-5 py-2 gap-4 justify-between transition-all duration-500 z-50 backdrop-blur ${y > 100 ? "md:top-6 md:scale-95 border-opacity-20" : "border-opacity-10"}`}>
             <Link href="/">
                 <Image src="/logo.png" alt="OH 2023" width={64} height={64} />
             </Link>
-            <div onClick={() => setIsOpen(false)} className={`z-20 fixed top-0 ${isOpen ? "left-0" : "-left-full"} sm:static transition-all duration-500 bg-black-1 sm:bg-transparent w-full font-normal sm:w-max h-screen sm:h-full flex flex-col sm:flex-row text-xl sm:text-base bg-opacity-10 backdrop-blur items-center gap-4 flex-1 justify-evenly`}>
-                <Link href="/" className='flex items-center justify-center sm:hidden'>
+            <div onClick={() => setIsOpen(false)} className={`z-20 fixed top-0 ${isOpen ? "left-0" : "-left-full"} md:static transition-all duration-500 bg-black-1 md:bg-transparent w-full font-normal md:w-max h-screen md:h-full flex flex-col md:flex-row text-xl md:text-base bg-opacity-10 backdrop-blur items-center gap-4 flex-1 justify-evenly`}>
+                <Link href="/" className='flex items-center justify-center md:hidden'>
                     <Image src="/logo.png" alt="OH 2023" width={64} height={64} />
                     <span className='text-white font-satoshi text-3xl font-semibold text-white-1'>OH 2023</span>
                 </Link>
@@ -85,11 +85,11 @@ const Navbar = () => {
                     <HiShoppingBag />
                     <span className='text-white'>Merchandise</span>
                 </NavLink>
-                <button onClick={() => setIsOpen(false)} className='sm:hidden'>
+                <button onClick={() => setIsOpen(false)} className='md:hidden'>
                   <HiX className='text-white-1 text-3xl' />
                 </button>
             </div>
-            <button onClick={() => setIsOpen(true)} className='sm:hidden'>
+            <button onClick={() => setIsOpen(true)} className='md:hidden'>
                 <HiMenuAlt3 className='text-white-1 text-3xl' />
             </button>
         </nav>

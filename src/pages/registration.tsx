@@ -22,7 +22,9 @@ export default function Home() {
           <h1 className="font-satoshi text-white-1 bg-clip-text font-extrabold text-3xl sm:text-5xl drop-shadow-sm shadow-white px-5">
             OPEN REGISTRATION
             <br />
+            <span className="text-lg sm:text-2xl">
             OPEN HOUSE FASILKOM 2023
+            </span>
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
           <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : "Close registration"}</h2>
