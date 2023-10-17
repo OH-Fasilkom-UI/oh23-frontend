@@ -83,7 +83,7 @@ export default function Timeline() {
                 <Tab.Panel className='grid place-items-center'>
                     <OurBloodyPerfectTimelineCard
                         title='Tour de Campus Fasilkom UI'
-                        time='2023-11-17'
+                        time='2023-11-18'
                         image='/home/tour.png'
                         description='Tour de Campus Fasilkom UI merupakan rangkaian acara utama pada Open House Fasilkom UI, dimana 
                         peserta akan datang ke Fasilkom UI dan melakukan serangkaian acara, seperti Tour Fasilkom UI, Mentoring Session, 
