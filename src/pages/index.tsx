@@ -12,6 +12,7 @@ export default function Home() {
   const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
   const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_1 || "2023-10-21T23:59:59+0700")
   const is_counting = new Date() < countdown
+  const open_reg = new Date() < next_countdown
 
   return (
     <main className="bg-[#000]">
@@ -24,7 +25,7 @@ export default function Home() {
             FASILKOM 2023
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
-            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : "Close registration"}</h2>
+            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : <>{open_reg ? "Registration will be closed" : "Registration closed"}</>}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
             <Countdown date={is_counting ? countdown : next_countdown} />
             <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
