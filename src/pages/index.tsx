@@ -9,8 +9,9 @@ import WTS from "@/sections/home/WTS";
 import VideoOH from "@/sections/home/VideoOH";
 
 export default function Home() {
-  const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
-  const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_1 || "2023-10-21T23:59:59+0700")
+  const bef_countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
+  const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_2 || "2023-10-17T12:00:00+0700")
+  const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_2 || "2023-10-21T23:59:59+0700")
   const is_counting = new Date() < countdown
   const open_reg = new Date() < next_countdown
 
@@ -25,10 +26,10 @@ export default function Home() {
             FASILKOM 2023
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
-            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : <>{open_reg ? "Registration will be closed" : "Registration closed"}</>}</h2>
+            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Registration closed" : <>{open_reg ? "Registration is extended" : "Registration closed"}</>}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
-            <Countdown date={is_counting ? countdown : next_countdown} />
-            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
+            <Countdown date={is_counting ? bef_countdown : next_countdown} />
+            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "21 Oktober 2023, 23:59 GMT+7" :  "1 November 2023, 23:59 GMT+7"}</h3>
           </div>
             <div className="flex items-center gap-3">
               <Link href="#definition">
