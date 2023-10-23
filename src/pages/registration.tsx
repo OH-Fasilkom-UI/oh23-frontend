@@ -10,8 +10,9 @@ import FAQ from "@/sections/registration/FAQ";
 import ContactPerson from "@/sections/registration/ContactPerson";
 
 export default function Home() {
-  const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
-  const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_1 || "2023-10-21T23:59:59+0700")
+  const bef_countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
+  const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_2 || "2023-10-17T12:00:00+0700")
+  const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_2 || "2023-10-21T23:59:59+0700")
   const is_counting = new Date() < countdown
   const open_reg = new Date() < next_countdown
 
@@ -28,10 +29,10 @@ export default function Home() {
             </span>
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full px-2">
-            <h2 className="text-xl mb-2 font-semibold font-satoshi">{is_counting ? "Open registration" : <>{open_reg ? "" : "Registration closed"}</>}</h2>
+            <h2 className="text-xl mb-2 font-semibold font-satoshi">{is_counting ? "Registration closed" : <>{open_reg ? "Registration is extended" : "Registration closed"}</>}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
-            <Countdown date={is_counting ? countdown : next_countdown} />
-            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "17 Oktober 2023, 12:00 GMT+7" : "21 Oktober 2023, 23:59 GMT+7"}</h3>
+            <Countdown date={is_counting ? bef_countdown : next_countdown} />
+            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "21 Oktober 2023, 23:59 GMT+7" : "1 November 2023, 23:59 GMT+7"}</h3>
           </div>
           <div className="flex sm:flex-row flex-col-reverse items-center gap-3">
             <Link href="#keseruan" className="sm:w-auto w-full">
@@ -46,8 +47,8 @@ export default function Home() {
                 className="opacity-30 font-satoshi font-bold sm:w-auto w-full"
                 onClick={() => {
                   notifications.show({
-                    title: 'Hi AInergic, sesaat lagi registrasi Open House Fasilkom UI akan dibuka',
-                    message: 'Silahkan cek lagi web page ini pada pukul 12.00 WIB, 17 Oktober yaa. See you soon!',
+                    title: 'Hi AInergic untuk sekarang registrasi telah ditutup yaa',
+                    message: 'Bagi kalian yang masih ingin menjadi bagian dari Open House Fasilkom UI, tunggu kabar dari kami yaa',
                     color: "red"
                   })
                 }}

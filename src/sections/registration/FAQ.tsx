@@ -19,7 +19,7 @@ const contentData: {
     },
     {
         header: "Batas waktu pendaftaran sampai kapan?",
-        body: `Untuk batas pendaftaran cuma sampai tanggal 21 Oktober 2023, Yuk langsung aja daftar!`,
+        body: `Untuk batas pendaftaran cuma sampai tanggal 1 November 2023, Yuk langsung aja daftar!`,
     },
     {
         header: "Semigap/Gapyear boleh ikut?",
