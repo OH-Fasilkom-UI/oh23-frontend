@@ -29,7 +29,7 @@ export default function Home() {
             </span>
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full px-2">
-            <h2 className="text-xl mb-2 font-semibold font-satoshi">{is_counting ? "Registration closed" : <>{open_reg ? "Registration is extended" : "Registration closed"}</>}</h2>
+            <h2 className="text-xl mb-2 font-semibold font-satoshi">{is_counting ? "Registration closed" : <>{open_reg ? "Registration will be closed" : "Registration closed"}</>}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
             <Countdown date={is_counting ? bef_countdown : next_countdown} />
             <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "21 Oktober 2023, 23:59 GMT+7" : "1 November 2023, 23:59 GMT+7"}</h3>
