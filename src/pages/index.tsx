@@ -9,12 +9,16 @@ import WTS from "@/sections/home/WTS";
 import VideoOH from "@/sections/home/VideoOH";
 
 export default function Home() {
-  const bef_countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_1 || "2023-10-17T12:00:00+0700")
-  const countdown = new Date(process.env.NEXT_PUBLIC_OPEN_REG_2 || "2023-10-17T12:00:00+0700")
-  const next_countdown = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_2 || "2023-10-21T23:59:59+0700")
-  const is_counting = new Date() < countdown
-  const open_reg = new Date() < next_countdown
-
+  // close reg 2
+  const countdown_1 = new Date(process.env.NEXT_PUBLIC_CLOSE_REG_2 || "2023-10-21T23:59:59+0700")
+  const is_counting_1 = new Date() < countdown_1
+  // CS connect
+  const countdown_2 = new Date(process.env.NEXT_PUBLIC_CS_CONNECT || "2023-11-05T13:00:00+0700")
+  const is_counting_2 = new Date() < countdown_2
+  // Main Event
+  const countdown_3 = new Date(process.env.NEXT_PUBLIC_MAIN_EVENT || "2023-11-18T00:00:00+0700")
+  const is_counting_3 = new Date() < countdown_3
+  
   return (
     <main className="bg-[#000]">
       <section className="bg-[url(/home/background-header.png)] bg-cover bg-center min-h-screen flex items-center justify-center relative">
@@ -26,10 +30,10 @@ export default function Home() {
             FASILKOM 2023
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
-            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting ? "Registration closed" : <>{open_reg ? "Registration is extended" : "Registration closed"}</>}</h2>
+            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting_1 ? "Registration will be closed" : <>{is_counting_2 ? "CS CONNECT" : "MAIN EVENT"}</>}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
-            <Countdown date={is_counting ? bef_countdown : next_countdown} />
-            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting ? "21 Oktober 2023, 23:59 GMT+7" :  "1 November 2023, 23:59 GMT+7"}</h3>
+            <Countdown date={is_counting_1 ? countdown_1 : (is_counting_2 ? countdown_2 : countdown_3)} />
+            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting_1 ? "1 November 2023, 23:59 GMT+7" : (is_counting_2 ? "5 November 2023, 13:00 GMT+7" : "18 November 2023, 08:00 GMT+7")}</h3>
           </div>
             <div className="flex items-center gap-3">
               <Link href="#definition">
