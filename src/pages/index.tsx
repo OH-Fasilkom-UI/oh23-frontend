@@ -30,10 +30,10 @@ export default function Home() {
             FASILKOM 2023
           </h1>
           <div className="font-satoshi text-center flex flex-col items-center text-lg w-full">
-            <h2 className="text-2xl mb-2 font-semibold font-satoshi">{is_counting_1 ? "Registration will be closed" : <>{is_counting_2 ? "CS CONNECT" : "MAIN EVENT"}</>}</h2>
+            <h2 className="sm:text-2xl text-lg mb-2 font-semibold font-satoshi">{is_counting_1 ? "Registration will be closed" : <>{is_counting_2 ? "CS CONNECT" : <>Tour de Campus Fasilkom UI</>}</>}</h2>
             <Image src="/home/countdown-arrow.svg" alt="" width={100} height={100}/>
             <Countdown date={is_counting_1 ? countdown_1 : (is_counting_2 ? countdown_2 : countdown_3)} />
-            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting_1 ? "1 November 2023, 23:59 GMT+7" : (is_counting_2 ? "5 November 2023, 13:00 GMT+7" : "18 November 2023, 08:00 GMT+7")}</h3>
+            <h3 className="mt-2 text-sm sm:text-lg font-bold">{is_counting_1 ? "1 November 2023, 23:59 GMT+7" : (is_counting_2 ? "5 November 2023, 13:00 GMT+7" : "18 November 2023, 07:00 GMT+7")}</h3>
           </div>
             <div className="flex items-center gap-3">
               <Link href="#definition">
