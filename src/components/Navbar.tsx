@@ -76,7 +76,7 @@ const Navbar = () => {
                     <HiUserGroup />
                     <span className='text-white'>Wall of Fame</span>
                 </NavLink>
-                <NavLink href='' isActive={router.pathname === "/merchandise"} disabled>
+                <NavLink href='/merchandise' isActive={router.pathname === "/merchandise"} disabled={false}>
                     <HiShoppingBag />
                     <span className='text-white'>Merchandise</span>
                 </NavLink>

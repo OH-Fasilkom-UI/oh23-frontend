@@ -51,15 +51,8 @@ const Footer = () => {
                                 Wall of Fame
                             </Link>
                             <Link
-                                href={""}
-                                onClick={() => {
-                                    disabled && notifications.show({
-                                        title: 'Coming soon~',
-                                        message: '',
-                                        color: "red"
-                                    })
-                                }}
-                                className={` transition-colors duration-300 ease-out ${disabled ? "opacity-50" : "hover:text-aqua-2"}`}
+                                href={"/merchandise"}
+                                className={`transition-colors duration-300 ease-out hover:text-aqua-2`}
                             >
                                 Merchandise
                             </Link>
