@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Button } from "@/components/elements/Button";
 import { Countdown } from "@/components/elements/Countdown";
-import { HiBookOpen, HiChevronDoubleRight } from "react-icons/hi2";
+import { HiBookOpen } from "react-icons/hi2";
 import Timeline from "@/sections/home/Timeline";
 import Link from "next/link";
 import Definition from "@/sections/home/Definition";
 import WTS from "@/sections/home/WTS";
 import VideoOH from "@/sections/home/VideoOH";
+import Partner from "@/sections/home/Partner";
 
 export default function Home() {
   // close reg 2
@@ -46,12 +47,15 @@ export default function Home() {
         </div>
       </section>
       <section id="definition" className="my-20">
+        <Partner />
+      </section>
+      <section id="definition" className="my-20">
         <Definition />
       </section>
-        <h1 className="font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white text-center mb-5">
-          Timeline
-        </h1>
-        <Timeline/>
+      <h1 className="font-satoshi text-white-1 font-extrabold text-4xl sm:text-5xl drop-shadow-sm shadow-white text-center mb-5">
+        Timeline
+      </h1>
+      <Timeline/>
       <section className="my-20">
       </section>
       <section className="my-20">
