@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[939],{4939:function(e,i,s){s.r(i);var a=s(5893),n=s(4368),o=s.n(n);i.default=e=>{let{slides:i,goToSlide:s,offsetRadius:n,showNavigation:t,animationConfig:l,goToSlideDelay:u}=e;return(0,a.jsx)(o(),{slides:i,goToSlide:s,offsetRadius:n,showNavigation:t,animationConfig:l,goToSlideDelay:u})}}}]);
