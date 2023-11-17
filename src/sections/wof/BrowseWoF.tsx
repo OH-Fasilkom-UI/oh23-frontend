@@ -62,11 +62,11 @@ export const BrowseWoF = () => {
 
   return (
     <section className="flex flex-col items-center">
-      <div className="w-1/2 mt-10 absolute mx-4 flex justify-evenly rounded-xl">
-        <div onClick={() => setMahasiswa()} className={`hover:cursor-pointer transition-all border-x-4 duration-500 rounded-full w-1/2 flex justify-center bg-gradient-to-br via-black-1 to-black-1 py-5 font-bold ${Tab == "Mahasiswa" ? "text-white-1 border-green-400 from-screaminGreen-4" : "from-grass-4 border-black-1"}`}>
+      <div className="z-10 sm:w-1/2 w-3/4 mt-10 mx-4 -mb-20 flex justify-evenly rounded-xl">
+        <div onClick={() => setMahasiswa()} className={` hover:cursor-pointer transition-all border-x-4 duration-500 rounded-full w-1/2 flex justify-center bg-gradient-to-br via-black-1 to-black-1 sm:py-5 py-4 sm:text-lg text-sm font-bold ${Tab == "Mahasiswa" ? "text-white-1 border-green-400 from-screaminGreen-4" : "from-grass-4 border-black-1"}`}>
           Mahasiswa
         </div>
-        <div onClick={() => setAlumni()} className={`hover:cursor-pointer transition-all border-x-4 duration-500 rounded-full w-1/2 flex justify-center bg-gradient-to-br from-black-1 via-black-1 py-5 font-bold ${Tab == "Alumni" ? "text-white-1 border-green-400 to-screaminGreen-4" : "border-black-1 to-grass-4"}`}>
+        <div onClick={() => setAlumni()} className={` hover:cursor-pointer transition-all border-x-4 duration-500 rounded-full w-1/2 flex justify-center bg-gradient-to-br from-black-1 via-black-1 sm:py-5 py-4 sm:text-lg text-sm font-bold ${Tab == "Alumni" ? "text-white-1 border-green-400 to-screaminGreen-4" : "border-black-1 to-grass-4"}`}>
           Alumni
         </div>
       </div>
@@ -75,7 +75,7 @@ export const BrowseWoF = () => {
           <div className="sm:flex hidden w-5/12 pl-5 h-full items-center align-middle justify-center text-center text-white-1 md:text-5xl text-3xl font-bold font-satoshi">
             {Tab}
           </div>
-          <div className={`sm:w-7/12 ${Tab == "Mahasiswa" ? "h-full" : "h-max"} w-full grid sm:grid-cols-2 grid-cols-1 gap-y-4 gap-x-8 overflow-y-auto sm:px-4 px-2`}>
+          <div className={`sm:w-7/12 ${Tab == "Mahasiswa" ? "h-full" : "sm:h-max h-full"} w-full grid sm:grid-cols-2 grid-cols-1 gap-y-4 gap-x-8 overflow-y-auto sm:px-4 px-2`}>
           {data.map((item, index) => (
             <div
               key={index}
