@@ -14,7 +14,7 @@ export const BrowseWoF = () => {
     {
       img:"/wof/Darren.jpg",
       name: "Darren Ngoh",
-      desc: `Hi! My name is Darren Ngoh, I graduated from Fasilkom UI on 2023. Unlike other CS graduates/students, I'm not really into coding, but instead I'm always very keen on the business side of things. This passion of mine led to explore various entreprenurial projects during my time at Fasilkom UI. Fast forward, I felt incredibly fortunate to receive multiple grants, including those from prestigious institutions like Google, Kemdikbudristekdikti, BRI, and, notably, four times from UI itself. In addition, I was honored to be awarded the Young Leader for Indonesia scholarship by McKinsey & Company.
+      desc: `      Hi! My name is Darren Ngoh, I graduated from Fasilkom UI on 2023. Unlike other CS graduates/students, I'm not really into coding, but instead I'm always very keen on the business side of things. This passion of mine led to explore various entreprenurial projects during my time at Fasilkom UI. Fast forward, I felt incredibly fortunate to receive multiple grants, including those from prestigious institutions like Google, Kemdikbudristekdikti, BRI, and, notably, four times from UI itself. In addition, I was honored to be awarded the Young Leader for Indonesia scholarship by McKinsey & Company.
 
       Reflecting on my first semester at Fasilkom UI, I recall a period doubt, a period of questioning my decision to study at Fasilkom. Now, looking back, I can confidently say that joining pacil was one of my life's best decisions. The continous support and resources provided by Fasilkom and UI played a crucial role in nurturing mine and every students' unique interest, despite their majors. But more importantly, the network. It was the rich network of like-minded individuals that I value second to none. Who knows a simple conversation over lunch at Gedung Lama led to the creation of Bikun Tracker (bikun.ui.ac.id), now widely-used tool with over 1000 daily users. That's the power of the community of Fasilkom UI – a network that fosters innovation and collaboration. That's the network you want to be in.
 
@@ -25,7 +25,7 @@ See you at Fasilkom!
     {
       img:"/wof/Fairuzi.jpeg",
       name: "Muhammad Fairuzi T.",
-      desc: `Saya adalah alumni Fasilkom UI yang lulus pada tahun 2021 dan sekarang bekerja di Google Taiwan. Sebelumnya, saya telah bekerja di Ruangguru tepat setelah kelulusan saya dari Fasilkom. Pada masa perkuliahan, saya juga aktif mengikuti dan memenangkan berbagai perlombaan, dua di antaranya adalah Medali Perunggu Pengembangan Perangkat Lunak Gemastik 2020 dan National Gold Medal ICPC Jakarta 2019.
+      desc: `      Saya adalah alumni Fasilkom UI yang lulus pada tahun 2021 dan sekarang bekerja di Google Taiwan. Sebelumnya, saya telah bekerja di Ruangguru tepat setelah kelulusan saya dari Fasilkom. Pada masa perkuliahan, saya juga aktif mengikuti dan memenangkan berbagai perlombaan, dua di antaranya adalah Medali Perunggu Pengembangan Perangkat Lunak Gemastik 2020 dan National Gold Medal ICPC Jakarta 2019.
 
       Berkuliah di Fasilkom benar-benar membantu mempersiapkan karier saya, mulai dari kurikulum yang terus diperbarui, dosen-dosen berprestasi dan mengajar sepenuh hati, serta teman-teman suportif yang sekarang telah tersebar di berbagai bidang di seluruh dunia. Semua hal ini membentuk pribadi saya sehingga bisa mendapat tawaran pekerjaan dan promosi di kedua tempat saya bekerja. Terima kasih Fasilkom!
       `,
@@ -42,7 +42,7 @@ See you at Fasilkom!
     {
       img:"/wof/Jasmine.JPG",
       name: "Jasmine A. Muthia",
-      desc: `Back in my freshman year, I initially thought I was going to be a software engineer working for top tech companies. However, in my second year, I came to the realization that I don’t really like to code 🥲. I then tried to find another career path that aligns with my knowledge in tech and my passion for business. Luckily enough, I found a video about product management—a role that intersects three things I’m keen about: tech, business, and design. I instantly fell in love with the role 💕
+      desc: `      Back in my freshman year, I initially thought I was going to be a software engineer working for top tech companies. However, in my second year, I came to the realization that I don’t really like to code 🥲. I then tried to find another career path that aligns with my knowledge in tech and my passion for business. Luckily enough, I found a video about product management—a role that intersects three things I’m keen about: tech, business, and design. I instantly fell in love with the role 💕
 
       I decided to apply for an internship in product management during summer break, but, of course, it was tough—I received zero acceptances 😇. In my second year, I joined RISTEK and learned about project and product management there. I got exposed to a lot of exciting IT projects and had the chance to advise on their product! There, my seniors suggested I join hackathons and strategy-related competitions to hone my skills.
 
@@ -62,9 +62,9 @@ Prestasi:
     {
       img:"/wof/Eryaw.jpeg",
       name: "Eryawan Presma Y.",
-      desc: `Kak Eryawan atau yang akrab dipanggil Eryaw merupakan seorang mahasiswa jurusan Ilmu Komputer Angkatan 2022. Kak Eryaw memulai perjalanannya dalam belajar coding sedari SMP dan mulai menekuninya lebih dalam ketika memasuki jenjang SMA. Minatnya pada logika berpikir dan problem solving membuat Kak Eryaw berhasil meraih medali perak Olimpiade Sains Nasional (OSN) bidang informatika. Hal tersebutlah yang menggiring kak Eryaw dapat diterima di Fasilkom UI melalui jalur prestasi. 
+      desc: `      Kak Eryawan atau yang akrab dipanggil Eryaw merupakan seorang mahasiswa jurusan Ilmu Komputer Angkatan 2022. Kak Eryaw memulai perjalanannya dalam belajar coding sedari SMP dan mulai menekuninya lebih dalam ketika memasuki jenjang SMA. Minatnya pada logika berpikir dan problem solving membuat Kak Eryaw berhasil meraih medali perak Olimpiade Sains Nasional (OSN) bidang informatika. Hal tersebutlah yang menggiring kak Eryaw dapat diterima di Fasilkom UI melalui jalur prestasi. 
 
-Namun, kisah perjalanan Kak Eryaw tidak berhenti sampai di situ saja. Di akhir kelas 12, Kak Eryaw mulai mempelajari lebih dalam mengenai topik yang berkaitan dengan Data Science & Artificial Intelligence dan hal itu masih berlanjut hingga kini. Saat ini, Kak Eryaw sangat aktif di berbagai kompetisi AI.
+      Namun, kisah perjalanan Kak Eryaw tidak berhenti sampai di situ saja. Di akhir kelas 12, Kak Eryaw mulai mempelajari lebih dalam mengenai topik yang berkaitan dengan Data Science & Artificial Intelligence dan hal itu masih berlanjut hingga kini. Saat ini, Kak Eryaw sangat aktif di berbagai kompetisi AI.
 
 Prestasi:
 • Juara 2 Datavidia from Arkavidia 8
@@ -78,7 +78,7 @@ Prestasi:
     {
       img:"/wof/Vincent.jpg",
       name: "Vincent Suhardi",
-      desc: `Berawal dari belajar keras banget buat UTBK, eh tau-taunya gagal masuk. Sempet demotivasi tapi dengan dukungan keluarga dan mengingat benefit yang bisa diberikan oleh kampus terbaik di seluruh Indonesia, lanjut coba buat SIMAK dan akhirnya lolos di Fasilkom jurusan SI.
+      desc: `      Berawal dari belajar keras banget buat UTBK, eh tau-taunya gagal masuk. Sempet demotivasi tapi dengan dukungan keluarga dan mengingat benefit yang bisa diberikan oleh kampus terbaik di seluruh Indonesia, lanjut coba buat SIMAK dan akhirnya lolos di Fasilkom jurusan SI.
 
 Prestasi:
 Sedang mencari prestasi dengan mengikuti banyak-banyak lomba dan terakhir jadi finalis Datathon yang diselenggarain sama RISTEK
@@ -88,7 +88,7 @@ Sedang mencari prestasi dengan mengikuti banyak-banyak lomba dan terakhir jadi f
     {
       img:"/wof/BryanT.jpg",
       name: "Bryan Tjandra",
-      desc: `Awalnya, saat di SMA, kak Bryan belum memiliki pengetahuan yang banyak tentang teknologi informasi (IT). Namun, ketika mendengar tentang Universitas Indonesia (UI) dan melihat kesuksesan orang-orang dari UI, ia mulai tertarik untuk mempelajari masuk UI dengan jurusan IT.
+      desc: `      Awalnya, saat di SMA, kak Bryan belum memiliki pengetahuan yang banyak tentang teknologi informasi (IT). Namun, ketika mendengar tentang Universitas Indonesia (UI) dan melihat kesuksesan orang-orang dari UI, ia mulai tertarik untuk mempelajari masuk UI dengan jurusan IT.
 
       Sejak awal-awal keterima di Ilmu Komputer UI, Ia merasa terkejut dengan kemampuan temannya yang sepertinya sudah jago.  Meskipun merasa tertinggal dibandingkan dengan beberapa teman yang lebih berpengalaman, ia tidak merasa putus asa dan mengikut dalam memperkembangkan skillnya. 
 
@@ -112,7 +112,7 @@ Prestasi:
     {
       img:"/wof/Jojo.jpeg",
       name: "Oey Joshua Jodrian",
-      desc: `Kak Oey Joshua Jodrian atau yang biasa dipanggil Kak Jojo merupakan seorang mahasiswa jurusan Ilmu Komputer Angkatan 2022. Kak Jojo merupakan mantan peserta KSN semasa SMA. Usai menjalani berbagai perlombaan, seorang kakak kelas memberikan referensi kepada Kak Jojo untuk mempelajari Website Development. Setelah itu, kisah Kak Jojo di Fasilkom UI baru saja dimulai. 
+      desc: `      Kak Oey Joshua Jodrian atau yang biasa dipanggil Kak Jojo merupakan seorang mahasiswa jurusan Ilmu Komputer Angkatan 2022. Kak Jojo merupakan mantan peserta KSN semasa SMA. Usai menjalani berbagai perlombaan, seorang kakak kelas memberikan referensi kepada Kak Jojo untuk mempelajari Website Development. Setelah itu, kisah Kak Jojo di Fasilkom UI baru saja dimulai. 
       
       Awal mula Kak Jojo masuk Fasilkom UI, Kak Jojo masih meneruskan karyanya di Website Development, dimulai dari membuat website angkatan, mengikuti acara sekolah BEM Fasilkom bidang WebDev, dan sebagainya. Namun, Kak Jojo mulai merasa kurang cocok di bidang WebDev karena lomba yang tersedia tergolong sedikit dan bidangnya sendiri memang dirasa kurang cocok dengan Kak Jojo.   
       
@@ -128,7 +128,7 @@ Prestasi:
     {
       img:"/wof/Nyoos.jpg",
       name: "Nyoo Steven Christopher",
-      desc: `Selama masa SMA, Nyoo Steven Christopher memenuhi waktunya terutama dalam olimpiade TOKI. Awalnya, ia fokus pada mata pelajaran matematika (MTK) daripada komputer. Namun, karena ia tidak berhasil dalam salah satu lomba matematika, ia diberikan kesempatan untuk mencoba pindah ke bidang komputer. Hasil prestasinya dalam olimpiade TOKI membawanya masuk ke Fakultas Ilmu Komputer Universitas Indonesia (FASILKOM UI). Meski tidak langsung tertarik dengan data science saat pertama kali masuk, minatnya baru muncul saat ia memasuki semester dua.
+      desc: `      Selama masa SMA, Nyoo Steven Christopher memenuhi waktunya terutama dalam olimpiade TOKI. Awalnya, ia fokus pada mata pelajaran matematika (MTK) daripada komputer. Namun, karena ia tidak berhasil dalam salah satu lomba matematika, ia diberikan kesempatan untuk mencoba pindah ke bidang komputer. Hasil prestasinya dalam olimpiade TOKI membawanya masuk ke Fakultas Ilmu Komputer Universitas Indonesia (FASILKOM UI). Meski tidak langsung tertarik dengan data science saat pertama kali masuk, minatnya baru muncul saat ia memasuki semester dua.
 
       Ketika ia mendaftar untuk RISTEK, ia berhasil lolos seleksi meskipun hanya belajar singkat untuk persiapan. Ini memberinya kesempatan untuk mendalami bidang Data Science. Di lingkungan RISTEK, ia bertemu dengan banyak individu yang memiliki minat serupa, dan bersama-sama mereka membentuk tim yang sekarang dikenal sebagai Three Neurons. Dengan dukungan rekan-rekannya dan ketekunan dalam belajar, ia terus mengikuti berbagai kompetisi di bidang data science dan programming.
 
@@ -208,9 +208,9 @@ Prestasi:
               <div className={`sm:w-7/12 ${Tab == "Mahasiswa" ? "h-full" : "sm:h-max h-full"} w-full grid sm:grid-cols-2 grid-cols-1 gap-y-4 gap-x-8 overflow-y-auto sm:px-4 px-2`}>
               {data.map((item, index) => (
                 <div
-                onClick={() => setIdx(index)}
+                  onClick={() => setIdx(index)}
                   key={index}
-                  className="w-full h-full p-4 md:p-6 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur"
+                  className="w-full h-full p-4 md:p-6 flex flex-col gap-y-5 items-center rounded-xl bg-cards backdrop-blur hover:cursor-pointer"
                   style={{ border: "1px solid rgba(165, 250, 209, 0.2)" }}
                 >
                   <div>
