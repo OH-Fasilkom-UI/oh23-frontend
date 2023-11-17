@@ -38,15 +38,8 @@ const Footer = () => {
                                 Registration
                             </Link>
                             <Link
-                                href={""}
-                                onClick={() => {
-                                    disabled && notifications.show({
-                                        title: 'Coming soon~',
-                                        message: '',
-                                        color: "red"
-                                    })
-                                }}
-                                className={` transition-colors duration-300 ease-out ${disabled ? "opacity-50" : "hover:text-aqua-2"}`}
+                                href={"/wall-of-fame"}
+                                className="hover:text-aqua-2 transition-colors duration-300 ease-out"
                             >
                                 Wall of Fame
                             </Link>
