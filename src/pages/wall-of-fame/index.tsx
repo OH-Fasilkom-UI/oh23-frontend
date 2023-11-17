@@ -21,10 +21,12 @@ export default function WoF() {
                 <h3 className="text-white-1 font-bold text-lg sm:text-2xl">Open House Fasilkom</h3>
                 <h1 className="text-white-1 font-bold text-4xl sm:text-6xl">Wall of Fame</h1>
               </div>
-              <p className="text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              </p>
-              <div className='flex flex-col gap-4'>
+                <p className="text-white-1">
+                  Tidak hanya dikenal sebagai individu yang kreatif, para civitas akademika Fasilkom UI juga 
+                  berhasil mengukir prestasi di bidangnya masing-masing. Telusuri informasi lebih rinci mengenai 
+                  perjalanan mereka di Wall of Fame!
+                </p>
+              <div className='w-fit flex flex-col gap-4'>
                 <Button onClick={() => setIsBrowsing(true)} variant='primary' className="font-satoshi font-bold">
                   Browse Our Fame
                   <HiSearch />
