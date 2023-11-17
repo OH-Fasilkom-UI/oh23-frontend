@@ -5,7 +5,7 @@ import { HiSearch } from "react-icons/hi";
 
 
 export default function WoF() {
-  const [isBrowsing, setIsBrowsing] = useState(true)
+  const [isBrowsing, setIsBrowsing] = useState(false)
 
   return (
     <div className="bg-black-1 overflow-x-hidden">
