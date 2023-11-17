@@ -72,7 +72,7 @@ const Navbar = () => {
                     <HiDocumentText />
                     <span className='text-white'>Registration</span>
                 </NavLink>
-                <NavLink href='' isActive={router.pathname === "/wall-of-fame"} disabled>
+                <NavLink href='/wall-of-fame' isActive={router.pathname === "/wall-of-fame"} disabled={false}>
                     <HiUserGroup />
                     <span className='text-white'>Wall of Fame</span>
                 </NavLink>
