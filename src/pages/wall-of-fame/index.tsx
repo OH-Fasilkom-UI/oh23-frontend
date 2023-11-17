@@ -10,7 +10,7 @@ export default function WoF() {
   return (
     <div className="bg-black-1 overflow-x-hidden">
       {isBrowsing ? (
-        <section className="pt-10">
+        <section className="my-20">
           <BrowseWoF />
         </section>
       ) : (
