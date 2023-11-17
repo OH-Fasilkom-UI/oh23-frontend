@@ -96,9 +96,7 @@ Sedang mencari prestasi dengan mengikuti banyak-banyak lomba dan terakhir jadi f
 
       Kuliah yang masih online memberikan lebih banyak waktu luang, yang digunakan secara intensif untuk belajar. Seseorang merasa harus terus belajar, tanpa henti, dan sempat mengikut beberapa kursus satunya generasi GG 
 
-      Sebagai mottonya, Berkat konsistensi dalam mengikuti lomba dan evaluasi diri sendiri, 
-
-      Ia pun mencoba mendaftar untuk berbagai beasiswa, seperti Paragon dan Posco, dan berhasil diterima. Selain itu, ia juga berpartisipasi dalam acara Mapres (Mahasiswa Berprestasi) dan akhirnya mendapat juara 3. 
+      Sebagai mottonya, Berkat konsistensi dalam mengikuti lomba dan evaluasi diri sendiri, Ia pun mencoba mendaftar untuk berbagai beasiswa, seperti Paragon dan Posco, dan berhasil diterima. Selain itu, ia juga berpartisipasi dalam acara Mapres (Mahasiswa Berprestasi) dan akhirnya mendapat juara 3. 
 
 Prestasi:
 • Seseorang meraih berbagai prestasi termasuk juara 1 di Satria Data,
